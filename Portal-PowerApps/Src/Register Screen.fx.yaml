@@ -88,7 +88,25 @@
             HoverBorderColor: =RGBA(238, 204, 204, 1)
             HoverFill: =ColorFade(RGBA(140.25, 4.090617, 4.090617, 1), -10%)
             OnSelect: |-
-                =
+                =If(
+                    CountRows(
+                        Filter(
+                            Users,
+                            Or(
+                                EmailTF.Text = Email,
+                                CNICTF.Text = CNIC
+                            )
+                        )
+                    ) = 1,
+                    Navigate(
+                        'Login Screen',
+                        ScreenTransition.Fade
+                    ),
+                    Notify(
+                        "Account with same email or CNIC already exist, try Login.",
+                        NotificationType.Error
+                    )
+                );
                 Patch(
                     Users,
                     Defaults(Users),
