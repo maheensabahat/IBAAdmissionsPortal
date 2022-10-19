@@ -1,4 +1,31 @@
 App As appinfo:
     BackEnabled: =false
-    OnStart: =
+    OnStart: |
+        =ClearCollect(
+            collSteps,
+            {
+                step:1,
+                stepText: "Personal",
+                stepFlag: 1,
+                isCurrent: true
+            },
+            {
+                step:2,
+                stepText: "Academics",
+                stepFlag: 1,
+                isCurrent: false
+            },
+            {
+                step:3,
+                stepText: "Extra-curriculars",
+                stepFlag: 1,
+                isCurrent: false
+            },
+            {
+                step:4,
+                stepText: "Summary",
+                stepFlag: 1,
+                isCurrent: false
+            }
+        );
 

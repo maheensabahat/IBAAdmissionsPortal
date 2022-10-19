@@ -1,33 +1,5 @@
 "Application As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
-    OnVisible: |
-        =ClearCollect(
-            collSteps,
-            {
-                step:1,
-                stepText: "Personal",
-                stepFlag: 1,
-                isCurrent: true
-            },
-            {
-                step:2,
-                stepText: "Academics",
-                stepFlag: 1,
-                isCurrent: false
-            },
-            {
-                step:3,
-                stepText: "Academics",
-                stepFlag: 1,
-                isCurrent: false
-            },
-            {
-                step:4,
-                stepText: "Academics",
-                stepFlag: 1,
-                isCurrent: false
-            }
-        );
-        UpdateContext({lvarCurrStep: 1});
+    OnVisible: =
 
     Label3 As label:
         BorderColor: =RGBA(151, 0, 0, 1)
@@ -42,6 +14,8 @@
         ZIndex: =2
 
     ProgressIndicator_3 As ProgressIndicator_2:
+        applicationSteps: =collSteps
+        Y: =180
         ZIndex: =3
 
     logo_1 As image:

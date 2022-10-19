@@ -80,6 +80,7 @@
         FocusedBorderThickness: =0
         Height: =40
         Icon: =Icon.NextArrow
+        OnSelect: =Navigate(Application)
         Width: =45
         X: =516
         Y: =324
