@@ -5,7 +5,7 @@
         BorderStyle: =BorderStyle.None
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledFill: =RGBA(0, 0, 0, 0)
-        Fill: =RGBA(238, 204, 204, 1)
+        Fill: =RGBA(255, 255, 255, 1)
         FocusedBorderThickness: =4
         Height: =1136
         HoverBorderColor: =RGBA(0, 0, 0, 0)
