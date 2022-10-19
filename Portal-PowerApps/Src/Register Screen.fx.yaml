@@ -124,6 +124,10 @@
                                 ProgramsInterestedIn: ProgramsDropDown.Selected.Value,
                                 Password: PasswordTF.Text
                             }
+                        );
+                        Navigate(
+                        'Home Screen',
+                            ScreenTransition.Fade
                         ),
                         //else notify the error
                         Notify(
@@ -135,7 +139,7 @@
                         "Password and Confirm Password do not match.",
                         NotificationType.Error
                     )
-                )
+                );
             PressedBorderColor: =RGBA(203, 102, 102, 1)
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =ColorFade(RGBA(203, 102, 102, 100), -10%)
