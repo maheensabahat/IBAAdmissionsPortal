@@ -1801,7 +1801,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Logout",
-      "ParentIndex": 12,
+      "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1907,7 +1907,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "nameText",
-      "ParentIndex": 11,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
