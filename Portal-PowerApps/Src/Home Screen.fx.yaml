@@ -117,7 +117,7 @@
             Height: =40
             Icon: =Icon.Leave
             OnSelect: |-
-                =ClearCollect(User);
+                =Clear();
                 Navigate('Login Screen',ScreenTransition.Fade);
             Width: =30
             X: =555
@@ -129,7 +129,7 @@
             FontWeight: =FontWeight.Semibold
             Height: =54
             OnSelect: |-
-                =ClearCollect(User);
+                =Clear();
                 Navigate('Login Screen',ScreenTransition.Fade);
             Size: =15
             Text: ="Logout"

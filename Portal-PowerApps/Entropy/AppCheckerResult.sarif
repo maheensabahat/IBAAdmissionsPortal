@@ -23,10 +23,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 18,
+                  "charLength": 7,
                   "charOffset": 0,
                   "snippet": {
-                    "text": "ClearCollect(User)"
+                    "text": "Clear()"
                   }
                 }
               },
@@ -39,15 +39,15 @@
           ],
           "message": {
             "arguments": [
-              "1",
-              "2"
+              "0",
+              "1"
             ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrBadArityMinimum",
+          "ruleId": "app-ErrBadArity",
           "ruleIndex": 0
         },
         {
@@ -64,10 +64,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 18,
+                  "charLength": 7,
                   "charOffset": 0,
                   "snippet": {
-                    "text": "ClearCollect(User)"
+                    "text": "Clear()"
                   }
                 }
               },
@@ -80,15 +80,15 @@
           ],
           "message": {
             "arguments": [
-              "1",
-              "2"
+              "0",
+              "1"
             ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrBadArityMinimum",
+          "ruleId": "app-ErrBadArity",
           "ruleIndex": 0
         },
         {
@@ -1618,10 +1618,10 @@
           "name": "PowerApps app checker",
           "rules": [
             {
-              "id": "app-ErrBadArityMinimum",
+              "id": "app-ErrBadArity",
               "messageStrings": {
                 "issue": {
-                  "text": "Invalid number of arguments: received {0}, expected {1} or more."
+                  "text": "Invalid number of arguments: received {0}, expected {1}."
                 }
               },
               "properties": {
