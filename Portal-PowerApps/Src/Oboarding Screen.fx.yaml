@@ -1,19 +1,10 @@
 "'Oboarding Screen' As screen.'phoneLayout_Tutorial_ver3.0'":
 
     IBA As image:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledFill: =RGBA(0, 0, 0, 0)
         Fill: =RGBA(255, 255, 255, 1)
-        FocusedBorderThickness: =4
         Height: =1136
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverFill: =RGBA(0, 0, 0, 0)
         Image: =
         ImagePosition: =ImagePosition.Fill
-        PressedBorderColor: =RGBA(0, 0, 0, 0)
-        PressedFill: =RGBA(0, 0, 0, 0)
         Transparency: =0.5
         Width: =640
         ZIndex: =1

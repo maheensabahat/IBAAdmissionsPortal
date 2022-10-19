@@ -1,18 +1,9 @@
 "'Register Screen' As screen":
 
     Image79_1 As image:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledFill: =RGBA(0, 0, 0, 0)
-        FocusedBorderThickness: =4
         Height: =1136
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverFill: =RGBA(0, 0, 0, 0)
         Image: =IBABackground
         ImagePosition: =ImagePosition.Fill
-        PressedBorderColor: =RGBA(0, 0, 0, 0)
-        PressedFill: =RGBA(0, 0, 0, 0)
         Transparency: =0.1
         Width: =640
         ZIndex: =1
@@ -27,16 +18,9 @@
         Image814_1 As image:
             BorderColor: =RGBA(151, 0, 0, 1)
             BorderThickness: =4
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledFill: =RGBA(0, 0, 0, 0)
-            FocusedBorderThickness: =4
             Height: =236
-            HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverFill: =RGBA(0, 0, 0, 0)
             Image: ='White Background'
             ImagePosition: =ImagePosition.Fill
-            PressedBorderColor: =RGBA(0, 0, 0, 0)
-            PressedFill: =RGBA(0, 0, 0, 0)
             RadiusBottomLeft: =20
             RadiusBottomRight: =20
             RadiusTopLeft: =20
@@ -50,19 +34,9 @@
             Align: =Align.Center
             BorderColor: =RGBA(151, 0, 0, 1)
             BorderStyle: =BorderStyle.None
-            Color: =RGBA(140.25, 4.090617, 4.090617, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            FocusedBorderThickness: =4
-            FontWeight: =FontWeight.Bold
             Height: =59
-            LineHeight: =1.171875
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =18.75
+            Size: =21
             Text: ="Online Admissions Portal"
-            VerticalAlign: =VerticalAlign.Top
             Width: =326
             X: =163
             Y: =230
@@ -71,15 +45,8 @@
         Image812_1 As image:
             BorderColor: =RGBA(151, 0, 0, 1)
             BorderStyle: =BorderStyle.None
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledFill: =RGBA(0, 0, 0, 0)
-            FocusedBorderThickness: =4
             Height: =61
-            HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverFill: =RGBA(0, 0, 0, 0)
             Image: ='png-transparent-institute-of-business-administration-karachi-sukkur-iba-university-business-school-master-of-business-administration-management-school'
-            PressedBorderColor: =RGBA(0, 0, 0, 0)
-            PressedFill: =RGBA(0, 0, 0, 0)
             Width: =251
             X: =200
             Y: =134
@@ -95,9 +62,6 @@
         Rectangle67_1 As rectangle:
             BorderColor: =RGBA(151, 0, 0, 1)
             BorderThickness: =4
-            DisabledFill: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(255, 255, 255, 1)
-            FocusedBorderThickness: =4
             Height: =730
             HoverFill: =RGBA(255, 255, 255, 1)
             PressedFill: =RGBA(255, 255, 255, 1)
@@ -108,32 +72,17 @@
 
         "'Register Label' As label":
             Align: =Align.Center
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            Color: =RGBA(140.25, 4.090617, 4.090617, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            FocusedBorderThickness: =4
-            FontWeight: =FontWeight.Bold
             Height: =49
-            LineHeight: =1.171875
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =22.5
+            Size: =21
             Text: ="Register"
-            VerticalAlign: =VerticalAlign.Top
             Width: =177
             X: =226
             Y: =395
             ZIndex: =6
 
         RegisterBtn As button:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
             Fill: =RGBA(140, 4, 4, 1)
             FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-            Font: =Font.'Segoe UI'
             Height: =47
             HoverBorderColor: =RGBA(238, 204, 204, 1)
             HoverFill: =ColorFade(RGBA(140.25, 4.090617, 4.090617, 1), -10%)
@@ -153,16 +102,10 @@
 
         "'FirstName Input Field' As text":
             BorderColor: =RGBA(203, 102, 102, 1)
-            Color: =RGBA(51, 51, 51, 1)
             Default: =""
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
             Fill: =RGBA(238, 204, 204, 1)
-            Font: =Font.'Segoe UI'
             Height: =49
             HintText: ="First Name"
-            HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-            HoverColor: =RGBA(51, 51, 51, 1)
-            HoverFill: =RGBA(255, 255, 255, 1)
             PressedBorderColor: =RGBA(151, 0, 0, 1)
             PressedColor: =RGBA(0, 0, 0, 1)
             PressedFill: =RGBA(255, 255, 255, 1)
@@ -178,19 +121,11 @@
 
         "'Email InputField' As text":
             BorderColor: =RGBA(203, 102, 102, 1)
-            Color: =RGBA(51, 51, 51, 1)
             Default: =""
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
             Fill: =RGBA(238, 204, 204, 1)
-            Font: =Font.'Segoe UI'
             Height: =50
             HintText: ="Email"
-            HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-            HoverColor: =RGBA(51, 51, 51, 1)
-            HoverFill: =RGBA(255, 255, 255, 1)
             PressedBorderColor: =RGBA(151, 0, 0, 1)
-            PressedColor: =RGBA(51, 51, 51, 1)
-            PressedFill: =RGBA(255, 255, 255, 1)
             RadiusBottomLeft: =10
             RadiusBottomRight: =10
             RadiusTopLeft: =10
@@ -203,19 +138,11 @@
 
         "'LastName InputField' As text":
             BorderColor: =RGBA(203, 102, 102, 1)
-            Color: =RGBA(51, 51, 51, 1)
             Default: =""
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
             Fill: =RGBA(238, 204, 204, 1)
-            Font: =Font.'Segoe UI'
             Height: =49
             HintText: ="Last Name"
-            HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-            HoverColor: =RGBA(51, 51, 51, 1)
-            HoverFill: =RGBA(255, 255, 255, 1)
             PressedBorderColor: =RGBA(151, 0, 0, 1)
-            PressedColor: =RGBA(51, 51, 51, 1)
-            PressedFill: =RGBA(255, 255, 255, 1)
             RadiusBottomLeft: =10
             RadiusBottomRight: =10
             RadiusTopLeft: =10
@@ -228,19 +155,11 @@
 
         "'PhoneNumber InputField_1' As text":
             BorderColor: =RGBA(203, 102, 102, 1)
-            Color: =RGBA(51, 51, 51, 1)
             Default: =""
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
             Fill: =RGBA(238, 204, 204, 1)
-            Font: =Font.'Segoe UI'
             Height: =50
             HintText: ="Phone Number"
-            HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-            HoverColor: =RGBA(51, 51, 51, 1)
-            HoverFill: =RGBA(255, 255, 255, 1)
             PressedBorderColor: =RGBA(151, 0, 0, 1)
-            PressedColor: =RGBA(51, 51, 51, 1)
-            PressedFill: =RGBA(255, 255, 255, 1)
             RadiusBottomLeft: =10
             RadiusBottomRight: =10
             RadiusTopLeft: =10
@@ -280,21 +199,13 @@
 
         CNICInputField As text:
             BorderColor: =RGBA(203, 102, 102, 1)
-            Color: =RGBA(51, 51, 51, 1)
             Default: |-
                 =
                  
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
             Fill: =RGBA(238, 204, 204, 1)
-            Font: =Font.'Segoe UI'
             Height: =50
             HintText: =If("Pakistani" in Radio1.Selected.Value,"00000-0000000-0", "00000000")
-            HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-            HoverColor: =RGBA(51, 51, 51, 1)
-            HoverFill: =RGBA(255, 255, 255, 1)
             PressedBorderColor: =RGBA(151, 0, 0, 1)
-            PressedColor: =RGBA(51, 51, 51, 1)
-            PressedFill: =RGBA(255, 255, 255, 1)
             RadiusBottomLeft: =10
             RadiusBottomRight: =10
             RadiusTopLeft: =10
@@ -355,19 +266,11 @@
 
         "'CNIC InputField_2' As text":
             BorderColor: =RGBA(203, 102, 102, 1)
-            Color: =RGBA(51, 51, 51, 1)
             Default: =""
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
             Fill: =RGBA(238, 204, 204, 1)
-            Font: =Font.'Segoe UI'
             Height: =50
             HintText: ="*********"
-            HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-            HoverColor: =RGBA(51, 51, 51, 1)
-            HoverFill: =RGBA(255, 255, 255, 1)
             PressedBorderColor: =RGBA(151, 0, 0, 1)
-            PressedColor: =RGBA(51, 51, 51, 1)
-            PressedFill: =RGBA(255, 255, 255, 1)
             RadiusBottomLeft: =10
             RadiusBottomRight: =10
             RadiusTopLeft: =10
@@ -380,19 +283,11 @@
 
         "'CNIC InputField_3' As text":
             BorderColor: =RGBA(203, 102, 102, 1)
-            Color: =RGBA(51, 51, 51, 1)
             Default: =""
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
             Fill: =RGBA(238, 204, 204, 1)
-            Font: =Font.'Segoe UI'
             Height: =50
             HintText: ="*********"
-            HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-            HoverColor: =RGBA(51, 51, 51, 1)
-            HoverFill: =RGBA(255, 255, 255, 1)
             PressedBorderColor: =RGBA(151, 0, 0, 1)
-            PressedColor: =RGBA(51, 51, 51, 1)
-            PressedFill: =RGBA(255, 255, 255, 1)
             RadiusBottomLeft: =10
             RadiusBottomRight: =10
             RadiusTopLeft: =10
