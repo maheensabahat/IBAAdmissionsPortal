@@ -1,0 +1,497 @@
+"'Register Screen' As screen":
+
+    Image79_1 As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =1136
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: =IBABackground
+        ImagePosition: =ImagePosition.Fill
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Transparency: =0.1
+        Width: =640
+        ZIndex: =1
+
+    "'Logo Region_1' As group":
+        Height: =5
+        Width: =5
+        X: =-89
+        Y: =-177
+        ZIndex: =5
+
+        Image814_1 As image:
+            BorderColor: =RGBA(151, 0, 0, 1)
+            BorderThickness: =4
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =236
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Image: ='White Background'
+            ImagePosition: =ImagePosition.Fill
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            RadiusBottomLeft: =20
+            RadiusBottomRight: =20
+            RadiusTopLeft: =20
+            RadiusTopRight: =20
+            Width: =390
+            X: =131
+            Y: =77
+            ZIndex: =2
+
+        Label813_1 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(151, 0, 0, 1)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(140.25, 4.090617, 4.090617, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            FontWeight: =FontWeight.Bold
+            Height: =59
+            LineHeight: =1.171875
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =18.75
+            Text: ="Online Admissions Portal"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =326
+            X: =163
+            Y: =230
+            ZIndex: =3
+
+        Image812_1 As image:
+            BorderColor: =RGBA(151, 0, 0, 1)
+            BorderStyle: =BorderStyle.None
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =61
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Image: ='png-transparent-institute-of-business-administration-karachi-sukkur-iba-university-business-school-master-of-business-administration-management-school'
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =251
+            X: =200
+            Y: =134
+            ZIndex: =4
+
+    "'Register Region' As group":
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =33
+
+        Rectangle67_1 As rectangle:
+            BorderColor: =RGBA(151, 0, 0, 1)
+            BorderThickness: =4
+            DisabledFill: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            FocusedBorderThickness: =4
+            Height: =730
+            HoverFill: =RGBA(255, 255, 255, 1)
+            PressedFill: =RGBA(255, 255, 255, 1)
+            Width: =600
+            X: =20
+            Y: =378
+            ZIndex: =5
+
+        "'Register Label' As label":
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(140.25, 4.090617, 4.090617, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            FontWeight: =FontWeight.Bold
+            Height: =49
+            LineHeight: =1.171875
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =22.5
+            Text: ="Register"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =177
+            X: =226
+            Y: =395
+            ZIndex: =6
+
+        RegisterBtn As button:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(140, 4, 4, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Font: =Font.'Segoe UI'
+            Height: =47
+            HoverBorderColor: =RGBA(238, 204, 204, 1)
+            HoverFill: =ColorFade(RGBA(140.25, 4.090617, 4.090617, 1), -10%)
+            PressedBorderColor: =RGBA(203, 102, 102, 1)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =ColorFade(RGBA(203, 102, 102, 100), -10%)
+            RadiusBottomLeft: =20
+            RadiusBottomRight: =20
+            RadiusTopLeft: =20
+            RadiusTopRight: =20
+            Text: ="Register"
+            Width: =174
+            X: =233
+            Y: =1030
+            ZIndex: =9
+
+        "'FirstName Input Field' As text":
+            BorderColor: =RGBA(203, 102, 102, 1)
+            Color: =RGBA(51, 51, 51, 1)
+            Default: =""
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(238, 204, 204, 1)
+            Font: =Font.'Segoe UI'
+            Height: =49
+            HintText: ="First Name"
+            HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            HoverColor: =RGBA(51, 51, 51, 1)
+            HoverFill: =RGBA(255, 255, 255, 1)
+            PressedBorderColor: =RGBA(151, 0, 0, 1)
+            PressedColor: =RGBA(0, 0, 0, 1)
+            PressedFill: =RGBA(255, 255, 255, 1)
+            RadiusBottomLeft: =10
+            RadiusBottomRight: =10
+            RadiusTopLeft: =10
+            RadiusTopRight: =10
+            Size: =15
+            Width: =268
+            X: =43
+            Y: =457
+            ZIndex: =12
+
+        "'Email InputField' As text":
+            BorderColor: =RGBA(203, 102, 102, 1)
+            Color: =RGBA(51, 51, 51, 1)
+            Default: =""
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(238, 204, 204, 1)
+            Font: =Font.'Segoe UI'
+            Height: =50
+            HintText: ="Email"
+            HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            HoverColor: =RGBA(51, 51, 51, 1)
+            HoverFill: =RGBA(255, 255, 255, 1)
+            PressedBorderColor: =RGBA(151, 0, 0, 1)
+            PressedColor: =RGBA(51, 51, 51, 1)
+            PressedFill: =RGBA(255, 255, 255, 1)
+            RadiusBottomLeft: =10
+            RadiusBottomRight: =10
+            RadiusTopLeft: =10
+            RadiusTopRight: =10
+            Size: =15
+            Width: =268
+            X: =43
+            Y: =539
+            ZIndex: =13
+
+        "'LastName InputField' As text":
+            BorderColor: =RGBA(203, 102, 102, 1)
+            Color: =RGBA(51, 51, 51, 1)
+            Default: =""
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(238, 204, 204, 1)
+            Font: =Font.'Segoe UI'
+            Height: =49
+            HintText: ="Last Name"
+            HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            HoverColor: =RGBA(51, 51, 51, 1)
+            HoverFill: =RGBA(255, 255, 255, 1)
+            PressedBorderColor: =RGBA(151, 0, 0, 1)
+            PressedColor: =RGBA(51, 51, 51, 1)
+            PressedFill: =RGBA(255, 255, 255, 1)
+            RadiusBottomLeft: =10
+            RadiusBottomRight: =10
+            RadiusTopLeft: =10
+            RadiusTopRight: =10
+            Size: =15
+            Width: =268
+            X: =328
+            Y: =457
+            ZIndex: =14
+
+        "'PhoneNumber InputField_1' As text":
+            BorderColor: =RGBA(203, 102, 102, 1)
+            Color: =RGBA(51, 51, 51, 1)
+            Default: =""
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(238, 204, 204, 1)
+            Font: =Font.'Segoe UI'
+            Height: =50
+            HintText: ="Phone Number"
+            HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            HoverColor: =RGBA(51, 51, 51, 1)
+            HoverFill: =RGBA(255, 255, 255, 1)
+            PressedBorderColor: =RGBA(151, 0, 0, 1)
+            PressedColor: =RGBA(51, 51, 51, 1)
+            PressedFill: =RGBA(255, 255, 255, 1)
+            RadiusBottomLeft: =10
+            RadiusBottomRight: =10
+            RadiusTopLeft: =10
+            RadiusTopRight: =10
+            Size: =15
+            Width: =268
+            X: =328
+            Y: =539
+            ZIndex: =15
+
+        Radio1 As radio:
+            FontWeight: =FontWeight.Bold
+            Height: =88
+            Items: |
+                =["Pakistani", "Other"]
+            Layout: |
+                =Layout.Horizontal
+            LineHeight: =2
+            RadioSize: =30
+            Size: =10
+            Width: =268
+            X: =31
+            Y: =635
+            ZIndex: =16
+
+        NationalityLabel As label:
+            FontWeight: =FontWeight.Bold
+            Height: =70
+            Size: =15
+            Text: |-
+                ="NATIONALITY
+                "
+            Width: =560
+            X: =43
+            Y: =589
+            ZIndex: =17
+
+        CNICInputField As text:
+            BorderColor: =RGBA(203, 102, 102, 1)
+            Color: =RGBA(51, 51, 51, 1)
+            Default: |-
+                =
+                 
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(238, 204, 204, 1)
+            Font: =Font.'Segoe UI'
+            Height: =50
+            HintText: =If("Pakistani" in Radio1.Selected.Value,"00000-0000000-0", "00000000")
+            HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            HoverColor: =RGBA(51, 51, 51, 1)
+            HoverFill: =RGBA(255, 255, 255, 1)
+            PressedBorderColor: =RGBA(151, 0, 0, 1)
+            PressedColor: =RGBA(51, 51, 51, 1)
+            PressedFill: =RGBA(255, 255, 255, 1)
+            RadiusBottomLeft: =10
+            RadiusBottomRight: =10
+            RadiusTopLeft: =10
+            RadiusTopRight: =10
+            Size: =15
+            Width: =268
+            X: =328
+            Y: =638
+            ZIndex: =18
+
+        Label1_1 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =70
+            Size: =15
+            Text: =If("Pakistani" in Radio1.Selected.Value,"CNIC", "Passport Number")
+            Width: =206
+            X: =328
+            Y: =586
+            ZIndex: =19
+
+        Star1 As star.star8:
+            BorderColor: =RGBA(151, 0, 0, 1)
+            Fill: =RGBA(151, 0, 0, 1)
+            Height: =15
+            Width: =15
+            X: =190
+            Y: =605
+            ZIndex: =20
+
+        ProgramsDropDown As dropdown:
+            BorderColor: =RGBA(203, 102, 102, 1)
+            ChevronBackground: =RGBA(255, 255, 255, 1)
+            ChevronFill: =RGBA(0, 0, 0, 1)
+            ChevronHoverBackground: |
+                =ColorFade(Self.BorderColor, 15%)
+            Default: ="CNIC"
+            Fill: =RGBA(238, 204, 204, 1)
+            Height: =48
+            HoverFill: =RGBA(203, 102, 102, 1)
+            Items: =["BBA","BSCS","BSACF","BSEM","BSSS","BSECO"]
+            PressedFill: =RGBA(151, 0, 0, 1)
+            SelectionFill: =RGBA(220, 153, 153, 1)
+            Size: =15
+            Width: =268
+            X: =43
+            Y: =754
+            ZIndex: =21
+
+        ProgramsInterestedIn As label:
+            FontWeight: =FontWeight.Bold
+            Height: =38
+            Size: =15
+            Text: ="Programs Interested In?"
+            Width: =560
+            X: =36
+            Y: =716
+            ZIndex: =22
+
+        "'CNIC InputField_2' As text":
+            BorderColor: =RGBA(203, 102, 102, 1)
+            Color: =RGBA(51, 51, 51, 1)
+            Default: =""
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(238, 204, 204, 1)
+            Font: =Font.'Segoe UI'
+            Height: =50
+            HintText: ="*********"
+            HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            HoverColor: =RGBA(51, 51, 51, 1)
+            HoverFill: =RGBA(255, 255, 255, 1)
+            PressedBorderColor: =RGBA(151, 0, 0, 1)
+            PressedColor: =RGBA(51, 51, 51, 1)
+            PressedFill: =RGBA(255, 255, 255, 1)
+            RadiusBottomLeft: =10
+            RadiusBottomRight: =10
+            RadiusTopLeft: =10
+            RadiusTopRight: =10
+            Size: =15
+            Width: =268
+            X: =43
+            Y: =854
+            ZIndex: =23
+
+        "'CNIC InputField_3' As text":
+            BorderColor: =RGBA(203, 102, 102, 1)
+            Color: =RGBA(51, 51, 51, 1)
+            Default: =""
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(238, 204, 204, 1)
+            Font: =Font.'Segoe UI'
+            Height: =50
+            HintText: ="*********"
+            HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            HoverColor: =RGBA(51, 51, 51, 1)
+            HoverFill: =RGBA(255, 255, 255, 1)
+            PressedBorderColor: =RGBA(151, 0, 0, 1)
+            PressedColor: =RGBA(51, 51, 51, 1)
+            PressedFill: =RGBA(255, 255, 255, 1)
+            RadiusBottomLeft: =10
+            RadiusBottomRight: =10
+            RadiusTopLeft: =10
+            RadiusTopRight: =10
+            Size: =15
+            Width: =268
+            X: =43
+            Y: =954
+            ZIndex: =24
+
+        Password As label:
+            FontWeight: =FontWeight.Bold
+            Height: =53
+            Size: =15
+            Text: |-
+                ="Password
+                "
+            Width: =560
+            X: =34
+            Y: =812
+            ZIndex: =25
+
+        ConfirmPassword As label:
+            FontWeight: =FontWeight.Bold
+            Height: =53
+            Size: =15
+            Text: |-
+                ="Confirm Password
+                "
+            Width: =560
+            X: =31
+            Y: =913
+            ZIndex: =26
+
+        Icon1 As icon.View:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            Height: =25
+            Icon: =Icon.View
+            Width: =25
+            X: =274
+            Y: =867
+            ZIndex: =27
+
+        Icon1_1 As icon.View:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            Height: =25
+            Icon: =Icon.View
+            Width: =25
+            X: =274
+            Y: =966
+            ZIndex: =28
+
+        Star1_1 As star.star8:
+            BorderColor: =RGBA(151, 0, 0, 1)
+            Fill: =RGBA(151, 0, 0, 1)
+            Height: =15
+            Width: =15
+            X: =147
+            Y: =820
+            ZIndex: =29
+
+        Star1_2 As star.star8:
+            BorderColor: =RGBA(151, 0, 0, 1)
+            Fill: =RGBA(151, 0, 0, 1)
+            Height: =15
+            Width: =15
+            X: =230
+            Y: =921
+            ZIndex: =30
+
+        ProgramsDropDown_1 As dropdown:
+            BorderColor: =RGBA(203, 102, 102, 1)
+            ChevronBackground: =RGBA(255, 255, 255, 1)
+            ChevronFill: =RGBA(0, 0, 0, 1)
+            ChevronHoverBackground: |
+                =ColorFade(Self.BorderColor, 15%)
+            Default: ="United States"
+            Fill: =RGBA(238, 204, 204, 1)
+            Height: =48
+            HoverFill: =RGBA(203, 102, 102, 1)
+            Items: =["United States", "Afghanistan", "Albania", "Australia", "United Kingdom"]
+            PressedFill: =RGBA(151, 0, 0, 1)
+            SelectionFill: =RGBA(220, 153, 153, 1)
+            Size: =15
+            Visible: =If("Other" in Radio1.Selected.Value, true)
+            Width: =206
+            X: =389
+            Y: =754
+            ZIndex: =31
+
+        Label1_2 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =70
+            Size: =15
+            Text: ="Passport Issuing Country"
+            Visible: =If("Other" in Radio1.Selected.Value, true)
+            Width: =268
+            X: =328
+            Y: =695
+            ZIndex: =32
+

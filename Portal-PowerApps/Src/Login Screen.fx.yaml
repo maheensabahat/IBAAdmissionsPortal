@@ -1,0 +1,284 @@
+"'Login Screen' As screen":
+
+    Image79 As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =1136
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: =IBABackground
+        ImagePosition: =ImagePosition.Fill
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Transparency: =0.1
+        Width: =640
+        ZIndex: =1
+
+    "'Logo Region' As group":
+        Height: =5
+        Width: =5
+        X: =-89
+        Y: =-177
+        ZIndex: =5
+
+        Image814 As image:
+            BorderColor: =RGBA(151, 0, 0, 1)
+            BorderThickness: =4
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =236
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Image: ='White Background'
+            ImagePosition: =ImagePosition.Fill
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            RadiusBottomLeft: =20
+            RadiusBottomRight: =20
+            RadiusTopLeft: =20
+            RadiusTopRight: =20
+            Width: =390
+            X: =125
+            Y: =195
+            ZIndex: =2
+
+        Label813 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(151, 0, 0, 1)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(140.25, 4.090617, 4.090617, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            FontWeight: =FontWeight.Bold
+            Height: =59
+            LineHeight: =1.171875
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =18.75
+            Text: ="Online Admissions Portal"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =326
+            X: =157
+            Y: =348
+            ZIndex: =3
+
+        Image812 As image:
+            BorderColor: =RGBA(151, 0, 0, 1)
+            BorderStyle: =BorderStyle.None
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =61
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Image: ='png-transparent-institute-of-business-administration-karachi-sukkur-iba-university-business-school-master-of-business-administration-management-school'
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =251
+            X: =194
+            Y: =252
+            ZIndex: =4
+
+    "'Login Region' As group":
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =16
+
+        Rectangle67 As rectangle:
+            BorderColor: =RGBA(151, 0, 0, 1)
+            BorderThickness: =4
+            DisabledFill: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            FocusedBorderThickness: =4
+            Height: =425
+            HoverFill: =RGBA(255, 255, 255, 1)
+            PressedFill: =RGBA(255, 255, 255, 1)
+            Width: =548
+            X: =45
+            Y: =548
+            ZIndex: =5
+
+        Label816 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(140.25, 4.090617, 4.090617, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            FontWeight: =FontWeight.Bold
+            Height: =49
+            LineHeight: =1.171875
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =22.5
+            Text: ="Login"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =177
+            X: =220
+            Y: =567
+            ZIndex: =6
+
+        "'Password Label' As label":
+            Align: =Align.Right
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            FontWeight: =FontWeight.Bold
+            Height: =34
+            LineHeight: =1.171875
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =17
+            Text: ="Password"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =152
+            X: =68
+            Y: =727
+            ZIndex: =7
+
+        "'Login btn' As button":
+            BorderColor: =RGBA(0, 0, 0, 0)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(140, 4, 4, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Font: =Font.'Segoe UI'
+            Height: =47
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+            PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =ColorFade(RGBA(203, 102, 102, 100), -10%)
+            RadiusBottomLeft: =20
+            RadiusBottomRight: =20
+            RadiusTopLeft: =20
+            RadiusTopRight: =20
+            Text: ="Login"
+            Width: =174
+            X: =234
+            Y: =812
+            ZIndex: =8
+
+        Registerbtn As button:
+            AutoDisableOnSelect: =false
+            BorderColor: =RGBA(0, 0, 0, 0)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(166, 166, 166, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Font: =Font.'Segoe UI'
+            Height: =47
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =ColorFade(RGBA(140.25, 4.090617, 4.090617, 1), -10%)
+            OnSelect: =Navigate('Register Screen')
+            PressedBorderColor: =RGBA(140.25, 4.090617, 4.090617, 1)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =ColorFade(RGBA(140.25, 4.090617, 4.090617, 1), -30%)
+            RadiusBottomLeft: =20
+            RadiusBottomRight: =20
+            RadiusTopLeft: =20
+            RadiusTopRight: =20
+            Text: ="Register"
+            Width: =174
+            X: =234
+            Y: =902
+            ZIndex: =9
+
+        "'Or Text' As label":
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =21
+            Size: =10
+            Text: ="OR"
+            Width: =31
+            X: =305
+            Y: =870
+            ZIndex: =10
+
+        "'Password TextField' As text":
+            BorderColor: =RGBA(203, 102, 102, 1)
+            Color: =RGBA(51, 51, 51, 1)
+            Default: =""
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(238, 204, 204, 1)
+            Font: =Font.'Segoe UI'
+            Height: =50
+            HintText: ="********"
+            HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            HoverColor: =RGBA(51, 51, 51, 1)
+            HoverFill: =RGBA(255, 255, 255, 1)
+            PressedBorderColor: =RGBA(203, 102, 102, 1)
+            PressedColor: =RGBA(51, 51, 51, 1)
+            PressedFill: =RGBA(255, 255, 255, 1)
+            RadiusBottomLeft: =10
+            RadiusBottomRight: =10
+            RadiusTopLeft: =10
+            RadiusTopRight: =10
+            Size: =15
+            Width: =308
+            X: =254
+            Y: =711
+            ZIndex: =13
+
+        Dropdown2 As dropdown:
+            BorderColor: =RGBA(203, 102, 102, 1)
+            ChevronBackground: =RGBA(255, 255, 255, 1)
+            ChevronFill: =RGBA(0, 0, 0, 1)
+            ChevronHoverBackground: |
+                =ColorFade(Self.BorderColor, 15%)
+            Default: =
+            Fill: =RGBA(238, 204, 204, 1)
+            Height: =46
+            HoverFill: =RGBA(203, 102, 102, 1)
+            Items: =["CNIC","Passport"]
+            PressedFill: =RGBA(151, 0, 0, 1)
+            SelectionFill: =RGBA(220, 153, 153, 1)
+            Size: =10
+            Tooltip: =
+            Width: =105
+            X: =115
+            Y: =638
+            ZIndex: =14
+
+        "'Login TextField' As text":
+            BorderColor: =RGBA(203, 102, 102, 1)
+            Color: =RGBA(51, 51, 51, 1)
+            Default: =""
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(238, 204, 204, 1)
+            Font: =Font.'Segoe UI'
+            Height: =50
+            HintText: =If("CNIC" in Dropdown2.Selected.Value,"CNIC","Passport")
+            HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            HoverColor: =RGBA(51, 51, 51, 1)
+            HoverFill: =RGBA(255, 255, 255, 1)
+            PressedBorderColor: =RGBA(203, 102, 102, 1)
+            PressedColor: =RGBA(51, 51, 51, 1)
+            PressedFill: =RGBA(255, 255, 255, 1)
+            RadiusBottomLeft: =10
+            RadiusBottomRight: =10
+            RadiusTopLeft: =10
+            RadiusTopRight: =10
+            Size: =15
+            Width: =308
+            X: =254
+            Y: =638
+            ZIndex: =15
+

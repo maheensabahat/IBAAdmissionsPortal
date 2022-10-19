@@ -1,0 +1,123 @@
+"'Oboarding Screen' As screen.'phoneLayout_Tutorial_ver3.0'":
+
+    IBA As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(238, 204, 204, 1)
+        FocusedBorderThickness: =4
+        Height: =1136
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: =
+        ImagePosition: =ImagePosition.Fill
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Transparency: =0.5
+        Width: =640
+        ZIndex: =1
+
+    TutorialNavigator1 As gallery.TutorialGalleryHorizontal:
+        AccessibleLabel: ="Layouts_Tutorial_Gallery_Accessible_Text"
+        BorderColor: =RGBA(184, 0, 0, 1)
+        Height: =85
+        Items: |-
+            =Table(           
+             {Step: 0, Text:"Welcome to IBA!", Image: IBABackground},           
+             {Step: 1, Text:"Customize your text from the formula bar. Open the formula bar by selecting the screen indicator dots.", Image: IBABackground},           
+             {Step: 2, Text:"Use screenshots of your app to highlight features and show its interface.", Image: IBABackground},           
+             {Step: 3, Text:"Get started!", Image: IBABackground}
+            )
+        ShowScrollbar: =false
+        TemplatePadding: =8
+        TemplateSize: =25
+        Width: =CountRows(Self.AllItems) * (Self.TemplateWidth + Self.TemplatePadding) + 8
+        X: =Parent.Width/2 - Self.Width/2
+        Y: =711
+        ZIndex: =2
+
+        Circle1 As circle:
+            BorderColor: =RGBA(184, 0, 0, 1)
+            BorderThickness: =2
+            Fill: =If(Or(ThisItem.Step = 0 && IsBlank(_guideStep), ThisItem.Step = _guideStep), iconPrev1.Color, RGBA(0,0,0,0))
+            FocusedBorderThickness: =4
+            Height: =Circle1.Width
+            OnSelect: =Set(_guideStep, ThisItem.Step)
+            TabIndex: =0
+            Width: =Parent.TemplateWidth - 5
+            X: =Parent.TemplateWidth/2 - Self.Width/2
+            Y: =Parent.TemplateHeight/2 - Self.Height/2
+            ZIndex: =1
+
+    TutorialImage1 As image:
+        AccessibleLabel: ="Layouts_Tutorial_Image_Accessible_Text"
+        Height: =622
+        Image: =If(IsBlank(_guideStep), First(TutorialNavigator1.AllItems).Image, LookUp(TutorialNavigator1.AllItems, Step = _guideStep).Image)
+        ImagePosition: =ImagePosition.Fill
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Width: =536
+        X: =50
+        Y: =104
+        ZIndex: =3
+
+    TutorialText1 As label:
+        Align: =Align.Center
+        Color: =RGBA(151, 0, 0, 1)
+        DisplayMode: =DisplayMode.View
+        Font: =Font.Georgia
+        FontWeight: =FontWeight.Semibold
+        Height: =120
+        LineHeight: =1.5
+        PaddingLeft: =20
+        PaddingRight: =20
+        Size: =20
+        Text: =If(IsBlank(_guideStep), First(TutorialNavigator1.AllItems).Text, LookUp(TutorialNavigator1.AllItems, Step = _guideStep).Text)
+        Width: =420
+        X: =127
+        Y: =880
+        ZIndex: =4
+
+    iconPrev1 As icon.ChevronLeft:
+        Color: =RGBA(184, 0, 0, 1)
+        Icon: =Icon.ChevronLeft
+        OnSelect: =Set(_guideStep, Max(_guideStep-1, First(TutorialNavigator1.AllItems).Step))
+        TabIndex: =0
+        Tooltip: ="Previous step"
+        Visible: =_guideStep > 0
+        X: =TutorialText1.X - iconPrev1.Width
+        Y: |
+            =1042
+        ZIndex: =5
+
+    iconNext1 As icon.ChevronRight:
+        BorderColor: =RGBA(184, 0, 0, 1)
+        Color: =RGBA(184, 0, 0, 1)
+        Height: =50
+        Icon: =Icon.ChevronRight
+        OnSelect: =Set(_guideStep, Min(_guideStep+1, Last(TutorialNavigator1.AllItems).Step))
+        TabIndex: =0
+        Tooltip: ="Next step"
+        Visible: =Last(TutorialNavigator1.AllItems).Step > _guideStep
+        Width: =50
+        X: =547
+        Y: =1042
+        ZIndex: =6
+
+    LabelSkip1 As label:
+        Align: =Align.Center
+        BorderColor: =Self.Color
+        Color: =RGBA(184, 0, 0, 1)
+        Height: =55
+        OnSelect: =Set(_guideStep, Last(TutorialNavigator1.AllItems).Step)
+        Size: =16
+        TabIndex: =0
+        Text: ="Skip"
+        Width: =100
+        X: =523
+        Y: =809
+        ZIndex: =7
+

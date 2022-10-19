@@ -1,0 +1,67 @@
+"'Home Screen' As screen":
+
+    Label2 As label:
+        Color: =RGBA(140, 4, 4, 1)
+        Font: =Font.'Lato Black'
+        Height: =56
+        Size: =25
+        Text: ="Candidate!"
+        Width: =195
+        X: =35
+        Y: =207
+        ZIndex: =1
+
+    Image1 As image:
+        Image: ='Institute_of_Business_Administration,_Karachi_(logo)'
+        X: =35
+        Y: =40
+        ZIndex: =2
+
+    Label3 As label:
+        Color: =RGBA(166, 166, 166, 1)
+        Height: =45
+        Size: =17
+        Text: ="Hello, "
+        Width: =90
+        X: =35
+        Y: =177
+        ZIndex: =3
+
+    Image2 As image:
+        ImagePosition: =ImagePosition.Fill
+        RadiusBottomLeft: =100
+        RadiusBottomRight: =100
+        RadiusTopLeft: =100
+        RadiusTopRight: =100
+        X: =509
+        Y: =40
+        ZIndex: =4
+
+    Rectangle1 As rectangle:
+        BorderColor: =RGBA(151, 0, 0, 1)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =4
+        Fill: =RGBA(238, 204, 204, 1)
+        Height: =178
+        Width: =574
+        X: =35
+        Y: =263
+        ZIndex: =5
+
+    StartWithApplication As label:
+        Color: =RGBA(140, 4, 4, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =70
+        Size: =21
+        Text: =" Application Process"
+        Width: =307
+        X: =168
+        Y: =263
+        ZIndex: =6
+
+    Gallery1 As gallery.galleryHorizontal:
+        Items: =CustomGallerySample
+        TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(320, Self.Width - 60), Min(320, Self.Height - 60))
+        Y: =500
+        ZIndex: =7
+
