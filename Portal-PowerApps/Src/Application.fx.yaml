@@ -9,8 +9,8 @@
         Size: =21
         Text: =ProgressIndicator_3.selectedStep
         Width: =560
-        X: =35
-        Y: =251
+        X: =45
+        Y: =321
         ZIndex: =2
 
     ProgressIndicator_3 As ProgressIndicator_2:
@@ -25,6 +25,18 @@
         X: =35
         Y: =40
         ZIndex: =3
+
+    Rectangle1_1 As rectangle:
+        BorderColor: =RGBA(151, 0, 0, 1)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =4
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(242, 228, 228, 1)
+        Height: =622
+        Width: =570
+        X: =35
+        Y: =306
+        ZIndex: =5
 
     Logout_1 As group:
         Height: =5
@@ -58,5 +70,67 @@
             Width: =94
             X: =531
             Y: =94
-            ZIndex: =5
+            ZIndex: =6
+
+    StartWithApplication_1 As label:
+        Color: =RGBA(140, 4, 4, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =241
+        Size: =21
+        Text: =" Application"
+        Width: =307
+        X: =54
+        Y: =306
+        ZIndex: =7
+
+    Status_label_1 As label:
+        Color: =RGBA(118, 0, 0, 1)
+        Height: =207
+        Size: =20
+        Text: |-
+            ="Status:"
+        Width: =108
+        X: =65
+        Y: =363
+        ZIndex: =8
+
+    Deadline_label_1 As label:
+        Color: =RGBA(116, 116, 116, 1)
+        Height: =158
+        Size: =17
+        Text: |-
+            ="Deadline: "
+        Width: =126
+        X: =65
+        Y: =429
+        ZIndex: =9
+
+    Icon7_1 As icon.NextArrow:
+        Color: =RGBA(118, 0, 0, 1)
+        FocusedBorderThickness: =0
+        Height: =138
+        Icon: =Icon.NextArrow
+        Width: =45
+        X: =516
+        Y: =333
+        ZIndex: =10
+
+    Deadline_1 As label:
+        Color: =RGBA(116, 116, 116, 1)
+        Height: =158
+        Size: =17
+        Text: ="10th January 2023"
+        Width: =206
+        X: =173
+        Y: =427
+        ZIndex: =11
+
+    Status_3 As label:
+        Height: =207
+        Size: =20
+        Text: ="Pending"
+        Width: =144
+        X: =173
+        Y: =363
+        ZIndex: =12
 
