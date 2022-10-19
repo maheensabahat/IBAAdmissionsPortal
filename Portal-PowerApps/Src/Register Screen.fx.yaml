@@ -87,19 +87,7 @@
             Height: =47
             HoverBorderColor: =RGBA(238, 204, 204, 1)
             HoverFill: =ColorFade(RGBA(140.25, 4.090617, 4.090617, 1), -10%)
-            OnSelect: |-
-                =Patch(
-                    Users,
-                    Defaults(Users),
-                    {    FirstName: 'FirstNameInputField'.Text,
-                         LastName: 'LastName InputField'.Text,
-                         Email: 'Email InputField'.Text,
-                         PhoneNumber:'PhoneNumber InputField'.Text,
-                         
-                
-                         
-                    }
-                )
+            OnSelect: =
             PressedBorderColor: =RGBA(203, 102, 102, 1)
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =ColorFade(RGBA(203, 102, 102, 100), -10%)
