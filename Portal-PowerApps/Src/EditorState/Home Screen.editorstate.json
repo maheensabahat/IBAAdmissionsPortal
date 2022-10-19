@@ -81,7 +81,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Candidate",
-      "ParentIndex": 4,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -364,7 +364,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Deadline",
-      "ParentIndex": 10,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -647,7 +647,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Deadline_label",
-      "ParentIndex": 11,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1244,7 +1244,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon7",
-      "ParentIndex": 7,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1801,7 +1801,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Logout",
-      "ParentIndex": 12,
+      "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1907,7 +1907,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "nameText",
-      "ParentIndex": 11,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2166,7 +2166,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Rectangle1",
-      "ParentIndex": 5,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2322,7 +2322,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "StartWithApplication",
-      "ParentIndex": 6,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2605,7 +2605,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Status",
-      "ParentIndex": 9,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3205,7 +3205,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Status_label",
-      "ParentIndex": 8,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
