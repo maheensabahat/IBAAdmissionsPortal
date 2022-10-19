@@ -158,6 +158,7 @@
             Height: =47
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+            OnSelect: =Navigate('Home Screen',ScreenTransition.Fade)
             PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =ColorFade(RGBA(203, 102, 102, 100), -10%)
@@ -181,7 +182,7 @@
             Height: =47
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverFill: =ColorFade(RGBA(140.25, 4.090617, 4.090617, 1), -10%)
-            OnSelect: =Navigate('Register Screen')
+            OnSelect: =Navigate('Register Screen',ScreenTransition.Fade)
             PressedBorderColor: =RGBA(140.25, 4.090617, 4.090617, 1)
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =ColorFade(RGBA(140.25, 4.090617, 4.090617, 1), -30%)

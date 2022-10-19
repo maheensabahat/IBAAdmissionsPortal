@@ -83,11 +83,13 @@
 
     iconPrev1 As icon.ChevronLeft:
         Color: =RGBA(184, 0, 0, 1)
+        Height: =50
         Icon: =Icon.ChevronLeft
         OnSelect: =Set(_guideStep, Max(_guideStep-1, First(TutorialNavigator1.AllItems).Step))
         TabIndex: =0
         Tooltip: ="Previous step"
         Visible: =_guideStep > 0
+        Width: =50
         X: =TutorialText1.X - iconPrev1.Width
         Y: |
             =1042
@@ -98,10 +100,11 @@
         Color: =RGBA(184, 0, 0, 1)
         Height: =50
         Icon: =Icon.ChevronRight
-        OnSelect: =Set(_guideStep, Min(_guideStep+1, Last(TutorialNavigator1.AllItems).Step))
+        OnSelect: |-
+            =Set(_guideStep, Min(_guideStep+1, Last(TutorialNavigator1.AllItems).Step));
+            If(_guideStep >= Last(TutorialNavigator1.AllItems).Step, Navigate('Login Screen'));
         TabIndex: =0
         Tooltip: ="Next step"
-        Visible: =Last(TutorialNavigator1.AllItems).Step > _guideStep
         Width: =50
         X: =547
         Y: =1042
@@ -112,7 +115,7 @@
         BorderColor: =Self.Color
         Color: =RGBA(184, 0, 0, 1)
         Height: =55
-        OnSelect: =Set(_guideStep, Last(TutorialNavigator1.AllItems).Step)
+        OnSelect: =Navigate('Login Screen',ScreenTransition.Fade)
         Size: =16
         TabIndex: =0
         Text: ="Skip"
