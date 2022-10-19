@@ -51,7 +51,7 @@
     "Password": 63,
     "Password Label": 13,
     "Password TextField": 12,
-    "PhoneNumber InputField_1": 53,
+    "PhoneNumberTxt": 53,
     "ProgramsDropDown": 61,
     "ProgramsDropDown_1": 62,
     "ProgramsInterestedIn": 60,
@@ -77,7 +77,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "10/19/2022 11:18:31",
+  "HeaderLastSavedDateTimeUTC": "10/19/2022 11:23:27",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "7580dfef-b203-40b2-8d5e-98aa9e654967": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/fd61e08e61b4462c845da42bde057db0\""
@@ -146,7 +146,7 @@
       "LastName InputField": 5,
       "NationalityLabel": 8,
       "Password": 16,
-      "PhoneNumber InputField_1": 6,
+      "PhoneNumberTxt": 6,
       "ProgramsDropDown": 12,
       "ProgramsDropDown_1": 22,
       "ProgramsInterestedIn": 13,
@@ -224,7 +224,7 @@
     "Password": 62,
     "Password Label": 26,
     "Password TextField": 25,
-    "PhoneNumber InputField_1": 52,
+    "PhoneNumberTxt": 52,
     "ProgramsDropDown": 60,
     "ProgramsDropDown_1": 61,
     "ProgramsInterestedIn": 59,
@@ -276,7 +276,7 @@
       "text": 9
     },
     "DeserializationLoadTime": 1.6490306,
-    "ErrorCount": 0
+    "ErrorCount": 6
   },
   "WasLocalDatabaseReferencesEmpty": true
 }

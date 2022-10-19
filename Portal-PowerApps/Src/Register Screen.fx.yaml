@@ -91,7 +91,13 @@
                 =Patch(
                     Users,
                     Defaults(Users),
-                    {LastName: 'LastName InputField'.Text
+                    {    FirstName: 'FirstNameInputField'.Text,
+                         LastName: 'LastName InputField'.Text,
+                         Email: 'Email InputField'.Text,
+                         PhoneNumber:'PhoneNumber InputField'.Text,
+                         
+                
+                         
                     }
                 )
             PressedBorderColor: =RGBA(203, 102, 102, 1)
@@ -166,7 +172,7 @@
             Y: =457
             ZIndex: =14
 
-        "'PhoneNumber InputField_1' As text":
+        PhoneNumberTxt As text:
             BorderColor: =RGBA(203, 102, 102, 1)
             Default: =""
             Fill: =RGBA(238, 204, 204, 1)

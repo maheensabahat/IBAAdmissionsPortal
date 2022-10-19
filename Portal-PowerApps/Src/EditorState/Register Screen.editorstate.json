@@ -5148,7 +5148,7 @@
       "StyleName": "defaultLabelStyle",
       "Type": "ControlInfo"
     },
-    "PhoneNumber InputField_1": {
+    "PhoneNumberTxt": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -5270,7 +5270,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "PhoneNumber InputField_1",
+      "Name": "PhoneNumberTxt",
       "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
