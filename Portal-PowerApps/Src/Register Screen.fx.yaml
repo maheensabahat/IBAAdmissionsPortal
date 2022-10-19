@@ -99,37 +99,31 @@
                             )
                         ) = 0,
                         //if it doesnt exist allow to register
-                        Or(
-                            Patch(
-                                Users,
-                                Defaults(Users),
-                                {
-                                    Title: Lower(
-                                        Concatenate(
-                                            FirstNameTF.Text,
-                                            ".",
-                                            LastNameTF.Text,
-                                            RandBetween(
-                                                100,
-                                                999
-                                            )
+                        Patch(
+                            Users,
+                            Defaults(Users),
+                            {
+                                Title: Lower(
+                                    Concatenate(
+                                        FirstNameTF.Text,
+                                        ".",
+                                        LastNameTF.Text,
+                                        RandBetween(
+                                            100,
+                                            999
                                         )
-                                    ),
-                                    FirstName: FirstNameTF.Text,
-                                    LastName: LastNameTF.Text,
-                                    Email: EmailTF.Text,
-                                    PhoneNumber: PhoneNumberTF.Text,
-                                    Nationality: NationalityRB.Selected.Value,
-                                    CNIC: CNICTF.Text,
-                                    PassportNumber: 00000000,
-                                    ProgramsInterestedIn: ProgramsDropDown.Selected.Value,
-                                    Password: PasswordTF.Text
-                                }
-                            ),
-                            Navigate(
-                                'Home Screen',
-                                ScreenTransition.Fade
-                            ),
+                                    )
+                                ),
+                                FirstName: FirstNameTF.Text,
+                                LastName: LastNameTF.Text,
+                                Email: EmailTF.Text,
+                                PhoneNumber: PhoneNumberTF.Text,
+                                Nationality: NationalityRB.Selected.Value,
+                                CNIC: CNICTF.Text,
+                                PassportNumber: 00000000,
+                                ProgramsInterestedIn: ProgramsDropDown.Selected.Value,
+                                Password: PasswordTF.Text
+                            }
                         ),
                         //else notify the error
                         Notify(
