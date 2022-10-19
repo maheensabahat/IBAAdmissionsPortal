@@ -1,1 +1,27 @@
-{}
+{
+  "7580dfef-b203-40b2-8d5e-98aa9e654967": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1591/1.0.1591.2961/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://cloudexpertz102.sharepoint.com/sites/IBAAdmissionPortal": {
+        "dataSources": {
+          "Users": {
+            "tableName": "7f9a42ee-a868-4b95-927f-1bc1efe2dd29"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Users"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "7580dfef-b203-40b2-8d5e-98aa9e654967"
+  }
+}
