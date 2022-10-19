@@ -120,6 +120,14 @@
                             )
                         )
                     ) = 1,
+                    //Save Users info in local app collection and navigate
+                    Collect(
+                        User,
+                        Filter(
+                            Users,
+                            LoginTF.Text = Email
+                        )
+                    );
                     Navigate(
                         'Home Screen',
                         ScreenTransition.Fade
