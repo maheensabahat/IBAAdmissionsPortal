@@ -63,10 +63,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 114,
-                  "charOffset": 111,
+                  "charLength": 119,
+                  "charOffset": 115,
                   "snippet": {
-                    "text": "CountRows(\n            Filter(\n                Users,\n                EmailTF.Text = Email\n            )\n        )"
+                    "text": "CountRows(\r\n            Filter(\r\n                Users,\r\n                EmailTF.Text = Email\r\n            )\r\n        )"
                   }
                 }
               },
@@ -1594,19 +1594,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Register Screen'.ProgramsDropDown_1.AccessibleLabel"
+                  "fullyQualifiedName": "'Register Screen'.Country.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Register Screen'.ProgramsDropDown_1.AccessibleLabel",
+                  "fullyQualifiedName": "'Register Screen'.Country.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Register Screen",
-                "type": "'Register Screen'.ProgramsDropDown_1"
+                "type": "'Register Screen'.Country"
               }
             }
           ],
