@@ -120,6 +120,8 @@
                             )
                         )
                     ) = 1,
+                    //Save Users info in local app collection and navigate
+                    
                     Navigate(
                         'Home Screen',
                         ScreenTransition.Fade

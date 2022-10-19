@@ -1768,7 +1768,14 @@
         "Italic",
         "Underline",
         "Strikethrough",
-        "OnSelect",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "If(\r\n    CountRows(\r\n        Filter(\r\n            Users,\r\n            And(\r\n                LoginTF.Text = Email,\r\n                Password2_TF.Text = Password\r\n            )\r\n        )\r\n    ) = 1,\r\n    Navigate(\r\n        'Home Screen',\r\n        ScreenTransition.Fade\r\n    ),\r\n    Notify(\r\n        \"Invalid Login Details\",\r\n        NotificationType.Error\r\n    )\r\n);\r\nReset(LoginTF);\r\nReset(Password2_TF);\r\n",
+          "InvariantPropertyName": "OnSelect",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Tooltip"
       ],
       "HasDynamicProperties": false,
