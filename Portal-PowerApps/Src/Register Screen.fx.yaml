@@ -90,12 +90,8 @@
             OnSelect: |-
                 =Patch(
                     Users,
-                    Defaults(Users),
-                    { 
-                        Las:'LastName InputField'.Text,
-                       
-                        
-                   }
+                    {
+                    }
                 )
             PressedBorderColor: =RGBA(203, 102, 102, 1)
             PressedColor: =RGBA(255, 255, 255, 1)
@@ -110,7 +106,7 @@
             Y: =1030
             ZIndex: =9
 
-        FirstNameInputField As text:
+        FirstNameTF As text:
             BorderColor: =RGBA(203, 102, 102, 1)
             Color: =RGBA(51, 51, 51, 1)
             Default: =""
@@ -135,7 +131,7 @@
             Y: =457
             ZIndex: =12
 
-        "'Email InputField' As text":
+        EmailTF As text:
             BorderColor: =RGBA(203, 102, 102, 1)
             Default: =""
             Fill: =RGBA(238, 204, 204, 1)
@@ -152,7 +148,7 @@
             Y: =539
             ZIndex: =13
 
-        "'LastName InputField' As text":
+        LastNameTF As text:
             BorderColor: =RGBA(203, 102, 102, 1)
             Default: =""
             Fill: =RGBA(238, 204, 204, 1)
@@ -169,7 +165,7 @@
             Y: =457
             ZIndex: =14
 
-        "'PhoneNumber InputField_1' As text":
+        PhoneNumberTF As text:
             BorderColor: =RGBA(203, 102, 102, 1)
             Default: =""
             Fill: =RGBA(238, 204, 204, 1)
@@ -186,7 +182,7 @@
             Y: =539
             ZIndex: =15
 
-        Radio1 As radio:
+        NationalityRB As radio:
             FontWeight: =FontWeight.Bold
             Height: =88
             Items: |
@@ -213,14 +209,14 @@
             Y: =589
             ZIndex: =17
 
-        CNICInputField As text:
+        CNICTF As text:
             BorderColor: =RGBA(203, 102, 102, 1)
             Default: |-
                 =
                  
             Fill: =RGBA(238, 204, 204, 1)
             Height: =50
-            HintText: =If("Pakistani" in Radio1.Selected.Value,"00000-0000000-0", "00000000")
+            HintText: =If("Pakistani" in NationalityRB.Selected.Value,"00000-0000000-0", "00000000")
             PressedBorderColor: =RGBA(151, 0, 0, 1)
             RadiusBottomLeft: =10
             RadiusBottomRight: =10
@@ -236,7 +232,7 @@
             FontWeight: =FontWeight.Bold
             Height: =70
             Size: =15
-            Text: =If("Pakistani" in Radio1.Selected.Value,"CNIC", "Passport Number")
+            Text: =If("Pakistani" in NationalityRB.Selected.Value,"CNIC", "Passport Number")
             Width: =206
             X: =328
             Y: =586
@@ -280,7 +276,7 @@
             Y: =716
             ZIndex: =22
 
-        "'CNIC InputField_2' As text":
+        PasswordTF As text:
             BorderColor: =RGBA(203, 102, 102, 1)
             Default: =""
             Fill: =RGBA(238, 204, 204, 1)
@@ -297,7 +293,7 @@
             Y: =854
             ZIndex: =23
 
-        "'CNIC InputField_3' As text":
+        confirmPasswordTF As text:
             BorderColor: =RGBA(203, 102, 102, 1)
             Default: =""
             Fill: =RGBA(238, 204, 204, 1)
@@ -390,7 +386,7 @@
             PressedFill: =RGBA(151, 0, 0, 1)
             SelectionFill: =RGBA(220, 153, 153, 1)
             Size: =15
-            Visible: =If("Other" in Radio1.Selected.Value, true)
+            Visible: =If("Other" in NationalityRB.Selected.Value, true)
             Width: =206
             X: =389
             Y: =754
@@ -401,7 +397,7 @@
             Height: =70
             Size: =15
             Text: ="Passport Issuing Country"
-            Visible: =If("Other" in Radio1.Selected.Value, true)
+            Visible: =If("Other" in NationalityRB.Selected.Value, true)
             Width: =268
             X: =328
             Y: =695
