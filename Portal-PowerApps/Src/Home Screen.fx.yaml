@@ -116,9 +116,7 @@
             FocusedBorderThickness: =0
             Height: =40
             Icon: =Icon.Leave
-            OnSelect: |-
-                =Clear();
-                Navigate('Login Screen',ScreenTransition.Fade);
+            OnSelect: =Navigate('Login Screen',ScreenTransition.Fade);
             Width: =30
             X: =555
             Y: =54
@@ -128,9 +126,7 @@
             Color: =RGBA(118, 0, 0, 1)
             FontWeight: =FontWeight.Semibold
             Height: =54
-            OnSelect: |-
-                =Clear();
-                Navigate('Login Screen',ScreenTransition.Fade);
+            OnSelect: =Navigate('Login Screen',ScreenTransition.Fade);
             Size: =15
             Text: ="Logout"
             Width: =94
