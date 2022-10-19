@@ -97,10 +97,28 @@
             FocusedBorderColor: =ColorFade(Self.Fill, -75%)
             Height: =47
             HoverFill: =ColorFade(RGBA(203, 102, 102, 100), -20%)
-            OnSelect: |-
-                =
-                
-                Navigate('Home Screen',ScreenTransition.Fade)
+            OnSelect: |
+                =If(
+                    CountRows(
+                        Filter(
+                            Users,
+                            And(
+                                LoginTF.Text = CNIC,
+                                Password2_TF.Text = Password
+                            )
+                        )
+                    ) = 1,
+                    Navigate(
+                        'Home Screen',
+                        ScreenTransition.Fade
+                    ),
+                    Notify(
+                        "Invalid Login Details",
+                        NotificationType.Error
+                    )
+                );
+                Reset(LoginTF);
+                Reset(Password2_TF);
             PressedFill: =ColorFade(RGBA(203, 102, 102, 100), -10%)
             RadiusBottomLeft: =20
             RadiusBottomRight: =20
@@ -141,7 +159,7 @@
             Y: =870
             ZIndex: =10
 
-        "'Password TextField' As text":
+        Password2_TF As text:
             BorderColor: =RGBA(203, 102, 102, 1)
             Default: =""
             Fill: =RGBA(238, 204, 204, 1)
@@ -180,7 +198,7 @@
             Y: =638
             ZIndex: =14
 
-        "'Login TextField' As text":
+        LoginTF As text:
             BorderColor: =RGBA(203, 102, 102, 1)
             Default: =""
             Fill: =RGBA(238, 204, 204, 1)
