@@ -90,7 +90,16 @@
             OnSelect: |-
                 =Patch(
                     Users,
-                    {
+                    Defaults(Users),
+                    {    FirstName: FirstNameTF.Text,
+                         LastName: 'LastNameTF'.Text,
+                         Email: EmailTF.Text,
+                         PhoneNumber:PhoneNumberTF.Text,
+                         Nationality: NationalityRB.Selected.Value.Text,
+                         CNIC: CNICTF.Text,
+                         PassportNumber: 00000000,
+                         'ProgramsInterestedIn?': ProgramsDropDown.Selected.Value.Text,
+                         Password: PasswordTF.Text,
                     }
                 )
             PressedBorderColor: =RGBA(203, 102, 102, 1)

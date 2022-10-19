@@ -24,7 +24,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 88,
+                  "charOffset": 423,
                   "snippet": {
                     "text": ","
                   }
@@ -61,7 +61,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 113,
+                  "charOffset": 430,
                   "snippet": {
                     "text": "}"
                   }
@@ -101,10 +101,84 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 117,
+                  "charLength": 5,
+                  "charOffset": 243,
+                  "snippet": {
+                    "text": ".Text"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Register Screen",
+                "type": "'Register Screen'.RegisterBtn"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Register Screen'.RegisterBtn.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Register Screen'.RegisterBtn.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 381,
+                  "snippet": {
+                    "text": ".Text"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Register Screen",
+                "type": "'Register Screen'.RegisterBtn"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Register Screen'.RegisterBtn.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Register Screen'.RegisterBtn.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 434,
                   "charOffset": 0,
                   "snippet": {
-                    "text": "Patch(\r\n    Users,\r\n    Defaults(Users),\r\n    { \r\n        Las:'LastName InputField'.Text,\r\n       \r\n        \r\n   }\r\n)"
+                    "text": "Patch(\r\n    Users,\r\n    Defaults(Users),\r\n    {    FirstName: FirstNameTF.Text,\r\n         LastName: 'LastNameTF'.Text,\r\n         Email: EmailTF.Text,\r\n         PhoneNumber:PhoneNumberTF.Text,\r\n         Nationality: NationalityRB.Selected.Value.Text,\r\n         CNIC: CNICTF.Text,\r\n         PassportNumber: 00000000,\r\n         'ProgramsInterestedIn?': ProgramsDropDown.Selected.Value.Text,\r\n         Password: PasswordTF.Text,\r\n    }\r\n)"
                   }
                 }
               },
@@ -125,7 +199,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 2
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -141,10 +215,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 68,
+                  "charLength": 385,
                   "charOffset": 46,
                   "snippet": {
-                    "text": "{ \r\n        Las:'LastName InputField'.Text,\r\n       \r\n        \r\n   }"
+                    "text": "{    FirstName: FirstNameTF.Text,\r\n         LastName: 'LastNameTF'.Text,\r\n         Email: EmailTF.Text,\r\n         PhoneNumber:PhoneNumberTF.Text,\r\n         Nationality: NationalityRB.Selected.Value.Text,\r\n         CNIC: CNICTF.Text,\r\n         PassportNumber: 00000000,\r\n         'ProgramsInterestedIn?': ProgramsDropDown.Selected.Value.Text,\r\n         Password: PasswordTF.Text,\r\n    }"
                   }
                 }
               },
@@ -157,16 +231,17 @@
           ],
           "message": {
             "arguments": [
-              "Las",
-              "ID"
+              "CNIC",
+              "Number",
+              "Text"
             ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrColumnDoesNotExist-Name-Similar",
-          "ruleIndex": 3
+          "ruleId": "app-ErrTypeError-Arg-Expected-Found",
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -196,7 +271,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -226,7 +301,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 5
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -256,7 +331,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 6
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -286,7 +361,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 6
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -316,7 +391,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 5
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -346,7 +421,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -376,7 +451,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 5
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -406,7 +481,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -436,7 +511,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 5
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -466,7 +541,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -496,7 +571,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 5
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -526,7 +601,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 6
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -556,7 +631,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 5
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -586,7 +661,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -616,7 +691,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 5
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -646,7 +721,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 6
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -676,7 +751,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 5
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -706,7 +781,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -736,7 +811,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -766,7 +841,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -796,7 +871,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 6
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -826,7 +901,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 5
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -856,7 +931,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -886,7 +961,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 5
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -916,7 +991,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 5
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -946,7 +1021,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -976,7 +1051,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 6
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -1006,7 +1081,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -1036,7 +1111,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -1066,7 +1141,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -1096,7 +1171,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 5
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -1126,7 +1201,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -1156,7 +1231,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 5
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -1186,7 +1261,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -1216,7 +1291,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 5
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -1246,7 +1321,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 6
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -1276,7 +1351,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 5
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -1306,7 +1381,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -1336,7 +1411,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 5
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -1366,7 +1441,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 6
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -1396,6 +1471,36 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Register Screen'.FirstNameTF.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Register Screen'.FirstNameTF.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Register Screen",
+                "type": "'Register Screen'.FirstNameTF"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 5
         },
         {
@@ -1403,19 +1508,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Register Screen'.FirstNameInputField.AccessibleLabel"
+                  "fullyQualifiedName": "'Register Screen'.LastNameTF.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Register Screen'.FirstNameInputField.AccessibleLabel",
+                  "fullyQualifiedName": "'Register Screen'.LastNameTF.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Register Screen",
-                "type": "'Register Screen'.FirstNameInputField"
+                "type": "'Register Screen'.LastNameTF"
               }
             }
           ],
@@ -1426,26 +1531,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 5
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Register Screen'.'LastName InputField'.AccessibleLabel"
+                  "fullyQualifiedName": "'Register Screen'.EmailTF.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Register Screen'.'LastName InputField'.AccessibleLabel",
+                  "fullyQualifiedName": "'Register Screen'.EmailTF.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Register Screen",
-                "type": "'Register Screen'.'LastName InputField'"
+                "type": "'Register Screen'.EmailTF"
               }
             }
           ],
@@ -1456,26 +1561,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 5
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Register Screen'.'Email InputField'.AccessibleLabel"
+                  "fullyQualifiedName": "'Register Screen'.PhoneNumberTF.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Register Screen'.'Email InputField'.AccessibleLabel",
+                  "fullyQualifiedName": "'Register Screen'.PhoneNumberTF.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Register Screen",
-                "type": "'Register Screen'.'Email InputField'"
+                "type": "'Register Screen'.PhoneNumberTF"
               }
             }
           ],
@@ -1486,26 +1591,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 5
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Register Screen'.'PhoneNumber InputField_1'.AccessibleLabel"
+                  "fullyQualifiedName": "'Register Screen'.PhoneNumberTxt.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Register Screen'.'PhoneNumber InputField_1'.AccessibleLabel",
+                  "fullyQualifiedName": "'Register Screen'.PhoneNumberTxt.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Register Screen",
-                "type": "'Register Screen'.'PhoneNumber InputField_1'"
+                "type": "'Register Screen'.PhoneNumberTxt"
               }
             }
           ],
@@ -1516,26 +1621,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 5
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Register Screen'.Radio1.AccessibleLabel"
+                  "fullyQualifiedName": "'Register Screen'.NationalityRB.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Register Screen'.Radio1.AccessibleLabel",
+                  "fullyQualifiedName": "'Register Screen'.NationalityRB.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Register Screen",
-                "type": "'Register Screen'.Radio1"
+                "type": "'Register Screen'.NationalityRB"
               }
             }
           ],
@@ -1546,26 +1651,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 5
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Register Screen'.CNICInputField.AccessibleLabel"
+                  "fullyQualifiedName": "'Register Screen'.CNICTF.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Register Screen'.CNICInputField.AccessibleLabel",
+                  "fullyQualifiedName": "'Register Screen'.CNICTF.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Register Screen",
-                "type": "'Register Screen'.CNICInputField"
+                "type": "'Register Screen'.CNICTF"
               }
             }
           ],
@@ -1576,7 +1681,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -1606,7 +1711,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -1636,26 +1741,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 5
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Register Screen'.'CNIC InputField_2'.AccessibleLabel"
+                  "fullyQualifiedName": "'Register Screen'.PasswordTF.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Register Screen'.'CNIC InputField_2'.AccessibleLabel",
+                  "fullyQualifiedName": "'Register Screen'.PasswordTF.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Register Screen",
-                "type": "'Register Screen'.'CNIC InputField_2'"
+                "type": "'Register Screen'.PasswordTF"
               }
             }
           ],
@@ -1666,26 +1771,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 5
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Register Screen'.'CNIC InputField_3'.AccessibleLabel"
+                  "fullyQualifiedName": "'Register Screen'.confirmPasswordTF.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Register Screen'.'CNIC InputField_3'.AccessibleLabel",
+                  "fullyQualifiedName": "'Register Screen'.confirmPasswordTF.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Register Screen",
-                "type": "'Register Screen'.'CNIC InputField_3'"
+                "type": "'Register Screen'.confirmPasswordTF"
               }
             }
           ],
@@ -1696,7 +1801,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 5
         }
       ],
       "tool": {
@@ -1739,6 +1844,20 @@
               }
             },
             {
+              "id": "app-ErrInvalidDot",
+              "messageStrings": {
+                "issue": {
+                  "text": "Invalid use of '.'"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
               "id": "app-ErrInvalidArgs-Func",
               "messageStrings": {
                 "issue": {
@@ -1753,10 +1872,10 @@
               }
             },
             {
-              "id": "app-ErrColumnDoesNotExist-Name-Similar",
+              "id": "app-ErrTypeError-Arg-Expected-Found",
               "messageStrings": {
                 "issue": {
-                  "text": "The specified column '{0}' does not exist. The column with the most similar name is '{1}'."
+                  "text": "The type of this argument '{0}' does not match the expected type '{1}'. Found type '{2}'."
                 }
               },
               "properties": {
