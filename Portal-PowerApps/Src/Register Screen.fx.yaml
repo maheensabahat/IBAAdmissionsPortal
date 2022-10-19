@@ -92,9 +92,9 @@
                 Patch(
                     Users,
                     Defaults(Users),
-                    {   Title: "New User",
+                    {   Title: FirstNameTF.Text+"."+LastNameTF.Text+RandBetween(100,999) ,
                         FirstName: FirstNameTF.Text,
-                         LastName: 'LastNameTF'.Text,
+                         LastName: LastNameTF.Text,
                          Email: EmailTF.Text,
                          PhoneNumber:PhoneNumberTF.Text,
                          Nationality: NationalityRB.Selected.Value,
