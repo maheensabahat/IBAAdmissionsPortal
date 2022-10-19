@@ -1,24 +1,4 @@
 App As appinfo:
     BackEnabled: =false
-    OnStart: |-
-        =Collect (
-            User,
-            {
-                Title: "",
-                FirstName:"",
-                LastName:"",
-                Email:"",
-                PhoneNumber:"",
-                Nationality:"",
-                CNIC:"",
-                Program:"",
-                Password:"",
-                PassportNum:"",
-                Country:""
-            }
-        );
-        Collect(
-            documents,
-            {}
-        );
+    OnStart: =
 

@@ -79,7 +79,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "10/19/2022 15:00:26",
+  "HeaderLastSavedDateTimeUTC": "10/19/2022 15:01:05",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "7580dfef-b203-40b2-8d5e-98aa9e654967": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/d866a69de2f14a66a7d1be1a343f935f\""
@@ -103,10 +103,9 @@
   "OrderDataSource": {
     "ComboBoxSample": 0,
     "CustomGallerySample": 1,
-    "documents": 5,
     "DropDownSample": 2,
     "RadioSample": 3,
-    "User": 6,
+    "User": 5,
     "Users": 4
   },
   "OrderGroupControls": {
