@@ -2314,19 +2314,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Application.ProgramsDropDown_1.AccessibleLabel"
+                  "fullyQualifiedName": "Application.DatePicker1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Application.ProgramsDropDown_1.AccessibleLabel",
+                  "fullyQualifiedName": "Application.DatePicker1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Application",
-                "type": "Application.ProgramsDropDown_1"
+                "type": "Application.DatePicker1"
               }
             }
           ],
