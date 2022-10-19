@@ -89,14 +89,6 @@
             HoverFill: =ColorFade(RGBA(140.25, 4.090617, 4.090617, 1), -10%)
             OnSelect: |-
                 =If(
-                    IsMatch(
-                        EmailTF.Text,
-                        "^([a-zA-Z0-9_.-])+@(([a-zA-Z0-9-])+.)+([a-zA-Z0-9]{2,4})+$"
-                    ),
-                    Green,
-                    Red
-                );
-                If(
                     PasswordTF.Text = confirmPasswordTF.Text,
                     If(
                         //check if any user with email exist
@@ -127,8 +119,21 @@
                                 Email: EmailTF.Text,
                                 PhoneNumber: PhoneNumberTF.Text,
                                 Nationality: NationalityRB.Selected.Value,
-                                CNIC: CNICTF.Text,
-                                PassportNumber: 00000000,
+                                CNIC: If(
+                                    NationalityRB.Selected.Value = "Pakistani",
+                                    CNICTF.Text,
+                                    ""
+                                ),
+                                PassportNumber: If(
+                                    NationalityRB.Selected.Value = "Pakistani",
+                                    "",
+                                    CNICTF.Text
+                                ),
+                                Country: If(
+                                    NationalityRB.Selected.Value = "Pakistani",
+                                    "Pakistan",
+                                    Country.Selected.Value
+                                ),
                                 ProgramsInterestedIn: ProgramsDropDown.Selected.Value,
                                 Password: PasswordTF.Text
                             }
@@ -444,7 +449,7 @@
             Y: =921
             ZIndex: =30
 
-        ProgramsDropDown_1 As dropdown:
+        Country As dropdown:
             BorderColor: =RGBA(203, 102, 102, 1)
             ChevronBackground: =RGBA(255, 255, 255, 1)
             ChevronFill: =RGBA(0, 0, 0, 1)
