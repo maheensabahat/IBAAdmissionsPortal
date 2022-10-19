@@ -51,7 +51,7 @@ ProgressIndicator_2 As CanvasComponent:
             BorderColor: =RGBA(77, 0, 0, 1)
             BorderThickness: =0
             Color: =If(ThisItem.isCurrent, RGBA(255, 255, 255, 1), RGBA(203, 102, 102, 100))
-            Fill: =If(ThisItem.isCurrent, RGBA(203, 102, 102, 1), RGBA(219, 219, 219, 100))
+            Fill: =If(ThisItem.isCurrent, RGBA(203, 102, 102, 100), RGBA(219, 219, 219, 100))
             Height: |
                 =Parent.Height -30
             HoverColor: =

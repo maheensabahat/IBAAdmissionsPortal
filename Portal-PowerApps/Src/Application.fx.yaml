@@ -29,17 +29,13 @@
         );
         UpdateContext({lvarCurrStep: 1});
 
-    ProgressIndicator_1 As ProgressIndicator:
-        applicationSteps: =collSteps
-        Y: =156
-
     Label3 As label:
         BorderColor: =RGBA(151, 0, 0, 1)
         Color: =RGBA(140, 4, 4, 1)
         FontWeight: =FontWeight.Bold
         Height: =70
         Size: =21
-        Text: ="Personal Details"
+        Text: =ProgressIndicator_3.selectedStep
         Width: =560
         X: =45
         Y: =321
@@ -51,6 +47,9 @@
         Width: =80
         X: =35
         Y: =40
+        ZIndex: =3
+
+    ProgressIndicator_3 As ProgressIndicator_2:
         ZIndex: =3
 
     Rectangle1_1 As rectangle:

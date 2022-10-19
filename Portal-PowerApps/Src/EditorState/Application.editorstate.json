@@ -1538,7 +1538,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Logout_1",
-      "ParentIndex": 12,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1570,7 +1570,7 @@
       "StyleName": "",
       "Type": "ControlInfo"
     },
-    "ProgressIndicator_1": {
+    "ProgressIndicator_3": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -1640,14 +1640,14 @@
         "Description": ""
       },
       "MetaDataIDKey": "",
-      "Name": "ProgressIndicator_1",
-      "ParentIndex": 3,
+      "Name": "ProgressIndicator_3",
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
           "Category": "Data",
           "PropertyName": "applicationSteps",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "System"
         },
         {
           "Category": "Data",
