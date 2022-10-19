@@ -64,7 +64,7 @@
                 },
                 "region": {
                   "charLength": 114,
-                  "charOffset": 111,
+                  "charOffset": 248,
                   "snippet": {
                     "text": "CountRows(\n            Filter(\n                Users,\n                EmailTF.Text = Email\n            )\n        )"
                   }
