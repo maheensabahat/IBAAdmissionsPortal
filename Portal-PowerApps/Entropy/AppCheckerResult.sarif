@@ -23,10 +23,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 18,
-                  "charOffset": 49,
+                  "charLength": 5,
+                  "charOffset": 48,
                   "snippet": {
-                    "text": "ClearCollect(User)"
+                    "text": "Clear"
                   }
                 }
               },
@@ -38,16 +38,49 @@
             }
           ],
           "message": {
-            "arguments": [
-              "1",
-              "2"
-            ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrBadArityMinimum",
+          "ruleId": "app-ErrOperatorExpected",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Home Screen'.Icon8.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Home Screen'.Icon8.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 48,
+                  "snippet": {
+                    "text": "Clear"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Home Screen",
+                "type": "'Home Screen'.Icon8"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrOperatorExpected",
           "ruleIndex": 0
         },
         {
@@ -64,10 +97,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 18,
-                  "charOffset": 49,
+                  "charLength": 5,
+                  "charOffset": 48,
                   "snippet": {
-                    "text": "ClearCollect(User)"
+                    "text": "Clear"
                   }
                 }
               },
@@ -79,16 +112,49 @@
             }
           ],
           "message": {
-            "arguments": [
-              "1",
-              "2"
-            ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrBadArityMinimum",
+          "ruleId": "app-ErrOperatorExpected",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Home Screen'.Status_1.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Home Screen'.Status_1.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 48,
+                  "snippet": {
+                    "text": "Clear"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Home Screen",
+                "type": "'Home Screen'.Status_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrOperatorExpected",
           "ruleIndex": 0
         },
         {
@@ -1618,14 +1684,17 @@
           "name": "PowerApps app checker",
           "rules": [
             {
-              "id": "app-ErrBadArityMinimum",
+              "id": "app-ErrOperatorExpected",
               "messageStrings": {
                 "issue": {
-                  "text": "Invalid number of arguments: received {0}, expected {1} or more."
+                  "text": "Expected operator. We expect an operator such as +, *, or & at this point in the formula."
                 }
               },
               "properties": {
                 "componentType": "app",
+                "howToFix": [
+                  "Edit your formula so that it includes an operator between the operands."
+                ],
                 "level": "High",
                 "primaryCategory": "formula",
                 "whyFix": ""
