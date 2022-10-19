@@ -89,32 +89,50 @@
             HoverFill: =ColorFade(RGBA(140.25, 4.090617, 4.090617, 1), -10%)
             OnSelect: |-
                 =If(
-                    //check if any user with email exist
-                    CountRows(
-                        Filter(
+                    PasswordTF.Text = confirmPasswordTF.Text,
+                    If(
+                        //check if any user with email exist
+                        CountRows(
+                            Filter(
+                                Users,
+                                EmailTF.Text = Email
+                            )
+                        ) = 0,
+                        //if it doesnt exist allow to register
+                        Patch(
                             Users,
-                            EmailTF.Text = Email
+                            Defaults(Users),
+                            {
+                                Title: Lower(
+                                    Concatenate(
+                                        FirstNameTF.Text,
+                                        ".",
+                                        LastNameTF.Text,
+                                        RandBetween(
+                                            100,
+                                            999
+                                        )
+                                    )
+                                ),
+                                FirstName: FirstNameTF.Text,
+                                LastName: LastNameTF.Text,
+                                Email: EmailTF.Text,
+                                PhoneNumber: PhoneNumberTF.Text,
+                                Nationality: NationalityRB.Selected.Value,
+                                CNIC: CNICTF.Text,
+                                PassportNumber: 00000000,
+                                ProgramsInterestedIn: ProgramsDropDown.Selected.Value,
+                                Password: PasswordTF.Text
+                            }
+                        ),
+                        //else notify the error
+                        Notify(
+                            "Account with same email, try Login.",
+                            NotificationType.Error
                         )
-                    ) = 0,
-                    //if it doesnt exist allow to register
-                    Patch(
-                        Users,
-                        Defaults(Users),
-                        {   Title: Lower(Concatenate(FirstNameTF.Text,".",LastNameTF.Text,RandBetween(100,999))),
-                            FirstName: FirstNameTF.Text,
-                            LastName: LastNameTF.Text,
-                            Email: EmailTF.Text,
-                            PhoneNumber:PhoneNumberTF.Text,
-                            Nationality: NationalityRB.Selected.Value,
-                            CNIC: CNICTF.Text,
-                            PassportNumber: 00000000,
-                            ProgramsInterestedIn:ProgramsDropDown.Selected.Value,
-                            Password: PasswordTF.Text
-                        }
                     ),
-                    //else notify the error
                     Notify(
-                        "Account with same email, try Login.",
+                        "Password and Confirm Password do not match.",
                         NotificationType.Error
                     )
                 )
