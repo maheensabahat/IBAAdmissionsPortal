@@ -53,6 +53,15 @@
             Y: =252
             ZIndex: =4
 
+    "'Password Label_1' As label":
+        Height: =34
+        Size: =17
+        Text: ="Email"
+        Width: =106
+        X: =114
+        Y: =649
+        ZIndex: =16
+
     "'Login Region' As group":
         Height: =5
         Width: =5
@@ -204,13 +213,4 @@
             X: =254
             Y: =638
             ZIndex: =15
-
-    "'Password Label_1' As label":
-        Height: =34
-        Size: =17
-        Text: ="Email"
-        Width: =106
-        X: =114
-        Y: =649
-        ZIndex: =16
 
