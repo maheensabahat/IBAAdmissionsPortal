@@ -92,7 +92,7 @@
                 Patch(
                     Users,
                     Defaults(Users),
-                    {   Title: FirstNameTF.Text+"."+LastNameTF.Text+RandBetween(100,999) ,
+                    {   Title: Lower(Concatenate(FirstNameTF.Text,".",LastNameTF.Text,RandBetween(100,999))),
                         FirstName: FirstNameTF.Text,
                          LastName: LastNameTF.Text,
                          Email: EmailTF.Text,
