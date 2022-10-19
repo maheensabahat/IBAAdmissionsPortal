@@ -63,10 +63,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 114,
-                  "charOffset": 111,
+                  "charLength": 119,
+                  "charOffset": 260,
                   "snippet": {
-                    "text": "CountRows(\n            Filter(\n                Users,\n                EmailTF.Text = Email\n            )\n        )"
+                    "text": "CountRows(\r\n            Filter(\r\n                Users,\r\n                EmailTF.Text = Email\r\n            )\r\n        )"
                   }
                 }
               },
