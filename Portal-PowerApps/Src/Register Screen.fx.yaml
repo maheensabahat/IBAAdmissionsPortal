@@ -92,7 +92,7 @@
                 Patch(
                     Users,
                     Defaults(Users),
-                    {   Title: 12345678,
+                    {   Title: "New User",
                         FirstName: FirstNameTF.Text,
                          LastName: 'LastNameTF'.Text,
                          Email: EmailTF.Text,
