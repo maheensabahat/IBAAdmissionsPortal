@@ -103,6 +103,16 @@
         Y: =354
         ZIndex: =11
 
+    nameText As label:
+        Color: =RGBA(166, 166, 166, 1)
+        Height: =45
+        Size: =18
+        Text: =""
+        Width: =416
+        X: =115
+        Y: =177
+        ZIndex: =14
+
     Logout As group:
         Height: =5
         Width: =5

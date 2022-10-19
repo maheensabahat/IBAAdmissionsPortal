@@ -36,12 +36,10 @@
       "LastName": "LastName",
       "Modified": "Modified",
       "Nationality": "Nationality",
-      "Nationality#Id": "Nationality Id",
       "PassportNumber": "PassportNumber",
       "Password": "Password",
       "PhoneNumber": "PhoneNumber",
-      "ProgramsInterestedIn_x003f_": "ProgramsInterestedIn?",
-      "ProgramsInterestedIn_x003f_#Id": "ProgramsInterestedIn? Id",
+      "ProgramsInterestedIn_x003f_": "ProgramsInterestedIn",
       "Title": "Title"
     },
     "DatasetName": "https://cloudexpertz102.sharepoint.com/sites/IBAAdmissionPortal",
