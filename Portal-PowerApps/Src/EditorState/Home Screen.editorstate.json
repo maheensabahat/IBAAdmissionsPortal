@@ -81,7 +81,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Candidate",
-      "ParentIndex": 12,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1801,7 +1801,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Logout",
-      "ParentIndex": 13,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
