@@ -343,7 +343,7 @@
       "StyleName": "defaultLabelStyle",
       "Type": "ControlInfo"
     },
-    "ProgressIndicator_1": {
+    "ProgressIndicator_3": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -413,14 +413,14 @@
         "Description": ""
       },
       "MetaDataIDKey": "",
-      "Name": "ProgressIndicator_1",
+      "Name": "ProgressIndicator_3",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
           "Category": "Data",
           "PropertyName": "applicationSteps",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "System"
         },
         {
           "Category": "Data",
@@ -445,12 +445,12 @@
         {
           "Category": "Design",
           "PropertyName": "Y",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
           "PropertyName": "X",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
@@ -460,7 +460,7 @@
         {
           "Category": "Design",
           "PropertyName": "Height",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",

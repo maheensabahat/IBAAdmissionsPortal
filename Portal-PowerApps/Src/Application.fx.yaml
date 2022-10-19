@@ -29,15 +29,15 @@
         );
         UpdateContext({lvarCurrStep: 1});
 
-    ProgressIndicator_1 As ProgressIndicator:
-        applicationSteps: =collSteps
-
     Label3 As label:
         Height: =70
         Size: =21
-        Text: =ProgressIndicator_1.selectedStep
+        Text: =ProgressIndicator_3.selectedStep
         Width: =560
         X: =27
         Y: =186
         ZIndex: =2
+
+    ProgressIndicator_3 As ProgressIndicator_2:
+        ZIndex: =3
 
