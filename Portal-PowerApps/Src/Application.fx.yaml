@@ -30,14 +30,59 @@
         UpdateContext({lvarCurrStep: 1});
 
     Label3 As label:
+        BorderColor: =RGBA(151, 0, 0, 1)
+        Color: =RGBA(140, 4, 4, 1)
+        FontWeight: =FontWeight.Bold
         Height: =70
         Size: =21
         Text: =ProgressIndicator_3.selectedStep
         Width: =560
-        X: =27
-        Y: =186
+        X: =35
+        Y: =251
         ZIndex: =2
 
     ProgressIndicator_3 As ProgressIndicator_2:
         ZIndex: =3
+
+    logo_1 As image:
+        Height: =80
+        Image: ='Institute_of_Business_Administration,_Karachi_(logo)'
+        Width: =80
+        X: =35
+        Y: =40
+        ZIndex: =3
+
+    Logout_1 As group:
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =60
+        ZIndex: =6
+
+        Icon8_1 As icon.Leave:
+            Color: =RGBA(118, 0, 0, 1)
+            FocusedBorderThickness: =0
+            Height: =40
+            Icon: =Icon.Leave
+            OnSelect: |-
+                =Navigate('Login Screen',ScreenTransition.Fade);
+                Clear(User);
+            Width: =30
+            X: =555
+            Y: =54
+            ZIndex: =4
+
+        Status_2 As label:
+            Color: =RGBA(118, 0, 0, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =30
+            OnSelect: |-
+                =Navigate('Login Screen',ScreenTransition.Fade);
+                Clear(User);
+            Size: =15
+            Text: ="Logout"
+            Width: =94
+            X: =531
+            Y: =94
+            ZIndex: =5
 
