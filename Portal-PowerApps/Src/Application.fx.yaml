@@ -1,0 +1,43 @@
+"Application As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+    OnVisible: |
+        =ClearCollect(
+            collSteps,
+            {
+                step:1,
+                stepText: "Personal",
+                stepFlag: 1,
+                isCurrent: true
+            },
+            {
+                step:2,
+                stepText: "Academics",
+                stepFlag: 1,
+                isCurrent: false
+            },
+            {
+                step:3,
+                stepText: "Academics",
+                stepFlag: 1,
+                isCurrent: false
+            },
+            {
+                step:4,
+                stepText: "Academics",
+                stepFlag: 1,
+                isCurrent: false
+            }
+        );
+        UpdateContext({lvarCurrStep: 1});
+
+    ProgressIndicator_1 As ProgressIndicator:
+        applicationSteps: =collSteps
+
+    Label3 As label:
+        Height: =70
+        Size: =21
+        Text: =ProgressIndicator_1.selectedStep
+        Width: =560
+        X: =27
+        Y: =186
+        ZIndex: =2
+
