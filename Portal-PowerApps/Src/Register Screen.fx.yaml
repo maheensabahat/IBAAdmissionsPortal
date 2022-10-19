@@ -87,7 +87,7 @@
             Height: =47
             HoverBorderColor: =RGBA(238, 204, 204, 1)
             HoverFill: =ColorFade(RGBA(140.25, 4.090617, 4.090617, 1), -10%)
-            OnSelect: |-
+            OnSelect: |
                 =If(
                     PasswordTF.Text = confirmPasswordTF.Text,
                     If(
@@ -138,8 +138,16 @@
                                 Password: PasswordTF.Text
                             }
                         );
+                        //Save Users info in local app collection and navigate
+                        Collect(
+                            User,
+                            Filter(
+                                Users,
+                                LoginTF.Text = Email
+                            )
+                        );
                         Navigate(
-                        'Home Screen',
+                            'Home Screen',
                             ScreenTransition.Fade
                         ),
                         //else notify the error
