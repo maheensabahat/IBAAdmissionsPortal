@@ -94,7 +94,7 @@
                     Defaults(Users),
                     {   Title: "New User",
                         FirstName: FirstNameTF.Text,
-                         LastName: 'LastNameTF'.Text,
+                         LastName: LastNameTF.Text,
                          Email: EmailTF.Text,
                          PhoneNumber:PhoneNumberTF.Text,
                          Nationality: NationalityRB.Selected.Value,
