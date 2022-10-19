@@ -6790,7 +6790,14 @@
         "AccessibleLabel",
         "Tooltip",
         "ContentLanguage",
-        "Fill",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Fill",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "DisabledFill",
         {
           "AFDDataSourceName": "",

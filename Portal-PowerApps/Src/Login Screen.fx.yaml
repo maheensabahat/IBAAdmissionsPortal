@@ -96,6 +96,7 @@
             Fill: =RGBA(140, 4, 4, 1)
             FocusedBorderColor: =ColorFade(Self.Fill, -75%)
             Height: =47
+            HoverFill: =ColorFade(RGBA(203, 102, 102, 100), -20%)
             OnSelect: =Navigate('Home Screen',ScreenTransition.Fade)
             PressedFill: =ColorFade(RGBA(203, 102, 102, 100), -10%)
             RadiusBottomLeft: =20

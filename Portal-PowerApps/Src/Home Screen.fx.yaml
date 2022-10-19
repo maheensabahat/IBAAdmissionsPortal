@@ -111,6 +111,7 @@
         ZIndex: =14
 
         Icon8 As icon.Leave:
+            Color: =RGBA(118, 0, 0, 1)
             FocusedBorderThickness: =0
             Height: =40
             Icon: =Icon.Leave
