@@ -88,10 +88,12 @@
             HoverBorderColor: =RGBA(238, 204, 204, 1)
             HoverFill: =ColorFade(RGBA(140.25, 4.090617, 4.090617, 1), -10%)
             OnSelect: |-
-                =Patch(
+                =
+                Patch(
                     Users,
                     Defaults(Users),
-                    {    FirstName: FirstNameTF.Text,
+                    {   Title: 0002,
+                        FirstName: FirstNameTF.Text,
                          LastName: 'LastNameTF'.Text,
                          Email: EmailTF.Text,
                          PhoneNumber:PhoneNumberTF.Text,
