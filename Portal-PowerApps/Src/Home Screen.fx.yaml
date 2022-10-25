@@ -30,81 +30,6 @@
         Y: =177
         ZIndex: =3
 
-    Rectangle1 As rectangle:
-        BorderColor: =RGBA(151, 0, 0, 1)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =4
-        DisplayMode: =DisplayMode.View
-        Fill: =RGBA(242, 228, 228, 1)
-        Height: =180
-        Width: =570
-        X: =35
-        Y: =297
-        ZIndex: =5
-
-    StartWithApplication As label:
-        Color: =RGBA(140, 4, 4, 1)
-        FontWeight: =FontWeight.Bold
-        Height: =70
-        Size: =21
-        Text: =" Application"
-        Width: =307
-        X: =54
-        Y: =297
-        ZIndex: =6
-
-    Status_label As label:
-        Color: =RGBA(118, 0, 0, 1)
-        Height: =60
-        Size: =20
-        Text: |-
-            ="Status:"
-        Width: =108
-        X: =65
-        Y: =354
-        ZIndex: =7
-
-    Deadline_label As label:
-        Color: =RGBA(116, 116, 116, 1)
-        Height: =46
-        Size: =17
-        Text: |-
-            ="Deadline: "
-        Width: =126
-        X: =65
-        Y: =420
-        ZIndex: =8
-
-    Icon7 As icon.NextArrow:
-        Color: =RGBA(118, 0, 0, 1)
-        FocusedBorderThickness: =0
-        Height: =40
-        Icon: =Icon.NextArrow
-        OnSelect: =Navigate(Application)
-        Width: =45
-        X: =516
-        Y: =324
-        ZIndex: =9
-
-    Deadline As label:
-        Color: =RGBA(116, 116, 116, 1)
-        Height: =46
-        Size: =17
-        Text: ="10th January 2023"
-        Width: =206
-        X: =173
-        Y: =418
-        ZIndex: =10
-
-    Status As label:
-        Height: =60
-        Size: =20
-        Text: ="Pending"
-        Width: =144
-        X: =173
-        Y: =354
-        ZIndex: =11
-
     Logout As group:
         Height: =5
         Width: =5
@@ -138,4 +63,250 @@
             X: =531
             Y: =94
             ZIndex: =13
+
+    "'Application Tab' As group":
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =60
+        ZIndex: =14
+
+        Rectangle1 As rectangle:
+            BorderColor: =RGBA(151, 0, 0, 1)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =4
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(242, 228, 228, 1)
+            Height: =180
+            Width: =570
+            X: =35
+            Y: =297
+            ZIndex: =5
+
+        StartWithApplication As label:
+            Color: =RGBA(140, 4, 4, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =70
+            Size: =21
+            Text: =" Application"
+            Width: =307
+            X: =54
+            Y: =297
+            ZIndex: =6
+
+        Status_label As label:
+            Color: =RGBA(118, 0, 0, 1)
+            Height: =60
+            Size: =20
+            Text: |-
+                ="Status:"
+            Width: =108
+            X: =65
+            Y: =354
+            ZIndex: =7
+
+        Deadline_label As label:
+            Color: =RGBA(116, 116, 116, 1)
+            Height: =46
+            Size: =17
+            Text: |-
+                ="Deadline: "
+            Width: =126
+            X: =65
+            Y: =420
+            ZIndex: =8
+
+        Icon7 As icon.NextArrow:
+            Color: =RGBA(118, 0, 0, 1)
+            FocusedBorderThickness: =0
+            Height: =40
+            Icon: =Icon.NextArrow
+            OnSelect: =Navigate(Application)
+            Width: =45
+            X: =516
+            Y: =324
+            ZIndex: =9
+
+        Deadline As label:
+            Color: =RGBA(116, 116, 116, 1)
+            Height: =46
+            Size: =17
+            Text: ="10th January 2023"
+            Width: =206
+            X: =173
+            Y: =418
+            ZIndex: =10
+
+        Status As label:
+            Height: =60
+            Size: =20
+            Text: ="Pending"
+            Width: =144
+            X: =173
+            Y: =354
+            ZIndex: =11
+
+    "'Testing tab' As group":
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =60
+        ZIndex: =28
+
+        Rectangle1_1 As rectangle:
+            BorderColor: =RGBA(151, 0, 0, 1)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =4
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(242, 228, 228, 1)
+            Height: =180
+            Width: =570
+            X: =35
+            Y: =497
+            ZIndex: =14
+
+        StartWithApplication_1 As label:
+            Color: =RGBA(140, 4, 4, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =70
+            Size: =21
+            Text: =" Application"
+            Width: =307
+            X: =54
+            Y: =497
+            ZIndex: =15
+
+        Status_label_1 As label:
+            Color: =RGBA(118, 0, 0, 1)
+            Height: =60
+            Size: =20
+            Text: |-
+                ="Status:"
+            Width: =108
+            X: =65
+            Y: =554
+            ZIndex: =16
+
+        Deadline_label_1 As label:
+            Color: =RGBA(116, 116, 116, 1)
+            Height: =46
+            Size: =17
+            Text: |-
+                ="Deadline: "
+            Width: =126
+            X: =65
+            Y: =620
+            ZIndex: =17
+
+        Icon7_1 As icon.NextArrow:
+            Color: =RGBA(118, 0, 0, 1)
+            FocusedBorderThickness: =0
+            Height: =40
+            Icon: =Icon.NextArrow
+            OnSelect: =Navigate(Application)
+            Width: =45
+            X: =516
+            Y: =524
+            ZIndex: =18
+
+        Deadline_1 As label:
+            Color: =RGBA(116, 116, 116, 1)
+            Height: =46
+            Size: =17
+            Text: ="10th January 2023"
+            Width: =206
+            X: =173
+            Y: =618
+            ZIndex: =19
+
+        Status_3 As label:
+            Height: =60
+            Size: =20
+            Text: ="Pending"
+            Width: =144
+            X: =173
+            Y: =554
+            ZIndex: =20
+
+    "'Fee Chalan tab' As group":
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =60
+        ZIndex: =28
+
+        Rectangle1_2 As rectangle:
+            BorderColor: =RGBA(151, 0, 0, 1)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =4
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(242, 228, 228, 1)
+            Height: =180
+            Width: =570
+            X: =35
+            Y: =702
+            ZIndex: =21
+
+        StartWithApplication_2 As label:
+            Color: =RGBA(140, 4, 4, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =70
+            Size: =21
+            Text: =" Application"
+            Width: =307
+            X: =54
+            Y: =702
+            ZIndex: =22
+
+        Status_label_2 As label:
+            Color: =RGBA(118, 0, 0, 1)
+            Height: =60
+            Size: =20
+            Text: |-
+                ="Status:"
+            Width: =108
+            X: =65
+            Y: =759
+            ZIndex: =23
+
+        Deadline_label_2 As label:
+            Color: =RGBA(116, 116, 116, 1)
+            Height: =46
+            Size: =17
+            Text: |-
+                ="Deadline: "
+            Width: =126
+            X: =65
+            Y: =825
+            ZIndex: =24
+
+        Icon7_2 As icon.NextArrow:
+            Color: =RGBA(118, 0, 0, 1)
+            FocusedBorderThickness: =0
+            Height: =40
+            Icon: =Icon.NextArrow
+            OnSelect: =Navigate(Application)
+            Width: =45
+            X: =516
+            Y: =729
+            ZIndex: =25
+
+        Deadline_2 As label:
+            Color: =RGBA(116, 116, 116, 1)
+            Height: =46
+            Size: =17
+            Text: ="10th January 2023"
+            Width: =206
+            X: =173
+            Y: =823
+            ZIndex: =26
+
+        Status_4 As label:
+            Height: =60
+            Size: =20
+            Text: ="Pending"
+            Width: =144
+            X: =173
+            Y: =759
+            ZIndex: =27
 
