@@ -1,8 +1,7 @@
 ProgressIndicatorTest As CanvasComponent:
-    Fill: =RGBA(0, 0, 0, 0)
-    GalleryItems: |-
+    applicationSteps: |-
         =Table(
-            {
+               {
                 step: 1,
                 stepText: "Step 1",
                 stepFlag: 1,
@@ -27,43 +26,80 @@ ProgressIndicatorTest As CanvasComponent:
                 isCurrent: false
             }
         )
-    Height: |
-        =60
+    colorDone: =RGBA(203, 102, 102, 100)
+    colorNotDone: =RGBA(0, 0, 0, 1)
+    Fill: =RGBA(219, 219, 219, 100)
+    Height: =60
+    selectedStep: =gSelectedStep
     Width: =App.Width
     X: =0
     Y: =0
     ZIndex: =1
 
-    "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+    "Gallery2_2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        Fill: =RGBA(255, 255, 255, 1)
         Height: =60
-        Items: =ProgressIndicatorTest.GalleryItems
+        Items: =ProgressIndicatorTest.applicationSteps
         Layout: =Layout.Vertical
+        OnSelect: =
         TemplatePadding: =0
-        TemplateSize: =54
+        TemplateSize: =60
         Width: =App.Width
-        WrapCount: =CountRows(ProgressIndicatorTest.GalleryItems)
+        WrapCount: =CountRows(ProgressIndicatorTest.applicationSteps)
         ZIndex: =1
 
-        Button8_2 As button:
-            BorderColor: =RGBA(77, 0, 0, 1)
-            BorderThickness: =0
-            Color: =If(ThisItem.isCurrent, RGBA(255, 255, 255, 1), RGBA(203, 102, 102, 100))
-            Fill: =If(ThisItem.isCurrent, RGBA(203, 102, 102, 100), RGBA(219, 219, 219, 100))
-            Height: =Parent.Height -30
-            HoverColor: =
+        Button9_2 As button:
+            Fill: =RGBA(219, 219, 219, 1)
+            Height: =4
+            HoverBorderColor: =
+            HoverFill: =
             OnSelect: =Set(gSelectedStep,ThisItem.step)
-            PaddingBottom: =0
-            PaddingTop: =0
-            PressedBorderColor: =
-            PressedColor: =RGBA(0, 0,0,1)
-            RadiusBottomLeft: =0
-            RadiusBottomRight: =0
-            RadiusTopLeft: =0
-            RadiusTopRight: =0
-            Size: =12
-            Text: =ThisItem.step
-            Width: =Self.Height
-            X: =63
-            Y: =12
-            ZIndex: =1
+            Size: =24
+            Text: =""
+            Visible: =ThisItem.step < CountRows(ProgressIndicatorTest.applicationSteps)
+            Width: =100
+            X: =95
+            Y: =22
+            ZIndex: =4
+
+        "'Step Button' As group":
+            Height: =5
+            Width: =5
+            X: =60
+            Y: =60
+            ZIndex: =5
+
+            Button8_3 As button:
+                BorderColor: =RGBA(77, 0, 0, 1)
+                BorderThickness: =0
+                Color: =If(ThisItem.isCurrent, RGBA(255, 255, 255, 1), RGBA(203, 102, 102, 100))
+                Fill: =If(ThisItem.isCurrent, RGBA(203, 102, 102, 100), RGBA(219, 219, 219, 100))
+                Height: =Parent.Height - 30
+                HoverColor: =
+                OnSelect: =Set(gSelectedStep,ThisItem.step)
+                PaddingBottom: =0
+                PaddingTop: =0
+                PressedBorderColor: =
+                PressedColor: =RGBA(0, 0,0,1)
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =12
+                Text: =ThisItem.step
+                Width: =Self.Height
+                X: =50
+                Y: =10
+                ZIndex: =1
+
+            Label1_4 As label:
+                Height: =30
+                OnSelect: =
+                PaddingTop: =0
+                Size: =10
+                Text: =ThisItem.stepText
+                Width: =160
+                X: =40
+                Y: =36
+                ZIndex: =3
 

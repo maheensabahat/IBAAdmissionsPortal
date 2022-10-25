@@ -2,8 +2,8 @@
   "ComponentIndexes": {
     "ProgressIndicator": 6,
     "ProgressIndicator_2": 7,
-    "ProgressIndicator_4": 9,
-    "ProgressIndicatorTest": 8
+    "ProgressIndicatort": 8,
+    "ProgressIndicatorTest": 9
   },
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
@@ -124,8 +124,8 @@
     "ProgressIndicator": 3,
     "ProgressIndicator_2": 9,
     "ProgressIndicator_3": 48,
-    "ProgressIndicator_4": 173,
-    "ProgressIndicatorTest": 152,
+    "ProgressIndicatort": 152,
+    "ProgressIndicatorTest": 173,
     "Rectangle1": 78,
     "Rectangle1_1": 85,
     "Rectangle1_2": 92,
@@ -149,6 +149,7 @@
     "Status_label": 81,
     "Status_label_1": 88,
     "Status_label_2": 95,
+    "Step Button": 179,
     "Step1": 71,
     "Subcircle1": 30,
     "Subtitle1": 43,
@@ -170,7 +171,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "10/25/2022 11:01:11",
+  "HeaderLastSavedDateTimeUTC": "10/25/2022 11:24:40",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "7580dfef-b203-40b2-8d5e-98aa9e654967": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/fd61e08e61b4462c845da42bde057db0\"",
@@ -274,6 +275,10 @@
       "RegisterBtn": 2,
       "Star1_1": 14,
       "Star1_2": 15
+    },
+    "Step Button": {
+      "Button8_3": 0,
+      "Label1_4": 1
     },
     "Step1": {
       "DatePicker1": 15,
@@ -397,7 +402,7 @@
     "Label_4": 96,
     "Label1": 135,
     "Label1_3": 140,
-    "Label1_4": 146,
+    "Label1_4": 149,
     "Label813": 4,
     "Label813_1": 19,
     "Label816": 7,
@@ -436,8 +441,8 @@
     "ProgressIndicator": 1,
     "ProgressIndicator_2": 7,
     "ProgressIndicator_3": 78,
-    "ProgressIndicator_4": 7,
-    "ProgressIndicatorTest": 0,
+    "ProgressIndicatort": 0,
+    "ProgressIndicatorTest": 7,
     "Rectangle1": 43,
     "Rectangle1_1": 51,
     "Rectangle1_2": 59,
@@ -461,6 +466,7 @@
     "Status_label": 47,
     "Status_label_1": 55,
     "Status_label_2": 63,
+    "Step Button": 146,
     "Step1": 80,
     "Subcircle1": 115,
     "Subtitle1": 128,
@@ -511,7 +517,7 @@
       "text": 17
     },
     "DeserializationLoadTime": 2.5602042,
-    "ErrorCount": 32
+    "ErrorCount": 33
   },
   "WasLocalDatabaseReferencesEmpty": true
 }
