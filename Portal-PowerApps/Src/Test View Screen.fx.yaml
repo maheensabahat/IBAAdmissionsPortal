@@ -1,8 +1,21 @@
 "'Test View Screen' As screen":
 
+    Rectangle3 As rectangle:
+        BorderColor: =RGBA(151, 0, 0, 1)
+        BorderThickness: =2
+        Fill: =RGBA(238, 204, 204, 1)
+        Height: =230
+        Width: =605
+        X: =20
+        Y: =327
+        ZIndex: =1
+
     ProgressIndicatorTest_1 As ProgressIndicatorTest:
         Fill: =RGBA(255, 255, 255, 1)
+        Height: =65
+        Width: =640
         Y: =163
+        ZIndex: =2
 
     logo_1 As image:
         Height: =80
@@ -10,7 +23,7 @@
         Width: =80
         X: =35
         Y: =40
-        ZIndex: =2
+        ZIndex: =3
 
     Logout_1 As group:
         Height: =5
@@ -30,7 +43,7 @@
             Width: =30
             X: =555
             Y: =54
-            ZIndex: =3
+            ZIndex: =4
 
         Status_2 As label:
             Color: =RGBA(118, 0, 0, 1)
@@ -44,7 +57,7 @@
             Width: =94
             X: =531
             Y: =94
-            ZIndex: =4
+            ZIndex: =5
 
     AcademicsLabel_1 As label:
         Align: =Align.Center
@@ -55,7 +68,7 @@
         Width: =323
         X: =155
         Y: =260
-        ZIndex: =21
+        ZIndex: =22
 
     Step1_1 As group:
         Height: =5
@@ -74,7 +87,7 @@
             Width: =245
             X: =194
             Y: =277
-            ZIndex: =5
+            ZIndex: =6
 
         NextButton_1 As button:
             Fill: =RGBA(140, 4, 4, 1)
@@ -95,7 +108,7 @@
             Width: =245
             X: =194
             Y: =1001
-            ZIndex: =6
+            ZIndex: =7
 
         FirstNameTF_2 As text:
             BorderColor: =RGBA(203, 102, 102, 1)
@@ -122,7 +135,7 @@
             Width: =268
             X: =45
             Y: =358
-            ZIndex: =7
+            ZIndex: =8
 
         EmailTF_2 As text:
             BorderColor: =RGBA(203, 102, 102, 1)
@@ -141,7 +154,7 @@
             Width: =268
             X: =45
             Y: =442
-            ZIndex: =8
+            ZIndex: =9
 
         LastNameTF_2 As text:
             BorderColor: =RGBA(203, 102, 102, 1)
@@ -160,7 +173,7 @@
             Width: =268
             X: =330
             Y: =358
-            ZIndex: =9
+            ZIndex: =10
 
         PhoneNumberTxt_2 As text:
             BorderColor: =RGBA(203, 102, 102, 1)
@@ -179,7 +192,7 @@
             Width: =268
             X: =330
             Y: =442
-            ZIndex: =10
+            ZIndex: =11
 
         TF_2 As text:
             BorderColor: =RGBA(203, 102, 102, 1)
@@ -198,7 +211,7 @@
             Width: =268
             X: =43
             Y: =569
-            ZIndex: =11
+            ZIndex: =12
 
         Label_5 As label:
             FontWeight: =FontWeight.Bold
@@ -209,7 +222,7 @@
             Width: =268
             X: =43
             Y: =510
-            ZIndex: =12
+            ZIndex: =13
 
         TF_5 As text:
             BorderColor: =RGBA(203, 102, 102, 1)
@@ -228,7 +241,7 @@
             Width: =552
             X: =46
             Y: =689
-            ZIndex: =13
+            ZIndex: =14
 
         Label_6 As label:
             FontWeight: =FontWeight.Bold
@@ -239,7 +252,7 @@
             Width: =268
             X: =43
             Y: =630
-            ZIndex: =14
+            ZIndex: =15
 
         TF_6 As text:
             BorderColor: =RGBA(203, 102, 102, 1)
@@ -258,7 +271,7 @@
             Width: =268
             X: =340
             Y: =825
-            ZIndex: =15
+            ZIndex: =16
 
         Label_7 As label:
             FontWeight: =FontWeight.Bold
@@ -269,7 +282,7 @@
             Width: =127
             X: =337
             Y: =782
-            ZIndex: =16
+            ZIndex: =17
 
         TF_7 As text:
             BorderColor: =RGBA(203, 102, 102, 1)
@@ -288,7 +301,7 @@
             Width: =260
             X: =43
             Y: =825
-            ZIndex: =17
+            ZIndex: =18
 
         Label_8 As label:
             FontWeight: =FontWeight.Bold
@@ -299,7 +312,7 @@
             Width: =127
             X: =43
             Y: =782
-            ZIndex: =18
+            ZIndex: =19
 
         Label_9 As label:
             FontWeight: =FontWeight.Bold
@@ -310,7 +323,7 @@
             Width: =268
             X: =330
             Y: =515
-            ZIndex: =19
+            ZIndex: =20
 
         DatePicker1_1 As datepicker:
             BorderColor: =RGBA(140, 4, 4, 1)
@@ -324,17 +337,7 @@
             Width: =269
             X: =330
             Y: =577
-            ZIndex: =20
-
-    OlevelLabel_1 As label:
-        FontWeight: =FontWeight.Bold
-        Height: =38
-        Size: =15
-        Text: ="Olevels / Matric"
-        Width: =264
-        X: =76
-        Y: =789
-        ZIndex: =24
+            ZIndex: =21
 
     AptitudeTestLabel_3 As label:
         Align: =Align.Center
@@ -344,8 +347,8 @@
         Text: ="SAT RESULTS"
         Width: =187
         X: =223
-        Y: =309
-        ZIndex: =26
+        Y: =344
+        ZIndex: =25
 
     AptitudeTestLabel_4 As label:
         FontWeight: =FontWeight.Bold
@@ -356,7 +359,7 @@
         Width: =98
         X: =303
         Y: =412
-        ZIndex: =27
+        ZIndex: =26
 
     Math As label:
         FontWeight: =FontWeight.Bold
@@ -368,7 +371,7 @@
         Width: =64
         X: =425
         Y: =417
-        ZIndex: =28
+        ZIndex: =27
 
     AptitudeTestLabel_5 As label:
         FontWeight: =FontWeight.Bold
@@ -379,7 +382,7 @@
         Width: =130
         X: =303
         Y: =473
-        ZIndex: =29
+        ZIndex: =28
 
     Math_1 As label:
         FontWeight: =FontWeight.Bold
@@ -391,18 +394,17 @@
         Width: =64
         X: =425
         Y: =475
-        ZIndex: =30
+        ZIndex: =29
 
     Icon2 As icon.CheckBadge:
         BorderColor: =RGBA(99, 139, 44, 1)
         Color: =RGBA(53, 74, 23, 1)
-        Fill: =RGBA(255, 255, 255, 1)
         Height: =30
         Icon: =Icon.CheckBadge
         Width: =30
-        X: =525
-        Y: =419
-        ZIndex: =31
+        X: =531
+        Y: =416
+        ZIndex: =30
 
     Group2 As group:
         Height: =5
@@ -413,14 +415,13 @@
 
         AptitudeTestLabel_2 As label:
             Color: =RGBA(140, 4, 4, 1)
-            Fill: =RGBA(255, 255, 255, 1)
             FontWeight: =FontWeight.Bold
             Height: =27
             Size: =15
             Text: ="Your Total Score"
             Width: =174
             X: =39
-            Y: =428
+            Y: =419
             ZIndex: =23
 
         SatExemptionResult As label:
@@ -431,6 +432,36 @@
             VerticalAlign: =VerticalAlign.Top
             Width: =212
             X: =35
-            Y: =435
-            ZIndex: =25
+            Y: =426
+            ZIndex: =24
+
+    Icon2_1 As icon.CheckBadge:
+        BorderColor: =RGBA(99, 139, 44, 1)
+        Color: =RGBA(53, 74, 23, 1)
+        Height: =30
+        Icon: =Icon.CheckBadge
+        Width: =30
+        X: =531
+        Y: =477
+        ZIndex: =31
+
+    AptitudeTestLabel_7 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =59
+        Size: =20
+        Text: |-
+            ="Choose test dates:"
+        Width: =263
+        X: =40
+        Y: =689
+        ZIndex: =34
+
+    Dropdown2 As dropdown:
+        Height: =70
+        Items: =DropDownSample
+        Size: =21
+        Width: =575
+        X: =40
+        Y: =744
+        ZIndex: =35
 
