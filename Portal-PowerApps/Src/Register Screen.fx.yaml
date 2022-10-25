@@ -267,35 +267,6 @@
             Y: =539
             ZIndex: =15
 
-        ProgramsDropDown As dropdown:
-            BorderColor: =RGBA(203, 102, 102, 1)
-            ChevronBackground: =RGBA(255, 255, 255, 1)
-            ChevronFill: =RGBA(0, 0, 0, 1)
-            ChevronHoverBackground: |
-                =ColorFade(Self.BorderColor, 15%)
-            Default: ="CNIC"
-            Fill: =RGBA(238, 204, 204, 1)
-            Height: =48
-            HoverFill: =RGBA(203, 102, 102, 1)
-            Items: =["BBA","BSCS","BSACF","BSEM","BSSS","BSECO"]
-            PressedFill: =RGBA(151, 0, 0, 1)
-            SelectionFill: =RGBA(220, 153, 153, 1)
-            Size: =15
-            Width: =268
-            X: =43
-            Y: =754
-            ZIndex: =21
-
-        ProgramsInterestedIn As label:
-            FontWeight: =FontWeight.Bold
-            Height: =38
-            Size: =15
-            Text: ="Programs Interested In?"
-            Width: =560
-            X: =36
-            Y: =716
-            ZIndex: =22
-
         PasswordTF As text:
             BorderColor: =RGBA(203, 102, 102, 1)
             Default: =""
@@ -310,7 +281,7 @@
             Size: =15
             Width: =268
             X: =43
-            Y: =854
+            Y: =646
             ZIndex: =23
 
         confirmPasswordTF As text:
@@ -338,8 +309,8 @@
                 ="Password
                 "
             Width: =560
-            X: =34
-            Y: =812
+            X: =43
+            Y: =607
             ZIndex: =25
 
         ConfirmPassword As label:
@@ -379,8 +350,8 @@
             Fill: =RGBA(151, 0, 0, 1)
             Height: =15
             Width: =15
-            X: =147
-            Y: =820
+            X: =148
+            Y: =620
             ZIndex: =29
 
         Star1_2 As star.star8:
