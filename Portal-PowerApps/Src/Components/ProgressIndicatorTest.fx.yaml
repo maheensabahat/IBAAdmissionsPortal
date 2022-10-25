@@ -61,19 +61,19 @@ ProgressIndicatorTest As CanvasComponent:
             Size: =12
             Text: =ThisItem.step
             Width: =Self.Height
-            X: =50
-            Y: =10
+            X: =66
+            Y: =9
             ZIndex: =1
 
         Label1_4 As label:
-            Height: =30
+            Height: =20
             OnSelect: =
             PaddingTop: =0
             Size: =10
             Text: =ThisItem.stepText
-            Width: =160
-            X: =40
-            Y: =36
+            Width: =54
+            X: =54
+            Y: =39
             ZIndex: =3
 
         Button9_2 As button:
@@ -86,7 +86,7 @@ ProgressIndicatorTest As CanvasComponent:
             Text: =""
             Visible: =ThisItem.step < CountRows(ProgressIndicatorTest.applicationSteps)
             Width: =100
-            X: =95
+            X: =135
             Y: =22
             ZIndex: =4
 
