@@ -30,12 +30,6 @@
                     stepText: "Step 3",
                     stepFlag: 1,
                     isCurrent: true
-                },
-                {
-                    step: 4,
-                    stepText: "Step 4",
-                    stepFlag: 1,
-                    isCurrent: false
                 }
             )
         Fill: =RGBA(255, 255, 255, 1)
