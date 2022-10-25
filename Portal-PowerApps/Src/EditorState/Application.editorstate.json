@@ -96,7 +96,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "AcademicsLabel",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -783,7 +783,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "AptitudeTestLabel",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1389,7 +1389,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "AptitudeTestLabel_6",
-      "ParentIndex": 8,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2970,7 +2970,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "FirstNameTF_1",
-      "ParentIndex": 6,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3241,7 +3241,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "IBA_Logo",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3444,7 +3444,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon4",
-      "ParentIndex": 0,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3648,7 +3648,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Import1",
-      "ParentIndex": 9,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5445,7 +5445,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "LastNameTF_1",
-      "ParentIndex": 7,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6461,7 +6461,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "PersonelDetailsLabel",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7139,7 +7139,7 @@
       },
       "MetaDataIDKey": "",
       "Name": "ProgressIndicator_3",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
