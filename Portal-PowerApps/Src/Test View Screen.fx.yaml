@@ -445,17 +445,6 @@
             Y: =426
             ZIndex: =24
 
-    AptitudeTestLabel_6 As label:
-        Align: =Align.Center
-        FontWeight: =FontWeight.Bold
-        Height: =59
-        Size: =20
-        Text: ="IBA TEST DATES"
-        Width: =263
-        X: =194
-        Y: =616
-        ZIndex: =32
-
     AptitudeTestLabel_7 As label:
         FontWeight: =FontWeight.Bold
         Height: =59
