@@ -68,6 +68,7 @@ ProgressIndicator_4 As CanvasComponent:
             Text: =ThisItem.step
             Width: =Self.Height
             X: =50
+            Y: =10
             ZIndex: =1
 
         Label1_4 As label:
@@ -81,7 +82,7 @@ ProgressIndicator_4 As CanvasComponent:
 
         Button9_2 As button:
             Fill: =RGBA(219, 219, 219, 1)
-            Height: =
+            Height: =4
             HoverBorderColor: =
             HoverFill: =
             OnSelect: =Set(gSelectedStep,ThisItem.step)
@@ -89,6 +90,7 @@ ProgressIndicator_4 As CanvasComponent:
             Text: =""
             Visible: =ThisItem.step < CountRows(ProgressIndicator_4.applicationSteps)
             Width: =100
-            X: =60
+            X: =95
+            Y: =22
             ZIndex: =4
 
