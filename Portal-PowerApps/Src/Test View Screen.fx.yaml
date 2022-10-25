@@ -434,3 +434,14 @@
             Y: =435
             ZIndex: =25
 
+    Icon2_1 As icon.CheckBadge:
+        BorderColor: =RGBA(99, 139, 44, 1)
+        Color: =RGBA(53, 74, 23, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =30
+        Icon: =Icon.CheckBadge
+        Width: =30
+        X: =525
+        Y: =476
+        ZIndex: =32
+
