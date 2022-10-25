@@ -50,11 +50,11 @@
         Align: =Align.Center
         FontWeight: =FontWeight.Bold
         Height: =41
-        Size: =20
-        Text: ="Academics"
-        Width: =216
-        X: =208
-        Y: =247
+        Size: =30
+        Text: ="Test Exemption"
+        Width: =323
+        X: =155
+        Y: =260
         ZIndex: =21
 
     Step1_1 As group:
@@ -326,32 +326,111 @@
             Y: =577
             ZIndex: =20
 
-    AptitudeTestLabel_2 As label:
-        FontWeight: =FontWeight.Bold
-        Height: =33
-        Size: =15
-        Text: ="Aptitude test"
-        Width: =159
-        X: =49
-        Y: =315
-        ZIndex: =23
-
     OlevelLabel_1 As label:
         FontWeight: =FontWeight.Bold
         Height: =38
         Size: =15
         Text: ="Olevels / Matric"
         Width: =264
-        X: =49
-        Y: =510
+        X: =76
+        Y: =789
         ZIndex: =24
 
     AptitudeTestLabel_3 As label:
-        Height: =88
-        Size: =15
-        Text: ="Upload your Documents"
-        Width: =145
-        X: =49
-        Y: =385
-        ZIndex: =25
+        Align: =Align.Center
+        FontWeight: =FontWeight.Bold
+        Height: =44
+        Size: =20
+        Text: ="SAT RESULTS"
+        Width: =187
+        X: =223
+        Y: =309
+        ZIndex: =26
+
+    AptitudeTestLabel_4 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =43
+        Size: =20
+        Text: |-
+            ="Math:"
+        Width: =98
+        X: =303
+        Y: =412
+        ZIndex: =27
+
+    Math As label:
+        FontWeight: =FontWeight.Bold
+        Height: =35
+        Size: =20
+        Text: |-
+            ="588
+            "
+        Width: =64
+        X: =425
+        Y: =417
+        ZIndex: =28
+
+    AptitudeTestLabel_5 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =43
+        Size: =20
+        Text: |-
+            ="English:"
+        Width: =130
+        X: =303
+        Y: =473
+        ZIndex: =29
+
+    Math_1 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =35
+        Size: =20
+        Text: |-
+            ="588
+            "
+        Width: =64
+        X: =425
+        Y: =475
+        ZIndex: =30
+
+    Icon2 As icon.CheckBadge:
+        BorderColor: =RGBA(99, 139, 44, 1)
+        Color: =RGBA(53, 74, 23, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =30
+        Icon: =Icon.CheckBadge
+        Width: =30
+        X: =525
+        Y: =419
+        ZIndex: =31
+
+    Group2 As group:
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =60
+        ZIndex: =31
+
+        AptitudeTestLabel_2 As label:
+            Color: =RGBA(140, 4, 4, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =27
+            Size: =15
+            Text: ="Your Total Score"
+            Width: =174
+            X: =39
+            Y: =428
+            ZIndex: =23
+
+        SatExemptionResult As label:
+            FontWeight: =FontWeight.Bold
+            Height: =120
+            Size: =60
+            Text: ="1300"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =212
+            X: =35
+            Y: =435
+            ZIndex: =25
 
