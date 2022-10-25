@@ -74,7 +74,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ConfirmPassword",
-      "ParentIndex": 12,
+      "ParentIndex": 24,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -399,7 +399,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "confirmPasswordTF",
-      "ParentIndex": 16,
+      "ParentIndex": 26,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1338,7 +1338,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon1",
-      "ParentIndex": 18,
+      "ParentIndex": 23,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1538,7 +1538,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon1_1",
-      "ParentIndex": 17,
+      "ParentIndex": 27,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3349,7 +3349,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Logo Region_1",
-      "ParentIndex": 20,
+      "ParentIndex": 29,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3455,7 +3455,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Password",
-      "ParentIndex": 11,
+      "ParentIndex": 20,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3780,7 +3780,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "PasswordTF",
-      "ParentIndex": 15,
+      "ParentIndex": 22,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5218,7 +5218,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Register Region",
-      "ParentIndex": 21,
+      "ParentIndex": 30,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5473,7 +5473,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "RegisterBtn",
-      "ParentIndex": 19,
+      "ParentIndex": 28,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5715,7 +5715,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Star1_1",
-      "ParentIndex": 14,
+      "ParentIndex": 21,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5842,7 +5842,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Star1_2",
-      "ParentIndex": 13,
+      "ParentIndex": 25,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
