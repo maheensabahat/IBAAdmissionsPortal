@@ -171,7 +171,7 @@
             Text: ="Register"
             Width: =174
             X: =233
-            Y: =1030
+            Y: =844
             ZIndex: =9
 
         FirstNameTF As text:
@@ -297,8 +297,8 @@
             RadiusTopRight: =10
             Size: =15
             Width: =268
-            X: =43
-            Y: =954
+            X: =328
+            Y: =646
             ZIndex: =24
 
         Password As label:
@@ -315,14 +315,14 @@
 
         ConfirmPassword As label:
             FontWeight: =FontWeight.Bold
-            Height: =53
+            Height: =33
             Size: =15
             Text: |-
                 ="Confirm Password
                 "
-            Width: =560
-            X: =31
-            Y: =913
+            Width: =195
+            X: =324
+            Y: =613
             ZIndex: =26
 
         Icon1 As icon.View:
@@ -332,7 +332,7 @@
             Icon: =Icon.View
             Width: =25
             X: =274
-            Y: =867
+            Y: =659
             ZIndex: =27
 
         Icon1_1 As icon.View:
@@ -341,8 +341,8 @@
             Height: =25
             Icon: =Icon.View
             Width: =25
-            X: =274
-            Y: =966
+            X: =559
+            Y: =658
             ZIndex: =28
 
         Star1_1 As star.star8:
@@ -359,7 +359,7 @@
             Fill: =RGBA(151, 0, 0, 1)
             Height: =15
             Width: =15
-            X: =230
-            Y: =921
+            X: =515
+            Y: =613
             ZIndex: =30
 
