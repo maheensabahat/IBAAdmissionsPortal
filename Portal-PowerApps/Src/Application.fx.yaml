@@ -1,6 +1,12 @@
 "Application As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
     OnVisible: =
 
+    ProgressIndicator_3 As ProgressIndicator_2:
+        applicationSteps: =collSteps
+        Fill: =RGBA(255, 255, 255, 1)
+        Y: =163
+        ZIndex: =3
+
     IBA_Logo As image:
         Height: =80
         Image: ='Institute_of_Business_Administration,_Karachi_(logo)'
@@ -9,45 +15,12 @@
         Y: =40
         ZIndex: =3
 
-    ProgressIndicator_3 As ProgressIndicator_2:
-        applicationSteps: =collSteps
-        Fill: =RGBA(255, 255, 255, 1)
-        Y: =163
-        ZIndex: =3
-
     LogoutButton As group:
         Height: =5
         Width: =5
         X: =60
         Y: =60
         ZIndex: =6
-
-        Icon8_1 As icon.Leave:
-            Color: =RGBA(118, 0, 0, 1)
-            FocusedBorderThickness: =0
-            Height: =40
-            Icon: =Icon.Leave
-            OnSelect: |-
-                =Navigate('Login Screen',ScreenTransition.Fade);
-                Clear(User);
-            Width: =30
-            X: =555
-            Y: =54
-            ZIndex: =4
-
-        Status_2 As label:
-            Color: =RGBA(118, 0, 0, 1)
-            FontWeight: =FontWeight.Semibold
-            Height: =30
-            OnSelect: |-
-                =Navigate('Login Screen',ScreenTransition.Fade);
-                Clear(User);
-            Size: =15
-            Text: ="Logout"
-            Width: =94
-            X: =531
-            Y: =94
-            ZIndex: =6
 
     AcademicsLabel As label:
         Align: =Align.Center
