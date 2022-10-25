@@ -28,7 +28,7 @@
             "Name": "galleryTemplate2_2",
             "Parent": "Gallery2_1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 113,
+            "PublishOrderIndex": 136,
             "Rules": [
               {
                 "Category": "Data",
@@ -283,7 +283,7 @@
             "Name": "Button8_1",
             "Parent": "Gallery2_1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 114,
+            "PublishOrderIndex": 137,
             "Rules": [
               {
                 "Category": "Data",
@@ -661,7 +661,7 @@
             "Name": "Button9_1",
             "Parent": "Gallery2_1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 115,
+            "PublishOrderIndex": 138,
             "Rules": [
               {
                 "Category": "Data",
@@ -1002,7 +1002,7 @@
             "Name": "Label1_3",
             "Parent": "Gallery2_1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 116,
+            "PublishOrderIndex": 139,
             "Rules": [
               {
                 "Category": "Data",
@@ -1344,7 +1344,7 @@
         "Name": "Gallery2_1",
         "Parent": "ProgressIndicator_2",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 112,
+        "PublishOrderIndex": 135,
         "Rules": [
           {
             "Category": "Data",
@@ -1568,7 +1568,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638022810793713041",
+    "LastModifiedTimestamp": "638022894558868765",
     "Name": "ProgressIndicator_2",
     "Rules": [
       {
@@ -1688,7 +1688,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638022810793713041",
+  "LastModifiedTimestamp": "638022894558868765",
   "Name": "9c29bbafb90f423daf0839ac07d787fb",
   "OverridableProperties": {},
   "TemplateOriginalName": "7db4da71b34d49a7807efee89dcce476",
