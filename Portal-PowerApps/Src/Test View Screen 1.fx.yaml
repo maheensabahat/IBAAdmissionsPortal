@@ -13,8 +13,9 @@
     ProgressIndicatorTest_1 As ProgressIndicatorTest:
         Fill: =RGBA(255, 255, 255, 1)
         Height: =65
-        Width: =640
-        Y: =163
+        Width: =561
+        X: =35
+        Y: =159
         ZIndex: =3
 
     logo_1 As image:
