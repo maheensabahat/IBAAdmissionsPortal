@@ -18,12 +18,6 @@ ProgressIndicatorTest As CanvasComponent:
                 stepText: "Step 3",
                 stepFlag: 1,
                 isCurrent: false
-            },
-            {
-                step: 4,
-                stepText: "Step 4",
-                stepFlag: 1,
-                isCurrent: false
             }
         )
     colorDone: =RGBA(203, 102, 102, 100)
