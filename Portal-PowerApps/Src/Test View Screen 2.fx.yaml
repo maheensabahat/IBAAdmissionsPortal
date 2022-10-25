@@ -4,7 +4,7 @@
         BorderColor: =RGBA(151, 0, 0, 1)
         BorderThickness: =2
         Fill: =RGBA(238, 204, 204, 1)
-        Height: =230
+        Height: =495
         Width: =605
         X: =20
         Y: =327
@@ -62,90 +62,32 @@
     AcademicsLabel_2 As label:
         Align: =Align.Center
         FontWeight: =FontWeight.Bold
-        Height: =41
+        Height: =73
         Size: =30
-        Text: ="Test Exemption"
-        Width: =323
-        X: =155
+        Text: ="Generate Admit Card"
+        Width: =640
         Y: =260
         ZIndex: =8
 
     AptitudeTestLabel_9 As label:
-        Align: =Align.Center
         FontWeight: =FontWeight.Bold
         Height: =44
         Size: =20
-        Text: ="Fee Challan"
-        Width: =187
-        X: =223
-        Y: =344
+        Text: ="Paid Fee Challan"
+        Width: =520
+        X: =35
+        Y: =333
         ZIndex: =11
 
     AptitudeTestLabel_10 As label:
         FontWeight: =FontWeight.Bold
         Height: =43
         Size: =20
-        Text: |-
-            ="Math:"
+        Text: =""
         Width: =98
         X: =303
         Y: =412
         ZIndex: =12
-
-    Math_2 As label:
-        FontWeight: =FontWeight.Bold
-        Height: =35
-        Size: =20
-        Text: |-
-            ="588
-            "
-        Width: =64
-        X: =425
-        Y: =417
-        ZIndex: =13
-
-    AptitudeTestLabel_11 As label:
-        FontWeight: =FontWeight.Bold
-        Height: =43
-        Size: =20
-        Text: |-
-            ="English:"
-        Width: =130
-        X: =303
-        Y: =473
-        ZIndex: =14
-
-    Math_3 As label:
-        FontWeight: =FontWeight.Bold
-        Height: =35
-        Size: =20
-        Text: |-
-            ="588
-            "
-        Width: =64
-        X: =425
-        Y: =475
-        ZIndex: =15
-
-    Icon2_2 As icon.CheckBadge:
-        BorderColor: =RGBA(99, 139, 44, 1)
-        Color: =RGBA(53, 74, 23, 1)
-        Height: =30
-        Icon: =Icon.CheckBadge
-        Width: =30
-        X: =531
-        Y: =416
-        ZIndex: =16
-
-    Icon2_3 As icon.CheckBadge:
-        BorderColor: =RGBA(99, 139, 44, 1)
-        Color: =RGBA(53, 74, 23, 1)
-        Height: =30
-        Icon: =Icon.CheckBadge
-        Width: =30
-        X: =531
-        Y: =477
-        ZIndex: =17
 
     GenerateFeeChallanBtn_2 As button:
         Fill: =RGBA(140, 4, 4, 1)
@@ -167,108 +109,38 @@
         Y: =991
         ZIndex: =22
 
-    "'IBA Test Dates_1' As group":
+    Label4 As label:
+        Height: =23
+        Size: =10
+        Text: ="File Name.jpg"
+        VerticalAlign: =VerticalAlign.Top
+        Width: =185
+        X: =42
+        Y: =476
+        ZIndex: =25
+
+    Group3 As group:
         Height: =5
         Width: =5
         X: =60
         Y: =60
-        ZIndex: =23
+        ZIndex: =25
 
-        Rectangle3_3 As rectangle:
-            BorderColor: =RGBA(151, 0, 0, 1)
-            BorderThickness: =2
-            Fill: =RGBA(238, 204, 204, 1)
-            Height: =230
-            Width: =605
-            X: =20
-            Y: =590
-            ZIndex: =1
-
-        AptitudeTestLabel_14 As label:
-            FontWeight: =FontWeight.Bold
-            Height: =59
-            Size: =20
-            Text: |-
-                ="Choose test dates:"
-            Width: =263
-            X: =38
-            Y: =658
-            ZIndex: =18
-
-        Dropdown2_1 As dropdown:
-            BorderColor: =RGBA(118, 0, 0, 1)
-            ChevronBackground: =RGBA(140, 4, 4, 1)
-            ChevronHoverBackground: |-
-                =ColorFade(
-                RGBA(140.25, 4.090617, 4.090617, 1), -20%)
-            Height: =70
-            HoverFill: =RGBA(238, 204, 204, 1)
-            Items: =["February","January"]
-            PressedFill: =RGBA(151, 0, 0, 1)
-            SelectionFill: =RGBA(203, 102, 102, 1)
-            Size: =21
-            Width: =341
-            X: =43
-            Y: =717
-            ZIndex: =19
-
-        AptitudeTestLabel_13 As label:
-            Align: =Align.Center
-            FontWeight: =FontWeight.Bold
-            Height: =44
-            Size: =20
-            Text: ="IBA TEST DATES"
-            Width: =237
-            X: =212
-            Y: =601
-            ZIndex: =20
-
-        GenerateFeeChallanBtn_3 As button:
+        Import2 As import:
             Fill: =RGBA(140, 4, 4, 1)
-            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-            Height: =70
-            HoverBorderColor: =RGBA(238, 204, 204, 1)
-            HoverFill: =ColorFade(RGBA(140.25, 4.090617, 4.090617, 1), -10%)
-            OnSelect: =
-            PressedBorderColor: =RGBA(203, 102, 102, 1)
-            PressedColor: =RGBA(255, 255, 255, 1)
-            PressedFill: =ColorFade(RGBA(203, 102, 102, 100), -10%)
-            RadiusBottomLeft: =20
-            RadiusBottomRight: =20
-            RadiusTopLeft: =20
-            RadiusTopRight: =20
-            Text: ="Generate Fee Challan"
-            Width: =174
-            X: =413
-            Y: =717
-            ZIndex: =21
+            Height: =64
+            Text: ="Upload"
+            Width: =185
+            X: =42
+            Y: =412
+            ZIndex: =23
 
-    Group2_1 As group:
-        Height: =5
-        Width: =5
-        X: =60
-        Y: =60
-        ZIndex: =24
-
-        AptitudeTestLabel_12 As label:
-            Color: =RGBA(140, 4, 4, 1)
-            FontWeight: =FontWeight.Bold
-            Height: =27
-            Size: =15
-            Text: ="Your Total Score"
-            Width: =174
-            X: =39
-            Y: =419
-            ZIndex: =9
-
-        SatExemptionResult_1 As label:
-            FontWeight: =FontWeight.Bold
-            Height: =120
-            Size: =60
-            Text: ="1300"
-            VerticalAlign: =VerticalAlign.Top
-            Width: =212
-            X: =35
-            Y: =426
-            ZIndex: =10
+        Icon3 As icon.AddDocument:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =29
+            Icon: =Icon.AddDocument
+            Width: =37
+            X: =55
+            Y: =429
+            ZIndex: =24
 
