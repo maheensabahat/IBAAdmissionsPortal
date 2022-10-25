@@ -96,7 +96,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "AcademicsLabel_1",
-      "ParentIndex": 6,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -413,7 +413,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "AptitudeTestLabel_2",
-      "ParentIndex": 17,
+      "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -716,7 +716,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "AptitudeTestLabel_3",
-      "ParentIndex": 8,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1019,7 +1019,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "AptitudeTestLabel_4",
-      "ParentIndex": 13,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1322,7 +1322,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "AptitudeTestLabel_5",
-      "ParentIndex": 21,
+      "ParentIndex": 17,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1625,7 +1625,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "AptitudeTestLabel_7",
-      "ParentIndex": 10,
+      "ParentIndex": 25,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1947,7 +1947,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "DatePicker1_1",
-      "ParentIndex": 26,
+      "ParentIndex": 23,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2182,7 +2182,14 @@
     "Dropdown2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
-        "Items",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "DropDownSample",
+          "InvariantPropertyName": "Items",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "SelectionColor",
         "ChevronFill",
         "ChevronHoverFill",
@@ -2203,8 +2210,22 @@
         "FocusedBorderColor",
         "Fill",
         "DisabledFill",
-        "PressedFill",
-        "HoverFill",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "PressedFill",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "HoverFill",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Font",
         "FontWeight",
         "X",
@@ -2234,7 +2255,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Dropdown2",
-      "ParentIndex": 1,
+      "ParentIndex": 27,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2585,7 +2606,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EmailTF_2",
-      "ParentIndex": 19,
+      "ParentIndex": 15,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2958,7 +2979,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "FirstNameTF_2",
-      "ParentIndex": 11,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3184,7 +3205,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Group2",
-      "ParentIndex": 36,
+      "ParentIndex": 35,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3288,7 +3309,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon2",
-      "ParentIndex": 15,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3482,7 +3503,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon2_1",
-      "ParentIndex": 16,
+      "ParentIndex": 19,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3677,7 +3698,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon8_1",
-      "ParentIndex": 3,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3893,7 +3914,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label_5",
-      "ParentIndex": 23,
+      "ParentIndex": 20,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4182,7 +4203,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label_6",
-      "ParentIndex": 27,
+      "ParentIndex": 24,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4478,7 +4499,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label_7",
-      "ParentIndex": 30,
+      "ParentIndex": 29,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4788,7 +4809,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label_8",
-      "ParentIndex": 29,
+      "ParentIndex": 28,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5084,7 +5105,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label_9",
-      "ParentIndex": 24,
+      "ParentIndex": 21,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5429,7 +5450,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "LastNameTF_2",
-      "ParentIndex": 12,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5700,7 +5721,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "logo_1",
-      "ParentIndex": 2,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5871,7 +5892,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Logout_1",
-      "ParentIndex": 34,
+      "ParentIndex": 33,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5999,7 +6020,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Math",
-      "ParentIndex": 14,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6302,7 +6323,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Math_1",
-      "ParentIndex": 22,
+      "ParentIndex": 18,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6679,7 +6700,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NextButton_1",
-      "ParentIndex": 33,
+      "ParentIndex": 32,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6964,7 +6985,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "PersonelDetailsLabel_1",
-      "ParentIndex": 7,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7364,7 +7385,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "PhoneNumberTxt_2",
-      "ParentIndex": 20,
+      "ParentIndex": 16,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7642,7 +7663,7 @@
       },
       "MetaDataIDKey": "",
       "Name": "ProgressIndicatorTest_1",
-      "ParentIndex": 5,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7749,7 +7770,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Rectangle3",
-      "ParentIndex": 0,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7912,7 +7933,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "SatExemptionResult",
-      "ParentIndex": 18,
+      "ParentIndex": 14,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8217,7 +8238,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Status_2",
-      "ParentIndex": 4,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8443,7 +8464,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Step1_1",
-      "ParentIndex": 35,
+      "ParentIndex": 34,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8695,7 +8716,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TF_2",
-      "ParentIndex": 25,
+      "ParentIndex": 22,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9040,7 +9061,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TF_5",
-      "ParentIndex": 28,
+      "ParentIndex": 26,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9392,7 +9413,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TF_6",
-      "ParentIndex": 32,
+      "ParentIndex": 31,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9765,7 +9786,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TF_7",
-      "ParentIndex": 31,
+      "ParentIndex": 30,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

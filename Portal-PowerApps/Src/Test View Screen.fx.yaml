@@ -463,7 +463,9 @@
             =ColorFade(
             RGBA(140.25, 4.090617, 4.090617, 1), -20%)
         Height: =70
-        Items: =DropDownSample
+        HoverFill: =RGBA(238, 204, 204, 1)
+        Items: =["February","January"]
+        PressedFill: =RGBA(151, 0, 0, 1)
         SelectionFill: =RGBA(203, 102, 102, 1)
         Size: =21
         Width: =575
