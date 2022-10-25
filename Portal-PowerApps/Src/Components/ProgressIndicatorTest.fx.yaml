@@ -1,0 +1,45 @@
+ProgressIndicatorTest As CanvasComponent:
+    Fill: =RGBA(0, 0, 0, 0)
+    GalleryItems: |-
+        =Table(
+            {
+                step: 1,
+                stepText: "Step 1",
+                stepFlag: 1,
+                isCurrent: true
+            },
+            {
+                step: 2,
+                stepText: "Step 2",
+                stepFlag: 1,
+                isCurrent: false
+            },
+            {
+                step: 3,
+                stepText: "Step 3",
+                stepFlag: 1,
+                isCurrent: false
+            },
+            {
+                step: 4,
+                stepText: "Step 4",
+                stepFlag: 1,
+                isCurrent: false
+            }
+        )
+    Height: |
+        =60
+    Width: =App.Width
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        Height: =60
+        Items: =ProgressIndicatorTest.GalleryItems
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =Min(160, Self.Height - 60)
+        WrapCount: =CountRows(ProgressIndicatorTest)
+        ZIndex: =1
+
