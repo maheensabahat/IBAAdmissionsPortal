@@ -147,24 +147,25 @@
         Y: =477
         ZIndex: =16
 
-    GenerateFeeChallanBtn_1 As button:
+    NextBtn As button:
+        DisplayMode: =DisplayMode.Disabled
         Fill: =RGBA(140, 4, 4, 1)
         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-        Height: =100
+        Height: =60
         HoverBorderColor: =RGBA(238, 204, 204, 1)
         HoverFill: =ColorFade(RGBA(140.25, 4.090617, 4.090617, 1), -10%)
         OnSelect: =
         PressedBorderColor: =RGBA(203, 102, 102, 1)
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =ColorFade(RGBA(203, 102, 102, 100), -10%)
-        RadiusBottomLeft: =100
-        RadiusBottomRight: =100
-        RadiusTopLeft: =100
-        RadiusTopRight: =100
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
         Text: ="Next"
-        Width: =100
-        X: =520
-        Y: =991
+        Width: =175
+        X: =229
+        Y: =1010
         ZIndex: =21
 
     "'IBA Test Dates' As group":
