@@ -457,8 +457,14 @@
         ZIndex: =34
 
     Dropdown2 As dropdown:
+        BorderColor: =RGBA(118, 0, 0, 1)
+        ChevronBackground: =RGBA(140, 4, 4, 1)
+        ChevronHoverBackground: |-
+            =ColorFade(
+            RGBA(140.25, 4.090617, 4.090617, 1), -20%)
         Height: =70
         Items: =DropDownSample
+        SelectionFill: =RGBA(203, 102, 102, 1)
         Size: =21
         Width: =575
         X: =40
