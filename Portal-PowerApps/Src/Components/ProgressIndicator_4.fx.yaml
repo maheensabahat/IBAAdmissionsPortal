@@ -44,6 +44,7 @@ ProgressIndicator_4 As CanvasComponent:
         OnSelect: =
         TemplatePadding: =0
         TemplateSize: =Min(160, Self.Height - 60)
+        Width: =App.Width
         WrapCount: =CountRows(ProgressIndicator_4.applicationSteps)
         ZIndex: =1
 
@@ -52,7 +53,7 @@ ProgressIndicator_4 As CanvasComponent:
             BorderThickness: =0
             Color: =If(ThisItem.isCurrent, RGBA(255, 255, 255, 1), RGBA(203, 102, 102, 100))
             Fill: =If(ThisItem.isCurrent, RGBA(203, 102, 102, 100), RGBA(219, 219, 219, 100))
-            Height: =1
+            Height: =Parent.Height - 30
             HoverColor: =
             OnSelect: =Set(gSelectedStep,ThisItem.step)
             PaddingBottom: =0
@@ -80,7 +81,7 @@ ProgressIndicator_4 As CanvasComponent:
 
         Button9_2 As button:
             Fill: =RGBA(219, 219, 219, 1)
-            Height: =1
+            Height: =
             HoverBorderColor: =
             HoverFill: =
             OnSelect: =Set(gSelectedStep,ThisItem.step)
