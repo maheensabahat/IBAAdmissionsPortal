@@ -467,3 +467,12 @@
         Y: =689
         ZIndex: =34
 
+    Dropdown2 As dropdown:
+        Height: =70
+        Items: =DropDownSample
+        Size: =21
+        Width: =575
+        X: =40
+        Y: =744
+        ZIndex: =35
+
