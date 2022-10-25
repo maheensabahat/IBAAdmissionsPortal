@@ -30,7 +30,7 @@ ProgressIndicatorTest As CanvasComponent:
     colorNotDone: =RGBA(0, 0, 0, 1)
     Fill: =RGBA(219, 219, 219, 100)
     Height: =60
-    selectedStep: =gSelectedStep
+    selectedStep: =gSelectedStep2
     Width: =App.Width
     X: =0
     Y: =0
@@ -55,7 +55,7 @@ ProgressIndicatorTest As CanvasComponent:
             Fill: =If(ThisItem.isCurrent, RGBA(203, 102, 102, 100), RGBA(219, 219, 219, 100))
             Height: =Parent.Height - 30
             HoverColor: =
-            OnSelect: =Set(gSelectedStep,ThisItem.step)
+            OnSelect: =Set(gSelectedStep2,ThisItem.step)
             PaddingBottom: =0
             PaddingTop: =0
             PressedBorderColor: =
@@ -87,7 +87,7 @@ ProgressIndicatorTest As CanvasComponent:
             Height: =4
             HoverBorderColor: =
             HoverFill: =
-            OnSelect: =Set(gSelectedStep,ThisItem.step)
+            OnSelect: =Set(gSelectedStep2,ThisItem.step)
             Size: =24
             Text: =""
             Visible: =ThisItem.step < CountRows(ProgressIndicatorTest.applicationSteps)
