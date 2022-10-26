@@ -1204,7 +1204,7 @@
 
             DataCardKey18 As label:
                 AutoHeight: =true
-                Color: =RGBA(140, 4, 4, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =48
                 Size: =20
@@ -1285,7 +1285,7 @@
 
             DataCardKey19 As label:
                 AutoHeight: =true
-                Color: =RGBA(140, 4, 4, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =48
                 Size: =20
@@ -1442,7 +1442,7 @@
 
             DataCardKey21 As label:
                 AutoHeight: =true
-                Color: =RGBA(140, 4, 4, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =48
                 Size: =20
@@ -1472,7 +1472,7 @@
                 SelectMultiple: =false
                 Size: =15
                 Tooltip: =Parent.DisplayName
-                Width: =356
+                Width: =303
                 X: =30
                 Y: =DataCardKey21.Y + DataCardKey21.Height + 5
                 ZIndex: =2
@@ -1522,7 +1522,7 @@
 
             DataCardKey22 As label:
                 AutoHeight: =true
-                Color: =RGBA(140, 4, 4, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =48
                 Size: =20
