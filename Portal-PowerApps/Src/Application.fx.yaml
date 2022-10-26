@@ -570,13 +570,6 @@
             Y: =163
             ZIndex: =3
 
-        LogoutButton As group:
-            Height: =5
-            Width: =5
-            X: =60
-            Y: =60
-            ZIndex: =6
-
         NextButtonNav As button:
             Fill: =RGBA(140, 4, 4, 1)
             FocusedBorderColor: =ColorFade(Self.Fill, -75%)
@@ -620,6 +613,7 @@
             RadiusTopLeft: =20
             RadiusTopRight: =20
             Text: ="Next"
+            Visible: =page<4
             Width: =175
             X: =400
             Y: =1004
@@ -668,8 +662,41 @@
             RadiusTopLeft: =20
             RadiusTopRight: =20
             Text: ="Previous"
+            Visible: =page>1
             Width: =175
             X: =78
             Y: =1004
             ZIndex: =59
+
+    Logout_4 As group:
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =60
+        ZIndex: =62
+
+        Icon8_4 As icon.Leave:
+            Color: =RGBA(118, 0, 0, 1)
+            FocusedBorderThickness: =0
+            Height: =40
+            Icon: =Icon.Leave
+            OnSelect: =Navigate('Home Screen',ScreenTransition.Fade);
+            Width: =95
+            X: =490
+            Y: =54
+            ZIndex: =60
+
+        Status_5 As label:
+            Color: =RGBA(118, 0, 0, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =30
+            OnSelect: |-
+                =Navigate('Login Screen',ScreenTransition.Fade);
+                Clear(User);
+            Size: =15
+            Text: ="Back to Home"
+            Width: =161
+            X: =464
+            Y: =94
+            ZIndex: =61
 
