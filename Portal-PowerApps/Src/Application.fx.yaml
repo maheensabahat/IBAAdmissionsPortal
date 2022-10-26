@@ -1104,7 +1104,7 @@
         ZIndex: =87
 
     PrimaryEduForm As form:
-        AcceptsFocus: =true
+        AcceptsFocus: =false
         DataSource: =PrimaryEducationList
         DefaultMode: =FormMode.New
         Height: =327
