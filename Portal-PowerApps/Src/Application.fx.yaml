@@ -711,7 +711,11 @@
                     Users,
                     Title = Last(User).Title
                 ),
-                {
+                {   
+                    FirstName: FirstNameTF_1.Text,
+                    LastName: LastNameTF_1.Text,
+                    PhoneNumber: PhoneNumberTxt_1.Text,
+                    Email: EmailTF_1.Text,
                     CNIC: CNICTF.Text,
                     Address: AddressTF.Text,
                     DOB: Text(DOB.SelectedDate),
