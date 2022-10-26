@@ -31,250 +31,6 @@
         Set(page, 1);
         Set(submitted, false);
 
-    PersonalSection As group:
-        Height: =5
-        Width: =5
-        X: =60
-        Y: =60
-        ZIndex: =35
-
-        PersonelDetailsLabel As label:
-            Align: =Align.Center
-            FontWeight: =FontWeight.Bold
-            Height: =50
-            Size: =20
-            Text: ="Personal Details"
-            Visible: =page=1
-            Width: =245
-            X: =194
-            Y: =277
-            ZIndex: =8
-
-        FirstNameTF_1 As text:
-            BorderColor: =RGBA(203, 102, 102, 1)
-            Color: =RGBA(51, 51, 51, 1)
-            Default: =Last(User).FirstName
-            DisabledBorderColor: =RGBA(153, 153, 153, 1)
-            Fill: =RGBA(238, 204, 204, 1)
-            Font: =Font.'Segoe UI'
-            Height: =50
-            HintText: ="First Name"
-            HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-            HoverColor: =RGBA(51, 51, 51, 1)
-            HoverFill: =RGBA(255, 255, 255, 1)
-            PressedBorderColor: =RGBA(151, 0, 0, 1)
-            PressedColor: =RGBA(0, 0, 0, 1)
-            PressedFill: =RGBA(255, 255, 255, 1)
-            RadiusBottomLeft: =10
-            RadiusBottomRight: =10
-            RadiusTopLeft: =10
-            RadiusTopRight: =10
-            Size: =15
-            Visible: =page=1
-            Width: =268
-            X: =45
-            Y: =358
-            ZIndex: =10
-
-        EmailTF_1 As text:
-            BorderColor: =RGBA(203, 102, 102, 1)
-            Default: =Last(User).Email
-            Fill: =RGBA(238, 204, 204, 1)
-            Height: =51
-            HintText: ="Email"
-            PressedBorderColor: =RGBA(151, 0, 0, 1)
-            RadiusBottomLeft: =10
-            RadiusBottomRight: =10
-            RadiusTopLeft: =10
-            RadiusTopRight: =10
-            Size: =15
-            Visible: =page=1
-            Width: =268
-            X: =45
-            Y: =442
-            ZIndex: =11
-
-        LastNameTF_1 As text:
-            BorderColor: =RGBA(203, 102, 102, 1)
-            Default: =Last(User).LastName
-            Fill: =RGBA(238, 204, 204, 1)
-            Height: =50
-            HintText: ="Last Name"
-            PressedBorderColor: =RGBA(151, 0, 0, 1)
-            RadiusBottomLeft: =10
-            RadiusBottomRight: =10
-            RadiusTopLeft: =10
-            RadiusTopRight: =10
-            Size: =15
-            Visible: =page=1
-            Width: =268
-            X: =330
-            Y: =358
-            ZIndex: =12
-
-        PhoneNumberTxt_1 As text:
-            BorderColor: =RGBA(203, 102, 102, 1)
-            Default: =Last(User).PhoneNumber
-            Fill: =RGBA(238, 204, 204, 1)
-            Height: =51
-            HintText: ="Phone Number"
-            PressedBorderColor: =RGBA(151, 0, 0, 1)
-            RadiusBottomLeft: =10
-            RadiusBottomRight: =10
-            RadiusTopLeft: =10
-            RadiusTopRight: =10
-            Size: =15
-            Visible: =page=1
-            Width: =268
-            X: =330
-            Y: =442
-            ZIndex: =14
-
-        CNICTF As text:
-            BorderColor: =RGBA(203, 102, 102, 1)
-            Default: =""
-            DisplayMode: =Edit
-            Fill: =RGBA(238, 204, 204, 1)
-            Height: =57
-            HintText: ="CNIC/Passport"
-            PressedBorderColor: =RGBA(151, 0, 0, 1)
-            RadiusBottomLeft: =10
-            RadiusBottomRight: =10
-            RadiusTopLeft: =10
-            RadiusTopRight: =10
-            Size: =15
-            Visible: =page=1
-            Width: =268
-            X: =43
-            Y: =569
-            ZIndex: =22
-
-        Label As label:
-            FontWeight: =FontWeight.Bold
-            Height: =67
-            Size: =15
-            Text: ="CNIC/Passport Number"
-            Visible: =page=1
-            Width: =268
-            X: =43
-            Y: =510
-            ZIndex: =23
-
-        AddressTF As text:
-            BorderColor: =RGBA(203, 102, 102, 1)
-            Default: =""
-            DisplayMode: =Edit
-            Fill: =RGBA(238, 204, 204, 1)
-            Height: =73
-            HintText: ="Address"
-            PressedBorderColor: =RGBA(151, 0, 0, 1)
-            RadiusBottomLeft: =10
-            RadiusBottomRight: =10
-            RadiusTopLeft: =10
-            RadiusTopRight: =10
-            Size: =15
-            Visible: =page=1
-            Width: =552
-            X: =46
-            Y: =689
-            ZIndex: =24
-
-        Label_1 As label:
-            FontWeight: =FontWeight.Bold
-            Height: =67
-            Size: =15
-            Text: ="Address"
-            Visible: =page=1
-            Width: =268
-            X: =43
-            Y: =630
-            ZIndex: =25
-
-        CountryTF As text:
-            BorderColor: =RGBA(203, 102, 102, 1)
-            Default: =""
-            DisplayMode: =Edit
-            Fill: =RGBA(238, 204, 204, 1)
-            Height: =57
-            HintText: ="Address"
-            PressedBorderColor: =RGBA(151, 0, 0, 1)
-            RadiusBottomLeft: =10
-            RadiusBottomRight: =10
-            RadiusTopLeft: =10
-            RadiusTopRight: =10
-            Size: =15
-            Visible: =page=1
-            Width: =268
-            X: =340
-            Y: =825
-            ZIndex: =28
-
-        Label_3 As label:
-            FontWeight: =FontWeight.Bold
-            Height: =45
-            Size: =15
-            Text: ="Country"
-            Visible: =page=1
-            Width: =127
-            X: =337
-            Y: =782
-            ZIndex: =29
-
-        CityTF As text:
-            BorderColor: =RGBA(203, 102, 102, 1)
-            Default: =""
-            DisplayMode: =Edit
-            Fill: =RGBA(238, 204, 204, 1)
-            Height: =57
-            HintText: ="Address"
-            PressedBorderColor: =RGBA(151, 0, 0, 1)
-            RadiusBottomLeft: =10
-            RadiusBottomRight: =10
-            RadiusTopLeft: =10
-            RadiusTopRight: =10
-            Size: =15
-            Visible: =page=1
-            Width: =260
-            X: =43
-            Y: =825
-            ZIndex: =30
-
-        Label_4 As label:
-            FontWeight: =FontWeight.Bold
-            Height: =45
-            Size: =15
-            Text: ="City"
-            Visible: =page=1
-            Width: =127
-            X: =43
-            Y: =782
-            ZIndex: =31
-
-        Label_2 As label:
-            FontWeight: =FontWeight.Bold
-            Height: =67
-            Size: =15
-            Text: ="Date of Birth"
-            Visible: =page=1
-            Width: =268
-            X: =330
-            Y: =515
-            ZIndex: =33
-
-        DOB As datepicker:
-            BorderColor: =RGBA(140, 4, 4, 1)
-            FontWeight: =FontWeight.Semibold
-            Height: =57
-            IconBackground: |
-                =RGBA(140, 4, 4, 1)
-            Size: =15
-            StartYear: =2000
-            Visible: =page=1
-            Width: =269
-            X: =330
-            Y: =577
-            ZIndex: =34
-
     AcademicSection As group:
         Height: =5
         Width: =5
@@ -958,34 +714,300 @@
             Y: =908
             ZIndex: =79
 
-    ProgramsIntDropDown As dropdown:
-        BorderColor: =RGBA(140, 4, 4, 1)
-        ChevronBackground: =RGBA(140, 4, 4, 1)
-        ChevronHoverBackground: |-
-            =ColorFade(
-            
-            RGBA(140.25, 4.090617, 4.090617, 1), -20%)
-        DisplayMode: =Edit
-        Height: =53
-        HoverFill: =RGBA(203, 102, 102, 1)
-        Items: =["BBA", "BSECO","BSEM","BSSS","BSCS","BSACF"]
-        PressedFill: =RGBA(140, 4, 4, 1)
-        SelectionFill: =RGBA(203, 102, 102, 1)
-        Size: =15
-        Width: =254
-        X: =45
-        Y: =925
-        ZIndex: =81
+    PersonalDetailsSection As group:
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =60
+        ZIndex: =84
 
-    Label_10 As label:
-        DisplayMode: =Edit
-        FontWeight: =FontWeight.Bold
-        Height: =45
-        Size: =15
-        Text: ="Programs Interested In?"
-        Visible: =page=1
-        Width: =259
-        X: =43
-        Y: =882
-        ZIndex: =82
+        PersonelDetailsLabel As label:
+            Align: =Align.Center
+            DisplayMode: =If(submitted=true, Disabled, Edit)
+            FontWeight: =FontWeight.Bold
+            Height: =50
+            Size: =20
+            Text: ="Personal Details"
+            Visible: =page=1
+            Width: =245
+            X: =194
+            Y: =277
+            ZIndex: =8
+
+        FirstNameTF_1 As text:
+            BorderColor: =RGBA(203, 102, 102, 1)
+            Color: =RGBA(51, 51, 51, 1)
+            Default: =Last(User).FirstName
+            DisabledBorderColor: =RGBA(153, 153, 153, 1)
+            DisplayMode: =If(submitted=true, Disabled, Edit)
+            Fill: =RGBA(238, 204, 204, 1)
+            Font: =Font.'Segoe UI'
+            Height: =50
+            HintText: ="First Name"
+            HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            HoverColor: =RGBA(51, 51, 51, 1)
+            HoverFill: =RGBA(255, 255, 255, 1)
+            PressedBorderColor: =RGBA(151, 0, 0, 1)
+            PressedColor: =RGBA(0, 0, 0, 1)
+            PressedFill: =RGBA(255, 255, 255, 1)
+            RadiusBottomLeft: =10
+            RadiusBottomRight: =10
+            RadiusTopLeft: =10
+            RadiusTopRight: =10
+            Size: =15
+            Visible: =page=1
+            Width: =268
+            X: =45
+            Y: =358
+            ZIndex: =10
+
+        EmailTF_1 As text:
+            BorderColor: =RGBA(203, 102, 102, 1)
+            Default: =Last(User).Email
+            DisplayMode: =If(submitted=true, Disabled, Edit)
+            Fill: =RGBA(238, 204, 204, 1)
+            Height: =51
+            HintText: ="Email"
+            PressedBorderColor: =RGBA(151, 0, 0, 1)
+            RadiusBottomLeft: =10
+            RadiusBottomRight: =10
+            RadiusTopLeft: =10
+            RadiusTopRight: =10
+            Size: =15
+            Visible: =page=1
+            Width: =268
+            X: =45
+            Y: =442
+            ZIndex: =11
+
+        LastNameTF_1 As text:
+            BorderColor: =RGBA(203, 102, 102, 1)
+            Default: =Last(User).LastName
+            DisplayMode: =If(submitted=true, Disabled, Edit)
+            Fill: =RGBA(238, 204, 204, 1)
+            Height: =50
+            HintText: ="Last Name"
+            PressedBorderColor: =RGBA(151, 0, 0, 1)
+            RadiusBottomLeft: =10
+            RadiusBottomRight: =10
+            RadiusTopLeft: =10
+            RadiusTopRight: =10
+            Size: =15
+            Visible: =page=1
+            Width: =268
+            X: =330
+            Y: =358
+            ZIndex: =12
+
+        PhoneNumberTxt_1 As text:
+            BorderColor: =RGBA(203, 102, 102, 1)
+            Default: =Last(User).PhoneNumber
+            DisplayMode: =If(submitted=true, Disabled, Edit)
+            Fill: =RGBA(238, 204, 204, 1)
+            Height: =51
+            HintText: ="Phone Number"
+            PressedBorderColor: =RGBA(151, 0, 0, 1)
+            RadiusBottomLeft: =10
+            RadiusBottomRight: =10
+            RadiusTopLeft: =10
+            RadiusTopRight: =10
+            Size: =15
+            Visible: =page=1
+            Width: =268
+            X: =330
+            Y: =442
+            ZIndex: =14
+
+        CNICTF As text:
+            BorderColor: =RGBA(203, 102, 102, 1)
+            Default: =""
+            DisplayMode: =If(submitted=true, Disabled, Edit)
+            Fill: =RGBA(238, 204, 204, 1)
+            Height: =57
+            HintText: ="CNIC/Passport"
+            PressedBorderColor: =RGBA(151, 0, 0, 1)
+            RadiusBottomLeft: =10
+            RadiusBottomRight: =10
+            RadiusTopLeft: =10
+            RadiusTopRight: =10
+            Size: =15
+            Visible: =page=1
+            Width: =268
+            X: =43
+            Y: =569
+            ZIndex: =22
+
+        Label As label:
+            DisplayMode: =If(submitted=true, Disabled, Edit)
+            FontWeight: =FontWeight.Bold
+            Height: =67
+            Size: =15
+            Text: ="CNIC/Passport Number"
+            Visible: =page=1
+            Width: =268
+            X: =43
+            Y: =510
+            ZIndex: =23
+
+        AddressTF As text:
+            BorderColor: =RGBA(203, 102, 102, 1)
+            Default: =""
+            DisplayMode: =If(submitted=true, Disabled, Edit)
+            Fill: =RGBA(238, 204, 204, 1)
+            Height: =73
+            HintText: ="Address"
+            PressedBorderColor: =RGBA(151, 0, 0, 1)
+            RadiusBottomLeft: =10
+            RadiusBottomRight: =10
+            RadiusTopLeft: =10
+            RadiusTopRight: =10
+            Size: =15
+            Visible: =page=1
+            Width: =552
+            X: =46
+            Y: =689
+            ZIndex: =24
+
+        Label_1 As label:
+            DisplayMode: =If(submitted=true, Disabled, Edit)
+            FontWeight: =FontWeight.Bold
+            Height: =67
+            Size: =15
+            Text: ="Address"
+            Visible: =page=1
+            Width: =268
+            X: =43
+            Y: =630
+            ZIndex: =25
+
+        CountryTF As text:
+            BorderColor: =RGBA(203, 102, 102, 1)
+            Default: =""
+            DisplayMode: =If(submitted=true, Disabled, Edit)
+            Fill: =RGBA(238, 204, 204, 1)
+            Height: =57
+            HintText: ="Address"
+            PressedBorderColor: =RGBA(151, 0, 0, 1)
+            RadiusBottomLeft: =10
+            RadiusBottomRight: =10
+            RadiusTopLeft: =10
+            RadiusTopRight: =10
+            Size: =15
+            Visible: =page=1
+            Width: =268
+            X: =340
+            Y: =825
+            ZIndex: =28
+
+        Label_3 As label:
+            DisplayMode: =If(submitted=true, Disabled, Edit)
+            FontWeight: =FontWeight.Bold
+            Height: =45
+            Size: =15
+            Text: ="Country"
+            Visible: =page=1
+            Width: =127
+            X: =337
+            Y: =782
+            ZIndex: =29
+
+        CityTF As text:
+            BorderColor: =RGBA(203, 102, 102, 1)
+            Default: =""
+            DisplayMode: =If(submitted=true, Disabled, Edit)
+            Fill: =RGBA(238, 204, 204, 1)
+            Height: =57
+            HintText: ="Address"
+            PressedBorderColor: =RGBA(151, 0, 0, 1)
+            RadiusBottomLeft: =10
+            RadiusBottomRight: =10
+            RadiusTopLeft: =10
+            RadiusTopRight: =10
+            Size: =15
+            Visible: =page=1
+            Width: =260
+            X: =43
+            Y: =825
+            ZIndex: =30
+
+        Label_4 As label:
+            DisplayMode: =If(submitted=true, Disabled, Edit)
+            FontWeight: =FontWeight.Bold
+            Height: =45
+            Size: =15
+            Text: ="City"
+            Visible: =page=1
+            Width: =127
+            X: =43
+            Y: =782
+            ZIndex: =31
+
+        Label_2 As label:
+            DisplayMode: =If(submitted=true, Disabled, Edit)
+            FontWeight: =FontWeight.Bold
+            Height: =67
+            Size: =15
+            Text: ="Date of Birth"
+            Visible: =page=1
+            Width: =268
+            X: =330
+            Y: =515
+            ZIndex: =33
+
+        DOB As datepicker:
+            BorderColor: =RGBA(140, 4, 4, 1)
+            DisplayMode: =If(submitted=true, Disabled, Edit)
+            FontWeight: =FontWeight.Semibold
+            Height: =57
+            IconBackground: |
+                =RGBA(140, 4, 4, 1)
+            Size: =15
+            StartYear: =2000
+            Visible: =page=1
+            Width: =269
+            X: =330
+            Y: =577
+            ZIndex: =34
+
+        ProgramsIntDropDown As dropdown:
+            BorderColor: =RGBA(140, 4, 4, 1)
+            ChevronBackground: =RGBA(140, 4, 4, 1)
+            ChevronHoverBackground: |-
+                =ColorFade(
+                
+                RGBA(140.25, 4.090617, 4.090617, 1), -20%)
+            DisplayMode: =If(submitted=true, Disabled, Edit)
+            Height: =53
+            HoverFill: =RGBA(203, 102, 102, 1)
+            Items: =["BBA", "BSECO","BSEM","BSSS","BSCS","BSACF"]
+            PressedFill: =RGBA(140, 4, 4, 1)
+            SelectionFill: =RGBA(203, 102, 102, 1)
+            Size: =15
+            Visible: =page=1
+            Width: =254
+            X: =45
+            Y: =925
+            ZIndex: =81
+
+        Label_10 As label:
+            DisplayMode: =Edit
+            FontWeight: =FontWeight.Bold
+            Height: =45
+            Size: =15
+            Text: ="Programs Interested In?"
+            Visible: =page=1
+            Width: =259
+            X: =43
+            Y: =882
+            ZIndex: =82
+
+        Icon5 As icon.Edit:
+            Color: =RGBA(151, 0, 0, 1)
+            Height: =40
+            Icon: =Icon.Edit
+            Visible: =page=1
+            Width: =40
+            X: =544
+            Y: =272
+            ZIndex: =83
 
