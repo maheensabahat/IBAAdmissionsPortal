@@ -11,6 +11,7 @@
     "AcademicSection": 275,
     "AcademicsLabel": 213,
     "AcademicsLabel_1": 188,
+    "AcademicsSection": 405,
     "AddressTF": 250,
     "Alevel/Inter_DataCard1": 395,
     "AlevelsLabel": 251,
@@ -326,7 +327,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "10/26/2022 19:13:25",
+  "HeaderLastSavedDateTimeUTC": "10/26/2022 19:16:32",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "7580dfef-b203-40b2-8d5e-98aa9e654967": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/fd61e08e61b4462c845da42bde057db0\"",
@@ -394,6 +395,10 @@
       "uploadLabel": 4,
       "uploadLabel_1": 8,
       "uploadLabel_2": 14
+    },
+    "AcademicsSection": {
+      "PrimaryEduForm": 1,
+      "SecondEduForm": 0
     },
     "Application Tab": {
       "Deadline": 5,
@@ -590,6 +595,7 @@
     "AcademicSection": 98,
     "AcademicsLabel": 99,
     "AcademicsLabel_1": 221,
+    "AcademicsSection": 0,
     "AddressTF": 160,
     "Alevel/Inter_DataCard1": 146,
     "AlevelsLabel": 161,
