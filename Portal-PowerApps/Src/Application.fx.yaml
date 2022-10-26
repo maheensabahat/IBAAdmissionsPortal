@@ -1132,7 +1132,6 @@
         PrimaryEduForm As form:
             AcceptsFocus: =false
             DataSource: =PrimaryEducationList
-            DefaultMode: =FormMode.New
             Height: =327
             Visible: =page=2
             Width: =640
@@ -1371,7 +1370,6 @@
 
         SecondEduForm As form:
             DataSource: =SecondaryEducationList
-            DefaultMode: =FormMode.New
             Height: =355
             Visible: =page=2
             Width: =640
