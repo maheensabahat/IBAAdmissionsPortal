@@ -723,7 +723,7 @@
         Visible: =page=1
         Width: =268
         X: =43
-        Y: =319
+        Y: =327
         ZIndex: =84
 
     PersonalDetailsSection As group:
@@ -789,7 +789,7 @@
             Visible: =page=1
             Width: =268
             X: =45
-            Y: =464
+            Y: =476
             ZIndex: =11
 
         LastNameTF_1 As text:
@@ -827,7 +827,7 @@
             Visible: =page=1
             Width: =268
             X: =331
-            Y: =464
+            Y: =476
             ZIndex: =14
 
         CNICTF As text:
@@ -846,7 +846,7 @@
             Visible: =page=1
             Width: =268
             X: =43
-            Y: =569
+            Y: =581
             ZIndex: =22
 
         Label As label:
@@ -858,7 +858,7 @@
             Visible: =page=1
             Width: =268
             X: =43
-            Y: =510
+            Y: =528
             ZIndex: =23
 
         AddressTF As text:
@@ -963,7 +963,7 @@
             Visible: =page=1
             Width: =268
             X: =330
-            Y: =515
+            Y: =525
             ZIndex: =33
 
         DOB As datepicker:
@@ -977,8 +977,8 @@
             StartYear: =2000
             Visible: =page=1
             Width: =269
-            X: =330
-            Y: =577
+            X: =331
+            Y: =579
             ZIndex: =34
 
         ProgramsIntDropDown As dropdown:
@@ -1033,7 +1033,7 @@
         Visible: =page=1
         Width: =268
         X: =330
-        Y: =315
+        Y: =324
         ZIndex: =85
 
     Label_13 As label:
@@ -1045,7 +1045,7 @@
         Visible: =page=1
         Width: =268
         X: =46
-        Y: =413
+        Y: =426
         ZIndex: =86
 
     Label_14 As label:
@@ -1057,6 +1057,6 @@
         Visible: =page=1
         Width: =268
         X: =330
-        Y: =415
+        Y: =422
         ZIndex: =87
 
