@@ -412,8 +412,8 @@
                     }
                 ));
                 
-                If(page = 2,NewForm(SecondEduForm));
-                If(page = 2,NewForm(PrimaryEduForm));
+                // If(page = 2,NewForm(SecondEduForm));
+                //If(page = 2,NewForm(PrimaryEduForm));
                 
                 SubmitForm(PrimaryEduForm);
                 SubmitForm(SecondEduForm);
