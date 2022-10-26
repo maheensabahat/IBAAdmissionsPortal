@@ -133,7 +133,7 @@
             Y: =442
             ZIndex: =14
 
-        TF As text:
+        CNICTF As text:
             BorderColor: =RGBA(203, 102, 102, 1)
             Default: =""
             DisplayMode: =DisplayMode.Disabled
@@ -163,7 +163,7 @@
             Y: =510
             ZIndex: =23
 
-        TF_1 As text:
+        AddressTF As text:
             BorderColor: =RGBA(203, 102, 102, 1)
             Default: =""
             DisplayMode: =DisplayMode.Disabled
@@ -193,7 +193,7 @@
             Y: =630
             ZIndex: =25
 
-        TF_3 As text:
+        CountryTF As text:
             BorderColor: =RGBA(203, 102, 102, 1)
             Default: =""
             DisplayMode: =DisplayMode.Disabled
@@ -223,7 +223,7 @@
             Y: =782
             ZIndex: =29
 
-        TF_4 As text:
+        CityTF As text:
             BorderColor: =RGBA(203, 102, 102, 1)
             Default: =""
             DisplayMode: =DisplayMode.Disabled
@@ -264,7 +264,7 @@
             Y: =515
             ZIndex: =33
 
-        DatePicker1 As datepicker:
+        DOB As datepicker:
             BorderColor: =RGBA(140, 4, 4, 1)
             Color: =RGBA(128, 128, 128, 1)
             Height: =57
@@ -668,17 +668,6 @@
             Y: =1004
             ZIndex: =59
 
-    Label_5 As label:
-        FontWeight: =FontWeight.Bold
-        Height: =27
-        Size: =15
-        Text: |-
-            ="Name:"
-        Width: =94
-        X: =59
-        Y: =267
-        ZIndex: =62
-
     Logout_4 As group:
         Height: =5
         Width: =5
@@ -711,126 +700,182 @@
             Y: =94
             ZIndex: =61
 
-    NameText As label:
-        Color: =RGBA(128, 128, 128, 1)
-        FontWeight: =FontWeight.Semibold
-        Height: =30
-        Size: =15
-        Text: ="User Name"
-        Width: =284
-        X: =141
-        Y: =268
-        ZIndex: =63
+    NextButtonNav_1 As button:
+        Fill: =RGBA(140, 4, 4, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Height: =60
+        HoverBorderColor: =RGBA(238, 204, 204, 1)
+        HoverFill: =ColorFade(RGBA(140.25, 4.090617, 4.090617, 1), -10%)
+        OnSelect: |-
+            =Patch(
+                        Users,
+                        LookUp(Users, Title = Last(User).Title),
+                        {
+                                CNIC: CNICTF.Text,
+                                Address: AddressTF,
+                                DOB: Text(DOB.SelectedDate),
+            
+            
+            
+                        }
+                    );
+        PressedBorderColor: =RGBA(203, 102, 102, 1)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(203, 102, 102, 100), -10%)
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Text: ="Save"
+        Visible: =page<4
+        Width: =175
+        X: =78
+        Y: =1004
+        ZIndex: =80
 
-    Label_6 As label:
-        FontWeight: =FontWeight.Bold
-        Height: =31
-        Size: =15
-        Text: |-
-            ="Phone Numer:"
-        Width: =165
-        X: =58
-        Y: =300
-        ZIndex: =64
-
-    PhoneText As label:
-        Color: =RGBA(128, 128, 128, 1)
-        FontWeight: =FontWeight.Semibold
-        Height: =30
-        Size: =15
-        Text: ="+923000000000"
-        Width: =284
-        X: =223
-        Y: =301
-        ZIndex: =65
-
-    Label_7 As label:
-        FontWeight: =FontWeight.Bold
-        Height: =27
-        Size: =15
-        Text: |-
-            ="Email:"
-        Width: =94
-        X: =59
-        Y: =331
-        ZIndex: =66
-
-    emailtext As label:
-        Color: =RGBA(128, 128, 128, 1)
-        FontWeight: =FontWeight.Semibold
-        Height: =30
-        Size: =15
-        Text: ="user.name@mail.com"
-        Width: =284
-        X: =131
-        Y: =332
-        ZIndex: =67
-
-    Label_8 As label:
-        FontWeight: =FontWeight.Bold
-        Height: =27
-        Size: =15
-        Text: |-
-            ="CNIC:"
-        Width: =94
-        X: =59
-        Y: =366
-        ZIndex: =68
-
-    cnictext As label:
-        Color: =RGBA(128, 128, 128, 1)
-        FontWeight: =FontWeight.Semibold
-        Height: =30
-        Size: =15
-        Text: ="42301-0000000-0"
-        Width: =284
-        X: =131
-        Y: =363
-        ZIndex: =69
-
-    Label_9 As label:
-        FontWeight: =FontWeight.Bold
-        Height: =27
-        Size: =15
-        Text: |-
-            ="Academics:"
-        X: =58
-        Y: =433
-        ZIndex: =70
-
-    educationType1 As label:
-        FontWeight: =FontWeight.Bold
-        Height: =27
-        Size: =15
-        Text: ="Matric/Olevel"
-        X: =90
-        Y: =474
-        ZIndex: =71
-
-    educationType1_1 As label:
-        FontWeight: =FontWeight.Bold
-        Height: =27
-        Size: =15
-        Text: ="Inter/Alevel"
-        X: =90
-        Y: =635
-        ZIndex: =72
-
-    educationType1_2 As label:
-        FontWeight: =FontWeight.Bold
-        Height: =27
-        Size: =15
-        Text: ="SAT Scores"
-        X: =90
-        Y: =794
-        ZIndex: =73
-
-    Group1 As group:
+    summarySection As group:
         Height: =5
         Width: =5
         X: =60
         Y: =60
         ZIndex: =80
+
+        Label_5 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =27
+            Size: =15
+            Text: |-
+                ="Name:"
+            Visible: =page=4
+            Width: =94
+            X: =59
+            Y: =267
+            ZIndex: =62
+
+        NameText As label:
+            Color: =RGBA(128, 128, 128, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =30
+            Size: =15
+            Text: ="User Name"
+            Visible: =page=4
+            Width: =284
+            X: =141
+            Y: =268
+            ZIndex: =63
+
+        Label_6 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =31
+            Size: =15
+            Text: |-
+                ="Phone Numer:"
+            Visible: =page=4
+            Width: =165
+            X: =58
+            Y: =300
+            ZIndex: =64
+
+        PhoneText As label:
+            Color: =RGBA(128, 128, 128, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =30
+            Size: =15
+            Text: ="+923000000000"
+            Visible: =page=4
+            Width: =284
+            X: =223
+            Y: =301
+            ZIndex: =65
+
+        Label_7 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =27
+            Size: =15
+            Text: |-
+                ="Email:"
+            Visible: =page=4
+            Width: =94
+            X: =59
+            Y: =331
+            ZIndex: =66
+
+        emailtext As label:
+            Color: =RGBA(128, 128, 128, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =30
+            Size: =15
+            Text: ="user.name@mail.com"
+            Visible: =page=4
+            Width: =284
+            X: =131
+            Y: =332
+            ZIndex: =67
+
+        Label_8 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =27
+            Size: =15
+            Text: |-
+                ="CNIC:"
+            Visible: =page=4
+            Width: =94
+            X: =59
+            Y: =366
+            ZIndex: =68
+
+        cnictext As label:
+            Color: =RGBA(128, 128, 128, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =30
+            Size: =15
+            Text: ="42301-0000000-0"
+            Visible: =page=4
+            Width: =284
+            X: =131
+            Y: =363
+            ZIndex: =69
+
+        Label_9 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =27
+            Size: =15
+            Text: |-
+                ="Academics:"
+            Visible: =page=4
+            X: =58
+            Y: =433
+            ZIndex: =70
+
+        educationType1 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =27
+            Size: =15
+            Text: ="Matric/Olevel"
+            Visible: =page=4
+            X: =90
+            Y: =474
+            ZIndex: =71
+
+        educationType1_1 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =27
+            Size: =15
+            Text: ="Inter/Alevel"
+            Visible: =page=4
+            X: =90
+            Y: =635
+            ZIndex: =72
+
+        educationType1_2 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =27
+            Size: =15
+            Text: ="SAT Scores"
+            Visible: =page=4
+            X: =90
+            Y: =794
+            ZIndex: =73
 
         AptitudeTestLabel_18 As label:
             Color: =RGBA(140, 4, 4, 1)
@@ -838,6 +883,7 @@
             Height: =22
             Size: =15
             Text: ="Your Total Score"
+            Visible: =page=4
             Width: =174
             X: =94
             Y: =863
@@ -849,6 +895,7 @@
             Size: =60
             Text: ="1300"
             VerticalAlign: =VerticalAlign.Top
+            Visible: =page=4
             Width: =212
             X: =90
             Y: =877
@@ -860,6 +907,7 @@
             Size: =20
             Text: |-
                 ="Math:"
+            Visible: =page=4
             Width: =98
             X: =358
             Y: =857
@@ -872,6 +920,7 @@
             Text: |-
                 ="588
                 "
+            Visible: =page=4
             Width: =64
             X: =480
             Y: =861
@@ -883,6 +932,7 @@
             Size: =20
             Text: |-
                 ="English:"
+            Visible: =page=4
             Width: =130
             X: =358
             Y: =906
@@ -895,6 +945,7 @@
             Text: |-
                 ="588
                 "
+            Visible: =page=4
             Width: =64
             X: =480
             Y: =908
