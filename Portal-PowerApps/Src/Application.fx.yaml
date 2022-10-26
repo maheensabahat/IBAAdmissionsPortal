@@ -118,6 +118,7 @@
         importSAT As import:
             Align: =Align.Right
             Fill: =RGBA(168, 0, 0, 1)
+            OnSelect: =Collect(SatScoreDoc, importSAT.Data);
             Padding: =10
             Size: =18
             Text: ="Upload report"
@@ -151,6 +152,11 @@
         importEducation1 As import:
             Align: =Align.Right
             Fill: =RGBA(168, 0, 0, 1)
+            OnSelect: |
+                =Collect(
+                    PrimaryScoreDoc,
+                    importEducation1.Data
+                );
             Padding: =10
             Size: =18
             Text: ="Upload report"
@@ -174,6 +180,11 @@
         importEducation2 As import:
             Align: =Align.Right
             Fill: =RGBA(168, 0, 0, 1)
+            OnSelect: |
+                =Collect(
+                    PrimaryScoreDoc,
+                    importEducation2.Data
+                );
             Padding: =10
             Size: =18
             Text: ="Upload report"
