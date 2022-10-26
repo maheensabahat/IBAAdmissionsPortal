@@ -410,7 +410,7 @@
                         Others: OthersTF.Text,
                         Hobbies: hobbyTF.Text
                     }
-                );
+                ));
                 
                 
                 SubmitForm(PrimaryEduForm);
