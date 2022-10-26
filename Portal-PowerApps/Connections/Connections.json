@@ -11,6 +11,18 @@
     "datasets": {
       "https://cloudexpertz102.sharepoint.com/sites/IBAAdmissionPortal": {
         "dataSources": {
+          "Academics": {
+            "tableName": "a881767e-6358-4eb7-991d-d40ec3ff1d60"
+          },
+          "Documents": {
+            "tableName": "e311245b-6d94-4d57-96fd-afcfc0d2f6bd"
+          },
+          "PrimaryEducationList": {
+            "tableName": "a881767e-6358-4eb7-991d-d40ec3ff1d60"
+          },
+          "SecondaryEducationList": {
+            "tableName": "1bfc24b1-5b4f-40f5-a320-ad1dcf3105ff"
+          },
           "Users": {
             "tableName": "7f9a42ee-a868-4b95-927f-1bc1efe2dd29"
           }
@@ -18,7 +30,11 @@
       }
     },
     "dataSources": [
-      "Users"
+      "Users",
+      "Documents",
+      "Academics",
+      "PrimaryEducationList",
+      "SecondaryEducationList"
     ],
     "dependencies": {},
     "dependents": [],
