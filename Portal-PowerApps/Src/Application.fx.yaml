@@ -714,6 +714,18 @@
             Y: =908
             ZIndex: =79
 
+    Label_11 As label:
+        DisplayMode: =Edit
+        FontWeight: =FontWeight.Bold
+        Height: =67
+        Size: =15
+        Text: ="First Name"
+        Visible: =page=1
+        Width: =268
+        X: =43
+        Y: =319
+        ZIndex: =84
+
     PersonalDetailsSection As group:
         Height: =5
         Width: =5
@@ -723,7 +735,7 @@
 
         PersonelDetailsLabel As label:
             Align: =Align.Center
-            DisplayMode: =If(submitted=true, Disabled, Edit)
+            DisplayMode: =Edit
             FontWeight: =FontWeight.Bold
             Height: =50
             Size: =20
@@ -758,7 +770,7 @@
             Visible: =page=1
             Width: =268
             X: =45
-            Y: =358
+            Y: =377
             ZIndex: =10
 
         EmailTF_1 As text:
@@ -777,7 +789,7 @@
             Visible: =page=1
             Width: =268
             X: =45
-            Y: =442
+            Y: =464
             ZIndex: =11
 
         LastNameTF_1 As text:
@@ -796,7 +808,7 @@
             Visible: =page=1
             Width: =268
             X: =330
-            Y: =358
+            Y: =374
             ZIndex: =12
 
         PhoneNumberTxt_1 As text:
@@ -814,8 +826,8 @@
             Size: =15
             Visible: =page=1
             Width: =268
-            X: =330
-            Y: =442
+            X: =331
+            Y: =464
             ZIndex: =14
 
         CNICTF As text:
@@ -838,7 +850,7 @@
             ZIndex: =22
 
         Label As label:
-            DisplayMode: =If(submitted=true, Disabled, Edit)
+            DisplayMode: =Edit
             FontWeight: =FontWeight.Bold
             Height: =67
             Size: =15
@@ -869,7 +881,7 @@
             ZIndex: =24
 
         Label_1 As label:
-            DisplayMode: =If(submitted=true, Disabled, Edit)
+            DisplayMode: =Edit
             FontWeight: =FontWeight.Bold
             Height: =67
             Size: =15
@@ -900,7 +912,7 @@
             ZIndex: =28
 
         Label_3 As label:
-            DisplayMode: =If(submitted=true, Disabled, Edit)
+            DisplayMode: = Edit
             FontWeight: =FontWeight.Bold
             Height: =45
             Size: =15
@@ -931,7 +943,7 @@
             ZIndex: =30
 
         Label_4 As label:
-            DisplayMode: =If(submitted=true, Disabled, Edit)
+            DisplayMode: =Edit
             FontWeight: =FontWeight.Bold
             Height: =45
             Size: =15
@@ -943,7 +955,7 @@
             ZIndex: =31
 
         Label_2 As label:
-            DisplayMode: =If(submitted=true, Disabled, Edit)
+            DisplayMode: =Edit
             FontWeight: =FontWeight.Bold
             Height: =67
             Size: =15
@@ -1011,4 +1023,40 @@
             X: =544
             Y: =272
             ZIndex: =83
+
+    Label_12 As label:
+        DisplayMode: =Edit
+        FontWeight: =FontWeight.Bold
+        Height: =67
+        Size: =15
+        Text: ="Last Name"
+        Visible: =page=1
+        Width: =268
+        X: =330
+        Y: =315
+        ZIndex: =85
+
+    Label_13 As label:
+        DisplayMode: =Edit
+        FontWeight: =FontWeight.Bold
+        Height: =67
+        Size: =15
+        Text: ="Email"
+        Visible: =page=1
+        Width: =268
+        X: =46
+        Y: =413
+        ZIndex: =86
+
+    Label_14 As label:
+        DisplayMode: =Edit
+        FontWeight: =FontWeight.Bold
+        Height: =67
+        Size: =15
+        Text: ="Phone Number"
+        Visible: =page=1
+        Width: =268
+        X: =330
+        Y: =415
+        ZIndex: =87
 
