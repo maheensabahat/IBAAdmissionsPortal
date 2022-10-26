@@ -1106,6 +1106,7 @@
     PrimaryEduForm As form:
         AcceptsFocus: =true
         DataSource: =PrimaryEducationList
+        DefaultMode: =FormMode.New
         Height: =313
         Width: =640
         Y: =247
@@ -1217,10 +1218,10 @@
             DataCardValue16 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 ChevronBackground: =RGBA(140, 4, 4, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(140.25, 4.090617, 4.090617, 1), -20%)
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Fill: =RGBA(0, 0, 0, 0)
                 Height: =43
                 Items: =Choices([@PrimaryEducationList].'Olevel/Matric')
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -1336,9 +1337,10 @@
                 Y: =DataCardKey19.Y
                 ZIndex: =4
 
-    Form6 As form:
+    SecondEduSection As form:
         DataSource: =SecondaryEducationList
-        Height: =340
+        DefaultMode: =FormMode.New
+        Height: =515
         Width: =640
         Y: =585
         ZIndex: =89
