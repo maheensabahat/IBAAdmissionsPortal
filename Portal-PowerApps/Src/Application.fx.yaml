@@ -719,7 +719,7 @@
                     DOB: Text(DOB.SelectedDate),
                     City: CityTF.Text,
                     Country: CountryTF.Text,
-                    ProgramsInterestedIn: ProgramsIntDropDown.SelectedText
+                    ProgramsInterestedIn: ProgramsIntDropDown.SelectedText.Value
                 }
             );
             UpdateContext({DisplayMode: DisplayMode.Disabled});
