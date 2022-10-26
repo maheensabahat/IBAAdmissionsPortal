@@ -1299,6 +1299,7 @@
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DisplayMode: =Parent.DisplayMode
                 Height: =145
+                HoverFill: =RGBA(220, 153, 153, 1)
                 IsInDataCard: =true
                 Items: =Parent.Default
                 MaxAttachments: =1
@@ -1306,6 +1307,7 @@
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PaddingRight: =5
                 PaddingTop: =5
+                PressedFill: =RGBA(203, 102, 102, 1)
                 Size: =15
                 Tooltip: =Parent.DisplayName
                 Width: =360
@@ -1535,6 +1537,7 @@
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DisplayMode: =Parent.DisplayMode
                 Height: =145
+                HoverFill: =RGBA(220, 153, 153, 1)
                 IsInDataCard: =true
                 Items: =Parent.Default
                 MaxAttachments: =1
@@ -1542,6 +1545,7 @@
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PaddingRight: =5
                 PaddingTop: =5
+                PressedFill: =RGBA(220, 153, 153, 1)
                 Size: =15
                 Tooltip: =Parent.DisplayName
                 Width: =360
