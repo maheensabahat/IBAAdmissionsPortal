@@ -400,6 +400,8 @@
                         isCurrent: page=4
                     }
                 );
+                
+                If(page = 3,
                 Patch(
                     Extracurriculars,
                     Defaults(Extracurriculars),
@@ -409,6 +411,7 @@
                         Hobbies: hobbyTF.Text
                     }
                 );
+                
                 
                 SubmitForm(PrimaryEduForm);
                 SubmitForm(SecondEduForm);
