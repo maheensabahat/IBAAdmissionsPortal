@@ -17,6 +17,9 @@
           "Documents": {
             "tableName": "e311245b-6d94-4d57-96fd-afcfc0d2f6bd"
           },
+          "Extracurriculars": {
+            "tableName": "5b6f72d8-e31c-4520-a21a-4303a8cb3e40"
+          },
           "PrimaryEducationList": {
             "tableName": "a881767e-6358-4eb7-991d-d40ec3ff1d60"
           },
@@ -34,7 +37,8 @@
       "Documents",
       "Academics",
       "PrimaryEducationList",
-      "SecondaryEducationList"
+      "SecondaryEducationList",
+      "Extracurriculars"
     ],
     "dependencies": {},
     "dependents": [],

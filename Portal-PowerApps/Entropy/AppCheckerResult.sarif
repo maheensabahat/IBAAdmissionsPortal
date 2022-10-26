@@ -3563,19 +3563,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Application.sportTF_1.AccessibleLabel"
+                  "fullyQualifiedName": "Application.OthersTF.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Application.sportTF_1.AccessibleLabel",
+                  "fullyQualifiedName": "Application.OthersTF.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Application",
-                "type": "Application.sportTF_1"
+                "type": "Application.OthersTF"
               }
             }
           ],

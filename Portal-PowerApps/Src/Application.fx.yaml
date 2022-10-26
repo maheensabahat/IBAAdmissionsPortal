@@ -27,7 +27,6 @@
                 isCurrent: false
             }
         );
-        
         Set(page, 1);
         Set(submitted, false);
 
@@ -333,7 +332,7 @@
             Y: =764
             ZIndex: =56
 
-        sportTF_1 As text:
+        OthersTF As text:
             Default: =""
             Height: =157
             HintText: ="Other acheivements"
@@ -372,7 +371,7 @@
             Height: =60
             HoverBorderColor: =RGBA(238, 204, 204, 1)
             HoverFill: =ColorFade(RGBA(140.25, 4.090617, 4.090617, 1), -10%)
-            OnSelect: |
+            OnSelect: |+
                 =Set(page, page+1);
                 ClearCollect(
                     collSteps,
@@ -401,9 +400,21 @@
                         isCurrent: page=4
                     }
                 );
+                Patch(
+                    Extracurriculars,
+                    Defaults(Extracurriculars),
+                    {   Title: Last(User).Title,
+                        Sports: sportTF.Text,
+                        Others: OthersTF.Text,
+                        Hobbies: hobbyTF.Text
+                    }
+                );
                 
                 SubmitForm(PrimaryEduForm);
                 SubmitForm(SecondEduForm);
+                
+                
+                
             PressedBorderColor: =RGBA(203, 102, 102, 1)
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =ColorFade(RGBA(203, 102, 102, 100), -10%)
