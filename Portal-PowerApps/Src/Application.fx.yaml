@@ -263,11 +263,11 @@
 
         DOB As datepicker:
             BorderColor: =RGBA(140, 4, 4, 1)
-            Color: =RGBA(128, 128, 128, 1)
+            FontWeight: =FontWeight.Semibold
             Height: =57
             IconBackground: |
                 =RGBA(140, 4, 4, 1)
-            Size: =24
+            Size: =15
             StartYear: =2000
             Visible: =page=1
             Width: =269
