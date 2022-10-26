@@ -807,15 +807,96 @@
         Y: =474
         ZIndex: =71
 
-    DataTable1 As dataTable.datatable:
-        BorderStyle: =BorderStyle.Solid
-        DisplayMode: =DisplayMode.Edit
-        Fill: =RGBA(0, 0, 0, 0)
-        HeadingSize: =21
-        Height: =500
-        Size: =21
-        Width: =640
-        X: =0
-        Y: =587
+    educationType1_1 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =27
+        Size: =15
+        Text: ="Inter/Alevel"
+        X: =90
+        Y: =635
         ZIndex: =72
+
+    educationType1_2 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =27
+        Size: =15
+        Text: ="SAT Scores"
+        X: =90
+        Y: =794
+        ZIndex: =73
+
+    Group1 As group:
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =60
+        ZIndex: =80
+
+        AptitudeTestLabel_18 As label:
+            Color: =RGBA(140, 4, 4, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =22
+            Size: =15
+            Text: ="Your Total Score"
+            Width: =174
+            X: =94
+            Y: =863
+            ZIndex: =74
+
+        SatExemptionResult_2 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =97
+            Size: =60
+            Text: ="1300"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =212
+            X: =90
+            Y: =877
+            ZIndex: =75
+
+        AptitudeTestLabel_9 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =35
+            Size: =20
+            Text: |-
+                ="Math:"
+            Width: =98
+            X: =358
+            Y: =857
+            ZIndex: =76
+
+        Math_6 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =28
+            Size: =20
+            Text: |-
+                ="588
+                "
+            Width: =64
+            X: =480
+            Y: =861
+            ZIndex: =77
+
+        AptitudeTestLabel_17 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =35
+            Size: =20
+            Text: |-
+                ="English:"
+            Width: =130
+            X: =358
+            Y: =906
+            ZIndex: =78
+
+        Math_7 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =28
+            Size: =20
+            Text: |-
+                ="588
+                "
+            Width: =64
+            X: =480
+            Y: =908
+            ZIndex: =79
 
