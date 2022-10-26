@@ -706,19 +706,21 @@
         Height: =60
         HoverBorderColor: =RGBA(238, 204, 204, 1)
         HoverFill: =ColorFade(RGBA(140.25, 4.090617, 4.090617, 1), -10%)
-        OnSelect: |-
+        OnSelect: |
             =Patch(
-                        Users,
-                        LookUp(Users, Title = Last(User).Title),
-                        {
-                                CNIC: CNICTF.Text,
-                                Address: AddressTF,
-                                DOB: Text(DOB.SelectedDate),
-            
-            
-            
-                        }
-                    );
+                Users,
+                LookUp(
+                    Users,
+                    Title = Last(User).Title
+                ),
+                {
+                    CNIC: CNICTF.Text,
+                    Address: AddressTF,
+                    DOB: Text(DOB.SelectedDate),
+                    City: CityTF.Text,
+                    Country: CountryTF
+                }
+            );
         PressedBorderColor: =RGBA(203, 102, 102, 1)
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =ColorFade(RGBA(203, 102, 102, 100), -10%)
