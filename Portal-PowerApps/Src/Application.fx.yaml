@@ -1,26 +1,34 @@
 "Application As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
-    OnVisible: =
-
-    IBA_Logo As image:
-        Height: =80
-        Image: ='Institute_of_Business_Administration,_Karachi_(logo)'
-        Width: =80
-        X: =35
-        Y: =40
-        ZIndex: =3
-
-    ProgressIndicator_3 As ProgressIndicator_2:
-        applicationSteps: =collSteps
-        Fill: =RGBA(255, 255, 255, 1)
-        Y: =163
-        ZIndex: =3
-
-    LogoutButton As group:
-        Height: =5
-        Width: =5
-        X: =60
-        Y: =60
-        ZIndex: =6
+    OnVisible: |-
+        =ClearCollect(
+            collSteps,
+            {
+                step:1,
+                stepText: "Personal",
+                stepFlag: 1,
+                isCurrent: true
+            },
+            {
+                step:2,
+                stepText: "Academics",
+                stepFlag: 1,
+                isCurrent: false
+            },
+            {
+                step:3,
+                stepText: "Extra-curriculars",
+                stepFlag: 1,
+                isCurrent: false
+            },
+            {
+                step:4,
+                stepText: "Summary",
+                stepFlag: 1,
+                isCurrent: false
+            }
+        );
+        
+        Set(page, 1);
 
     PersonalSection As group:
         Height: =5
@@ -35,32 +43,11 @@
             Height: =50
             Size: =20
             Text: ="Personal Details"
-            Visible: =false
+            Visible: =page=1
             Width: =245
             X: =194
             Y: =277
             ZIndex: =8
-
-        NextButton As button:
-            Fill: =RGBA(140, 4, 4, 1)
-            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-            Height: =63
-            HoverBorderColor: =RGBA(238, 204, 204, 1)
-            HoverFill: =ColorFade(RGBA(140.25, 4.090617, 4.090617, 1), -10%)
-            OnSelect: =
-            PressedBorderColor: =RGBA(203, 102, 102, 1)
-            PressedColor: =RGBA(255, 255, 255, 1)
-            PressedFill: =ColorFade(RGBA(203, 102, 102, 100), -10%)
-            RadiusBottomLeft: =20
-            RadiusBottomRight: =20
-            RadiusTopLeft: =20
-            RadiusTopRight: =20
-            Text: ="Save and Continue"
-            Visible: =false
-            Width: =245
-            X: =194
-            Y: =1001
-            ZIndex: =9
 
         FirstNameTF_1 As text:
             BorderColor: =RGBA(203, 102, 102, 1)
@@ -83,7 +70,7 @@
             RadiusTopLeft: =10
             RadiusTopRight: =10
             Size: =15
-            Visible: =false
+            Visible: =page=1
             Width: =268
             X: =45
             Y: =358
@@ -102,7 +89,7 @@
             RadiusTopLeft: =10
             RadiusTopRight: =10
             Size: =15
-            Visible: =false
+            Visible: =page=1
             Width: =268
             X: =45
             Y: =442
@@ -121,7 +108,7 @@
             RadiusTopLeft: =10
             RadiusTopRight: =10
             Size: =15
-            Visible: =false
+            Visible: =page=1
             Width: =268
             X: =330
             Y: =358
@@ -140,7 +127,7 @@
             RadiusTopLeft: =10
             RadiusTopRight: =10
             Size: =15
-            Visible: =false
+            Visible: =page=1
             Width: =268
             X: =330
             Y: =442
@@ -159,7 +146,7 @@
             RadiusTopLeft: =10
             RadiusTopRight: =10
             Size: =15
-            Visible: =false
+            Visible: =page=1
             Width: =268
             X: =43
             Y: =569
@@ -170,7 +157,7 @@
             Height: =67
             Size: =15
             Text: ="CNIC/Passport Number"
-            Visible: =false
+            Visible: =page=1
             Width: =268
             X: =43
             Y: =510
@@ -189,7 +176,7 @@
             RadiusTopLeft: =10
             RadiusTopRight: =10
             Size: =15
-            Visible: =false
+            Visible: =page=1
             Width: =552
             X: =46
             Y: =689
@@ -200,7 +187,7 @@
             Height: =67
             Size: =15
             Text: ="Address"
-            Visible: =false
+            Visible: =page=1
             Width: =268
             X: =43
             Y: =630
@@ -219,7 +206,7 @@
             RadiusTopLeft: =10
             RadiusTopRight: =10
             Size: =15
-            Visible: =false
+            Visible: =page=1
             Width: =268
             X: =340
             Y: =825
@@ -230,7 +217,7 @@
             Height: =45
             Size: =15
             Text: ="Country"
-            Visible: =false
+            Visible: =page=1
             Width: =127
             X: =337
             Y: =782
@@ -249,7 +236,7 @@
             RadiusTopLeft: =10
             RadiusTopRight: =10
             Size: =15
-            Visible: =false
+            Visible: =page=1
             Width: =260
             X: =43
             Y: =825
@@ -260,7 +247,7 @@
             Height: =45
             Size: =15
             Text: ="City"
-            Visible: =false
+            Visible: =page=1
             Width: =127
             X: =43
             Y: =782
@@ -271,7 +258,7 @@
             Height: =67
             Size: =15
             Text: ="Date of Birth"
-            Visible: =false
+            Visible: =page=1
             Width: =268
             X: =330
             Y: =515
@@ -285,22 +272,11 @@
                 =RGBA(140, 4, 4, 1)
             Size: =24
             StartYear: =2000
-            Visible: =false
+            Visible: =page=1
             Width: =269
             X: =330
             Y: =577
             ZIndex: =34
-
-    extracurricullarLabel As label:
-        Align: =Align.Center
-        FontWeight: =FontWeight.Bold
-        Height: =34
-        Size: =20
-        Text: ="Extra Curricular"
-        Width: =276
-        X: =178
-        Y: =270
-        ZIndex: =51
 
     AcademicSection As group:
         Height: =5
@@ -315,7 +291,7 @@
             Height: =41
             Size: =20
             Text: ="Academics"
-            Visible: =false
+            Visible: =page=2
             Width: =216
             X: =208
             Y: =247
@@ -326,7 +302,7 @@
             Height: =33
             Size: =15
             Text: ="Aptitude test"
-            Visible: =false
+            Visible: =page=2
             Width: =159
             X: =49
             Y: =315
@@ -337,7 +313,7 @@
             Height: =38
             Size: =15
             Text: ="Olevels / Matric"
-            Visible: =false
+            Visible: =page=2
             Width: =264
             X: =49
             Y: =510
@@ -348,7 +324,7 @@
             Height: =33
             Size: =15
             Text: ="A-Levels / Inter"
-            Visible: =false
+            Visible: =page=2
             Width: =209
             X: =46
             Y: =709
@@ -358,7 +334,7 @@
             Height: =55
             Size: =10
             Text: ="Please upload in *jpg, *png or *pdf files."
-            Visible: =false
+            Visible: =page=2
             Width: =223
             X: =376
             Y: =438
@@ -369,7 +345,7 @@
             Items: =["O-levels","Matriculation"]
             RadioSize: =20
             Size: =21
-            Visible: =false
+            Visible: =page=2
             Width: =239
             X: =98
             Y: =571
@@ -380,7 +356,7 @@
             Items: =["A-levels","Intermediate"]
             RadioSize: =20
             Size: =21
-            Visible: =false
+            Visible: =page=2
             Width: =242
             X: =98
             Y: =764
@@ -392,7 +368,7 @@
             Padding: =10
             Size: =18
             Text: ="Upload report"
-            Visible: =false
+            Visible: =page=2
             Width: =223
             X: =375
             Y: =398
@@ -402,7 +378,7 @@
             Height: =55
             Size: =15
             Text: ="Only SAT are accepted."
-            Visible: =false
+            Visible: =page=2
             Width: =240
             X: =115
             Y: =366
@@ -413,7 +389,7 @@
             Fill: =RGBA(168, 0, 0, 1)
             Height: =38
             Icon: =Icon.AddDocument
-            Visible: =false
+            Visible: =page=2
             Width: =35
             X: =389
             Y: =398
@@ -425,7 +401,7 @@
             Padding: =10
             Size: =18
             Text: ="Upload report"
-            Visible: =false
+            Visible: =page=2
             Width: =223
             X: =375
             Y: =574
@@ -436,7 +412,7 @@
             Fill: =RGBA(168, 0, 0, 1)
             Height: =38
             Icon: =Icon.AddDocument
-            Visible: =false
+            Visible: =page=2
             Width: =35
             X: =389
             Y: =574
@@ -448,7 +424,7 @@
             Padding: =10
             Size: =18
             Text: ="Upload report"
-            Visible: =false
+            Visible: =page=2
             Width: =223
             X: =376
             Y: =762
@@ -459,7 +435,7 @@
             Fill: =RGBA(168, 0, 0, 1)
             Height: =38
             Icon: =Icon.AddDocument
-            Visible: =false
+            Visible: =page=2
             Width: =35
             X: =390
             Y: =762
@@ -469,7 +445,7 @@
             Height: =55
             Size: =10
             Text: ="Please upload in *jpg, *png or *pdf files."
-            Visible: =false
+            Visible: =page=2
             Width: =223
             X: =376
             Y: =618
@@ -479,112 +455,221 @@
             Height: =55
             Size: =10
             Text: ="Please upload in *jpg, *png or *pdf files."
-            Visible: =false
+            Visible: =page=2
             Width: =223
             X: =376
             Y: =802
             ZIndex: =50
 
-    extracurricullarLabel_1 As label:
-        FontWeight: =FontWeight.Bold
-        Height: =33
-        Size: =18
-        Text: ="Hobbies"
-        Width: =221
-        X: =78
-        Y: =318
-        ZIndex: =52
+    ExtraCurricularSection As group:
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =60
+        ZIndex: =60
 
-    hobbyTF As text:
-        Default: =""
-        Height: =157
-        HintText: ="My hobbies"
-        Mode: =TextMode.MultiLine
-        Size: =15
-        Width: =495
-        X: =78
-        Y: =358
-        ZIndex: =53
+        extracurricullarLabel As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Bold
+            Height: =34
+            Size: =20
+            Text: ="Extra Curricular"
+            Visible: =page=3
+            Width: =276
+            X: =178
+            Y: =270
+            ZIndex: =51
 
-    extracurricullarLabel_2 As label:
-        FontWeight: =FontWeight.Bold
-        Height: =33
-        Size: =18
-        Text: ="Sports"
-        Width: =221
-        X: =78
-        Y: =545
-        ZIndex: =54
+        extracurricullarLabel_1 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =33
+            Size: =18
+            Text: ="Hobbies"
+            Visible: =page=3
+            Width: =221
+            X: =78
+            Y: =318
+            ZIndex: =52
 
-    sportTF As text:
-        Default: =""
-        Height: =157
-        HintText: ="My Sport acheivements"
-        Mode: =TextMode.MultiLine
-        Size: =15
-        Width: =495
-        X: =78
-        Y: =585
-        ZIndex: =55
+        hobbyTF As text:
+            Default: =""
+            Height: =157
+            HintText: ="My hobbies"
+            Mode: =TextMode.MultiLine
+            Size: =15
+            Visible: =page=3
+            Width: =495
+            X: =78
+            Y: =358
+            ZIndex: =53
 
-    extracurricullarLabel_3 As label:
-        FontWeight: =FontWeight.Bold
-        Height: =33
-        Size: =18
-        Text: ="Others"
-        Width: =221
-        X: =78
-        Y: =764
-        ZIndex: =56
+        extracurricullarLabel_2 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =33
+            Size: =18
+            Text: ="Sports"
+            Visible: =page=3
+            Width: =221
+            X: =78
+            Y: =545
+            ZIndex: =54
 
-    sportTF_1 As text:
-        Default: =""
-        Height: =157
-        HintText: ="Other acheivements"
-        Mode: =TextMode.MultiLine
-        Size: =15
-        Width: =495
-        X: =78
-        Y: =804
-        ZIndex: =57
+        sportTF As text:
+            Default: =""
+            Height: =157
+            HintText: ="My Sport acheivements"
+            Mode: =TextMode.MultiLine
+            Size: =15
+            Visible: =page=3
+            Width: =495
+            X: =78
+            Y: =585
+            ZIndex: =55
 
-    NextBtn_1 As button:
-        Fill: =RGBA(140, 4, 4, 1)
-        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-        Height: =60
-        HoverBorderColor: =RGBA(238, 204, 204, 1)
-        HoverFill: =ColorFade(RGBA(140.25, 4.090617, 4.090617, 1), -10%)
-        OnSelect: =
-        PressedBorderColor: =RGBA(203, 102, 102, 1)
-        PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =ColorFade(RGBA(203, 102, 102, 100), -10%)
-        RadiusBottomLeft: =20
-        RadiusBottomRight: =20
-        RadiusTopLeft: =20
-        RadiusTopRight: =20
-        Text: ="Next"
-        Width: =175
-        X: =400
-        Y: =1004
-        ZIndex: =58
+        extracurricullarLabel_3 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =33
+            Size: =18
+            Text: ="Others"
+            Visible: =page=3
+            Width: =221
+            X: =78
+            Y: =764
+            ZIndex: =56
 
-    NextBtn_2 As button:
-        Fill: =RGBA(140, 4, 4, 1)
-        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-        Height: =60
-        HoverBorderColor: =RGBA(238, 204, 204, 1)
-        HoverFill: =ColorFade(RGBA(140.25, 4.090617, 4.090617, 1), -10%)
-        OnSelect: =
-        PressedBorderColor: =RGBA(203, 102, 102, 1)
-        PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =ColorFade(RGBA(203, 102, 102, 100), -10%)
-        RadiusBottomLeft: =20
-        RadiusBottomRight: =20
-        RadiusTopLeft: =20
-        RadiusTopRight: =20
-        Text: ="Previous"
-        Width: =175
-        X: =78
-        Y: =1004
-        ZIndex: =59
+        sportTF_1 As text:
+            Default: =""
+            Height: =157
+            HintText: ="Other acheivements"
+            Mode: =TextMode.MultiLine
+            Size: =15
+            Visible: =page=3
+            Width: =495
+            X: =78
+            Y: =804
+            ZIndex: =57
+
+    PageLayout As group:
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =60
+        ZIndex: =60
+
+        IBA_Logo As image:
+            Height: =80
+            Image: ='Institute_of_Business_Administration,_Karachi_(logo)'
+            Width: =80
+            X: =35
+            Y: =40
+            ZIndex: =3
+
+        ProgressIndicator_3 As ProgressIndicator_2:
+            applicationSteps: =collSteps
+            Fill: =RGBA(255, 255, 255, 1)
+            Y: =163
+            ZIndex: =3
+
+        LogoutButton As group:
+            Height: =5
+            Width: =5
+            X: =60
+            Y: =60
+            ZIndex: =6
+
+        NextButtonNav As button:
+            Fill: =RGBA(140, 4, 4, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =60
+            HoverBorderColor: =RGBA(238, 204, 204, 1)
+            HoverFill: =ColorFade(RGBA(140.25, 4.090617, 4.090617, 1), -10%)
+            OnSelect: |-
+                =Set(page, page+1);
+                ClearCollect(
+                    collSteps,
+                    {
+                        step:1,
+                        stepText: "Personal",
+                        stepFlag: 1,
+                        isCurrent: page=1
+                    },
+                    {
+                        step:2,
+                        stepText: "Academics",
+                        stepFlag: 1,
+                        isCurrent: page=2
+                    },
+                    {
+                        step:3,
+                        stepText: "Extra-curriculars",
+                        stepFlag: 1,
+                        isCurrent: page=3
+                    },
+                    {
+                        step:4,
+                        stepText: "Summary",
+                        stepFlag: 1,
+                        isCurrent: page=4
+                    }
+                );
+            PressedBorderColor: =RGBA(203, 102, 102, 1)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =ColorFade(RGBA(203, 102, 102, 100), -10%)
+            RadiusBottomLeft: =20
+            RadiusBottomRight: =20
+            RadiusTopLeft: =20
+            RadiusTopRight: =20
+            Text: ="Next"
+            Width: =175
+            X: =400
+            Y: =1004
+            ZIndex: =58
+
+        PrevButtonNav As button:
+            Fill: =RGBA(140, 4, 4, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =60
+            HoverBorderColor: =RGBA(238, 204, 204, 1)
+            HoverFill: =ColorFade(RGBA(140.25, 4.090617, 4.090617, 1), -10%)
+            OnSelect: |-
+                =Set(page, page-1);
+                ClearCollect(
+                    collSteps,
+                    {
+                        step:1,
+                        stepText: "Personal",
+                        stepFlag: 1,
+                        isCurrent: page=1
+                    },
+                    {
+                        step:2,
+                        stepText: "Academics",
+                        stepFlag: 1,
+                        isCurrent: page=2
+                    },
+                    {
+                        step:3,
+                        stepText: "Extra-curriculars",
+                        stepFlag: 1,
+                        isCurrent: page=3
+                    },
+                    {
+                        step:4,
+                        stepText: "Summary",
+                        stepFlag: 1,
+                        isCurrent: page=4
+                    }
+                );
+            PressedBorderColor: =RGBA(203, 102, 102, 1)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =ColorFade(RGBA(203, 102, 102, 100), -10%)
+            RadiusBottomLeft: =20
+            RadiusBottomRight: =20
+            RadiusTopLeft: =20
+            RadiusTopRight: =20
+            Text: ="Previous"
+            Width: =175
+            X: =78
+            Y: =1004
+            ZIndex: =59
 
