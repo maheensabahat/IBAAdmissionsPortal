@@ -1107,7 +1107,7 @@
         AcceptsFocus: =true
         DataSource: =PrimaryEducationList
         DefaultMode: =FormMode.New
-        Height: =313
+        Height: =327
         Width: =640
         Y: =247
         ZIndex: =88
