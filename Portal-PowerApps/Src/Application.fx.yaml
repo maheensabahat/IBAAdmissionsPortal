@@ -22,18 +22,7 @@
         Y: =60
         ZIndex: =6
 
-    AcademicsLabel As label:
-        Align: =Align.Center
-        FontWeight: =FontWeight.Bold
-        Height: =41
-        Size: =20
-        Text: ="Academics"
-        Width: =216
-        X: =208
-        Y: =247
-        ZIndex: =35
-
-    Step1 As group:
+    PersonalSection As group:
         Height: =5
         Width: =5
         X: =60
@@ -302,92 +291,300 @@
             Y: =577
             ZIndex: =34
 
-    AptitudeTestLabel As label:
+    extracurricullarLabel As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Bold
+        Height: =34
+        Size: =20
+        Text: ="Extra Curricular"
+        Width: =276
+        X: =178
+        Y: =270
+        ZIndex: =51
+
+    AcademicSection As group:
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =60
+        ZIndex: =51
+
+        AcademicsLabel As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Bold
+            Height: =41
+            Size: =20
+            Text: ="Academics"
+            Visible: =false
+            Width: =216
+            X: =208
+            Y: =247
+            ZIndex: =35
+
+        AptitudeTestLabel As label:
+            FontWeight: =FontWeight.Bold
+            Height: =33
+            Size: =15
+            Text: ="Aptitude test"
+            Visible: =false
+            Width: =159
+            X: =49
+            Y: =315
+            ZIndex: =36
+
+        OlevelLabel As label:
+            FontWeight: =FontWeight.Bold
+            Height: =38
+            Size: =15
+            Text: ="Olevels / Matric"
+            Visible: =false
+            Width: =264
+            X: =49
+            Y: =510
+            ZIndex: =37
+
+        AlevelsLabel As label:
+            FontWeight: =FontWeight.Bold
+            Height: =33
+            Size: =15
+            Text: ="A-Levels / Inter"
+            Visible: =false
+            Width: =209
+            X: =46
+            Y: =709
+            ZIndex: =38
+
+        uploadLabel As label:
+            Height: =55
+            Size: =10
+            Text: ="Please upload in *jpg, *png or *pdf files."
+            Visible: =false
+            Width: =223
+            X: =376
+            Y: =438
+            ZIndex: =39
+
+        eductionType1 As radio:
+            Height: =99
+            Items: =["O-levels","Matriculation"]
+            RadioSize: =20
+            Size: =21
+            Visible: =false
+            Width: =239
+            X: =98
+            Y: =571
+            ZIndex: =40
+
+        educationType2 As radio:
+            Height: =99
+            Items: =["A-levels","Intermediate"]
+            RadioSize: =20
+            Size: =21
+            Visible: =false
+            Width: =242
+            X: =98
+            Y: =764
+            ZIndex: =41
+
+        importSAT As import:
+            Align: =Align.Right
+            Fill: =RGBA(168, 0, 0, 1)
+            Padding: =10
+            Size: =18
+            Text: ="Upload report"
+            Visible: =false
+            Width: =223
+            X: =375
+            Y: =398
+            ZIndex: =42
+
+        AptitudeTestLabel_6 As label:
+            Height: =55
+            Size: =15
+            Text: ="Only SAT are accepted."
+            Visible: =false
+            Width: =240
+            X: =115
+            Y: =366
+            ZIndex: =43
+
+        Icon4 As icon.AddDocument:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(168, 0, 0, 1)
+            Height: =38
+            Icon: =Icon.AddDocument
+            Visible: =false
+            Width: =35
+            X: =389
+            Y: =398
+            ZIndex: =44
+
+        importEducation1 As import:
+            Align: =Align.Right
+            Fill: =RGBA(168, 0, 0, 1)
+            Padding: =10
+            Size: =18
+            Text: ="Upload report"
+            Visible: =false
+            Width: =223
+            X: =375
+            Y: =574
+            ZIndex: =45
+
+        Icon4_2 As icon.AddDocument:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(168, 0, 0, 1)
+            Height: =38
+            Icon: =Icon.AddDocument
+            Visible: =false
+            Width: =35
+            X: =389
+            Y: =574
+            ZIndex: =46
+
+        importEducation2 As import:
+            Align: =Align.Right
+            Fill: =RGBA(168, 0, 0, 1)
+            Padding: =10
+            Size: =18
+            Text: ="Upload report"
+            Visible: =false
+            Width: =223
+            X: =376
+            Y: =762
+            ZIndex: =47
+
+        Icon4_3 As icon.AddDocument:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(168, 0, 0, 1)
+            Height: =38
+            Icon: =Icon.AddDocument
+            Visible: =false
+            Width: =35
+            X: =390
+            Y: =762
+            ZIndex: =48
+
+        uploadLabel_1 As label:
+            Height: =55
+            Size: =10
+            Text: ="Please upload in *jpg, *png or *pdf files."
+            Visible: =false
+            Width: =223
+            X: =376
+            Y: =618
+            ZIndex: =49
+
+        uploadLabel_2 As label:
+            Height: =55
+            Size: =10
+            Text: ="Please upload in *jpg, *png or *pdf files."
+            Visible: =false
+            Width: =223
+            X: =376
+            Y: =802
+            ZIndex: =50
+
+    extracurricullarLabel_1 As label:
         FontWeight: =FontWeight.Bold
         Height: =33
-        Size: =15
-        Text: ="Aptitude test"
-        Width: =159
-        X: =49
-        Y: =315
-        ZIndex: =36
-
-    OlevelLabel As label:
-        FontWeight: =FontWeight.Bold
-        Height: =38
-        Size: =15
-        Text: ="Olevels / Matric"
-        Width: =264
-        X: =49
-        Y: =510
-        ZIndex: =37
-
-    AlevelsLabel As label:
-        FontWeight: =FontWeight.Bold
-        Height: =33
-        Size: =15
-        Text: ="A-Levels / Inter"
-        Width: =209
-        X: =46
-        Y: =709
-        ZIndex: =38
-
-    AptitudeTestLabel_1 As label:
-        Height: =55
-        Size: =10
-        Text: ="Please upload in *jpg, *png or *pdf files."
-        Width: =240
-        X: =115
-        Y: =424
-        ZIndex: =39
-
-    eduction1type As radio:
-        Height: =99
-        Items: =["O-levels","Matriculation"]
-        RadioSize: =20
-        Size: =21
-        Width: =239
-        X: =98
-        Y: =571
-        ZIndex: =40
-
-    eduction1type_1 As radio:
-        Height: =99
-        Items: =["A-levels","Intermediate"]
-        RadioSize: =20
-        Size: =21
-        Width: =242
-        X: =98
-        Y: =764
-        ZIndex: =41
-
-    Import1 As import:
-        Align: =Align.Right
-        Fill: =RGBA(168, 0, 0, 1)
-        Padding: =10
         Size: =18
-        Text: ="Upload report"
-        Width: =223
-        X: =375
-        Y: =398
-        ZIndex: =42
+        Text: ="Hobbies"
+        Width: =221
+        X: =78
+        Y: =318
+        ZIndex: =52
 
-    AptitudeTestLabel_6 As label:
-        Height: =55
+    hobbyTF As text:
+        Default: =""
+        Height: =157
+        HintText: ="My hobbies"
+        Mode: =TextMode.MultiLine
         Size: =15
-        Text: ="Only SAT are accepted."
-        Width: =240
-        X: =115
-        Y: =366
-        ZIndex: =43
+        Width: =495
+        X: =78
+        Y: =358
+        ZIndex: =53
 
-    Icon4 As icon.AddDocument:
-        Color: =RGBA(255, 255, 255, 1)
-        Fill: =RGBA(168, 0, 0, 1)
-        Height: =38
-        Icon: =Icon.AddDocument
-        Width: =35
-        X: =389
-        Y: =398
-        ZIndex: =44
+    extracurricullarLabel_2 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =33
+        Size: =18
+        Text: ="Sports"
+        Width: =221
+        X: =78
+        Y: =545
+        ZIndex: =54
+
+    sportTF As text:
+        Default: =""
+        Height: =157
+        HintText: ="My Sport acheivements"
+        Mode: =TextMode.MultiLine
+        Size: =15
+        Width: =495
+        X: =78
+        Y: =585
+        ZIndex: =55
+
+    extracurricullarLabel_3 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =33
+        Size: =18
+        Text: ="Others"
+        Width: =221
+        X: =78
+        Y: =764
+        ZIndex: =56
+
+    sportTF_1 As text:
+        Default: =""
+        Height: =157
+        HintText: ="Other acheivements"
+        Mode: =TextMode.MultiLine
+        Size: =15
+        Width: =495
+        X: =78
+        Y: =804
+        ZIndex: =57
+
+    NextBtn_1 As button:
+        Fill: =RGBA(140, 4, 4, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Height: =60
+        HoverBorderColor: =RGBA(238, 204, 204, 1)
+        HoverFill: =ColorFade(RGBA(140.25, 4.090617, 4.090617, 1), -10%)
+        OnSelect: =
+        PressedBorderColor: =RGBA(203, 102, 102, 1)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(203, 102, 102, 100), -10%)
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Text: ="Next"
+        Width: =175
+        X: =400
+        Y: =1004
+        ZIndex: =58
+
+    NextBtn_2 As button:
+        Fill: =RGBA(140, 4, 4, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Height: =60
+        HoverBorderColor: =RGBA(238, 204, 204, 1)
+        HoverFill: =ColorFade(RGBA(140.25, 4.090617, 4.090617, 1), -10%)
+        OnSelect: =
+        PressedBorderColor: =RGBA(203, 102, 102, 1)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(203, 102, 102, 100), -10%)
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Text: ="Previous"
+        Width: =175
+        X: =78
+        Y: =1004
+        ZIndex: =59
 
