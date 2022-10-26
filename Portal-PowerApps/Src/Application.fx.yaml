@@ -954,3 +954,23 @@
             Y: =908
             ZIndex: =79
 
+    Dropdown3 As dropdown:
+        Height: =53
+        Items: =DropDownSample
+        Size: =21
+        Width: =254
+        X: =45
+        Y: =925
+        ZIndex: =81
+
+    Label_10 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =45
+        Size: =15
+        Text: ="City"
+        Visible: =page=1
+        Width: =127
+        X: =43
+        Y: =882
+        ZIndex: =82
+

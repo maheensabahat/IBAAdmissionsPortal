@@ -61,6 +61,7 @@
     "Description1": 233,
     "DOB": 82,
     "Dropdown2": 271,
+    "Dropdown3": 280,
     "dropdownCalendarSelection1": 239,
     "educationType1": 73,
     "educationType1_1": 86,
@@ -144,6 +145,7 @@
     "importSAT": 67,
     "Label": 74,
     "Label_1": 85,
+    "Label_10": 281,
     "Label_2": 76,
     "Label_3": 94,
     "Label_4": 93,
@@ -287,7 +289,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "10/26/2022 14:38:12",
+  "HeaderLastSavedDateTimeUTC": "10/26/2022 14:40:41",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "7580dfef-b203-40b2-8d5e-98aa9e654967": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/fd61e08e61b4462c845da42bde057db0\"",
@@ -521,18 +523,18 @@
   "OrderTemplate": {},
   "OrderXMLTemplate": {
     "button": 4,
-    "circle": 10,
-    "datepicker": 9,
-    "dropdown": 12,
+    "circle": 11,
+    "datepicker": 10,
+    "dropdown": 7,
     "gallery": 3,
     "icon": 1,
     "image": 0,
     "import": 6,
     "label": 2,
-    "radio": 8,
+    "radio": 9,
     "rectangle": 5,
-    "star": 11,
-    "text": 7
+    "star": 12,
+    "text": 8
   },
   "PublishOrderIndices": {
     "AcademicSection": 82,
@@ -588,6 +590,7 @@
     "Description1": 156,
     "DOB": 118,
     "Dropdown2": 196,
+    "Dropdown3": 0,
     "dropdownCalendarSelection1": 162,
     "educationType1": 109,
     "educationType1_1": 122,
@@ -671,6 +674,7 @@
     "importSAT": 103,
     "Label": 110,
     "Label_1": 121,
+    "Label_10": 129,
     "Label_2": 112,
     "Label_3": 130,
     "Label_4": 129,
@@ -838,7 +842,7 @@
       "icon": 28,
       "image": 13,
       "import": 4,
-      "label": 114,
+      "label": 115,
       "radio": 2,
       "rectangle": 13,
       "screen": 9,
@@ -846,7 +850,7 @@
       "text": 20
     },
     "DeserializationLoadTime": 3.8965743,
-    "ErrorCount": 4
+    "ErrorCount": 6
   },
   "WasLocalDatabaseReferencesEmpty": true
 }
