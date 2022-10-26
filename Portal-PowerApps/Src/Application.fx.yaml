@@ -372,7 +372,7 @@
             Height: =60
             HoverBorderColor: =RGBA(238, 204, 204, 1)
             HoverFill: =ColorFade(RGBA(140.25, 4.090617, 4.090617, 1), -10%)
-            OnSelect: |-
+            OnSelect: |
                 =Set(page, page+1);
                 ClearCollect(
                     collSteps,
@@ -401,6 +401,9 @@
                         isCurrent: page=4
                     }
                 );
+                
+                SubmitForm(PrimaryEduForm);
+                SubmitForm(SecondEduForm);
             PressedBorderColor: =RGBA(203, 102, 102, 1)
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =ColorFade(RGBA(203, 102, 102, 100), -10%)
@@ -1342,10 +1345,10 @@
                 Y: =DataCardKey19.Y
                 ZIndex: =4
 
-    SecondEduSection As form:
+    SecondEduForm As form:
         DataSource: =SecondaryEducationList
         DefaultMode: =FormMode.New
-        Height: =515
+        Height: =355
         Width: =640
         Y: =585
         ZIndex: =89
