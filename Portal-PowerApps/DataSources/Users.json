@@ -3,7 +3,7 @@
     "ApiId": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
     "CdpRevision": {
       "BaseUrl": "/",
-      "LastChangedTimeString": "2022-08-08T16:22:49.5900000Z",
+      "LastChangedTimeString": "2022-10-24T18:13:34.7220000Z",
       "RevisionNumber": 1
     },
     "ConnectedDataSourceInfoNameMapping": {
@@ -25,10 +25,12 @@
       "{VersionNumber}": "Version number",
       "Author": "Created By",
       "Author#Claims": "Created By Claims",
+      "City": "City",
       "CNIC": "CNIC",
       "ComplianceAssetId": "Compliance Asset Id",
       "Country": "Country",
       "Created": "Created",
+      "DOB": "DOB",
       "Editor": "Modified By",
       "Editor#Claims": "Modified By Claims",
       "Email": "Email",
@@ -36,8 +38,6 @@
       "ID": "ID",
       "LastName": "LastName",
       "Modified": "Modified",
-      "Nationality": "Nationality",
-      "PassportNumber": "PassportNumber",
       "Password": "Password",
       "PhoneNumber": "PhoneNumber",
       "ProgramsInterestedIn_x003f_": "ProgramsInterestedIn",

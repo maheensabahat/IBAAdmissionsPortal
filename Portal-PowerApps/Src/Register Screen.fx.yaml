@@ -52,48 +52,6 @@
             Y: =134
             ZIndex: =4
 
-    RegisterBtn_1 As button:
-        Fill: =RGBA(140, 4, 4, 1)
-        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-        Height: =47
-        HoverBorderColor: =RGBA(238, 204, 204, 1)
-        HoverFill: =ColorFade(RGBA(140.25, 4.090617, 4.090617, 1), -10%)
-        OnSelect: |-
-            =Patch(
-                Users,
-                Defaults(Users),
-                {
-                    Title: Lower(
-                        Concatenate(
-                            FirstNameTF.Text,
-                            ".",
-                            LastNameTF.Text,
-                            RandBetween(
-                                100,
-                                999
-                            )
-                        )
-                    ),
-                    FirstName: FirstNameTF.Text,
-                    LastName: LastNameTF.Text,
-                    Email: EmailTF.Text,
-                    PhoneNumber: PhoneNumberTxt.Text,
-                    Password: PasswordTF.Text
-                }
-            );
-        PressedBorderColor: =RGBA(203, 102, 102, 1)
-        PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =ColorFade(RGBA(203, 102, 102, 100), -10%)
-        RadiusBottomLeft: =20
-        RadiusBottomRight: =20
-        RadiusTopLeft: =20
-        RadiusTopRight: =20
-        Text: ="patch"
-        Width: =174
-        X: =233
-        Y: =814
-        ZIndex: =31
-
     "'Register Region' As group":
         Height: =5
         Width: =5
@@ -164,6 +122,13 @@
                             }
                         );
                         //Save Users info in local app collection and navigate
+                        Collect(
+                            User,
+                            Filter(
+                                Users,
+                                EmailTF.Text = Email
+                            )
+                        );
                         Navigate(
                             'Home Screen',
                             ScreenTransition.Fade
