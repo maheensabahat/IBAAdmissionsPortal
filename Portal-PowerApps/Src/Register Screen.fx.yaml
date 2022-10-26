@@ -118,23 +118,6 @@
                                 LastName: LastNameTF.Text,
                                 Email: EmailTF.Text,
                                 PhoneNumber: PhoneNumberTF.Text,
-                                Nationality: NationalityRB.Selected.Value,
-                                CNIC: If(
-                                    NationalityRB.Selected.Value = "Pakistani",
-                                    CNICTF.Text,
-                                    ""
-                                ),
-                                PassportNumber: If(
-                                    NationalityRB.Selected.Value = "Pakistani",
-                                    "",
-                                    CNICTF.Text
-                                ),
-                                Country: If(
-                                    NationalityRB.Selected.Value = "Pakistani",
-                                    "Pakistan",
-                                    Country.Selected.Value
-                                ),
-                                ProgramsInterestedIn: ProgramsDropDown.Selected.Value,
                                 Password: PasswordTF.Text
                             }
                         );
