@@ -490,7 +490,7 @@
         RadiusTopLeft: =20
         RadiusTopRight: =20
         Text: ="Save"
-        Visible: =page<4
+        Visible: =page=1
         Width: =175
         X: =78
         Y: =1004
