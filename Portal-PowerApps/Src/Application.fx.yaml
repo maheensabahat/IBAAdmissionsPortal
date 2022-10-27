@@ -1491,7 +1491,7 @@
                     Height: =43
                     HoverFill: =RGBA(238, 204, 204, 1)
                     IsSearchable: =false
-                    Items: =Choices([@SecondaryEducationList].Alevel_x002f_Inter)
+                    Items: =Choices([@SecondaryEducationList].'Alevel/Inter')
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     PressedFill: =RGBA(203, 102, 102, 1)
                     SearchFields: =["Value"]
